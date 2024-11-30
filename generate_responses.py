@@ -16,7 +16,7 @@ import pickle
 from dotenv import load_dotenv
 load_dotenv()
 
-from core.data.data_utils import load_ds
+from core.data.data_utils import load_ds, load_ds_from_json
 from core.utils import utils
 from core.models.huggingface_models import HuggingfaceModel
 
@@ -44,44 +44,59 @@ def make_brief_prompt(question, context=None):
 def get_output_path(args, example_id):
     '''返回输出文件路径'''
     # `./output/train/generation/Qwen/Qwen2.5-1.5B-Instruct/squad/greedy_golden/1.pkl`
-    sample = "greedy" if args.temperature < GREEDY_TEMPERATURE_THRESHOLD else "sample"
-    context = ""
-    if args.use_context:
-        if args.irrelevant_context:
-            context = "irrelevant"
-        else:
-            context = "golden"
-    else:
-        context = "without"
-    sample_context = f"{sample}_{context}"
-    dir_path = f"{args.output_dir}/{args.split}/generation/{args.model}/{args.dataset}/{sample_context}"
+    # sample = "greedy" if args.temperature < GREEDY_TEMPERATURE_THRESHOLD else "sample"
+    # context = ""
+    # if args.use_context:
+    #     if args.irrelevant_context:
+    #         context = "irrelevant"
+    #     else:
+    #         context = "golden"
+    # else:
+    #     context = "without"
+    # sample_context = f"{sample}_{context}"
+    dir_path = args.output_dir
+    # f"{args.output_dir}/{args.split}/generation/{args.model}/{args.dataset}/{sample_context}"
     if not os.path.exists(dir_path):
         os.makedirs(dir_path)
     return os.path.join(dir_path, f"{example_id}.pkl")
 
 
 def main(args):
-    dataset = load_ds(args.dataset, args.split)
+    # 加载模型
     model = HuggingfaceModel(args.model, stop_sequences='default', max_new_tokens=args.max_new_tokens)
-    # model.predict(input_data, temperature, return_full=False, return_latent=False)
-    
-    num_samples = args.num_samples
-    if num_samples is None or num_samples < 0 or num_samples > len(dataset):
-        num_samples = len(dataset)
-    logging.info(f"Generating responses for {num_samples} samples")
 
-    for i in tqdm(range(num_samples)):
-    # for i, example in tqdm(enumerate(dataset_split)):
+    # 创建输出目录
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
+
+    # 加载数据集
+    assert args.dataset_json_file, f"Dataset json file is required. Got {args.dataset_json_file}"
+    id_list, data_dict = load_ds_from_json(args.dataset_json_file)
+
+    # 根据prompt生成回答
+    def generate_responses(prompt):
+        last_error = None
+        for _ in range(args.retry_times):
+            output = model.predict(prompt, temperature=args.temperature, return_latent=args.return_latent)
+            if 'error' not in output:
+                return output
+            last_error = output['error']
+        if last_error is not None:
+            return {'error': last_error}
+
+    for i, example_id in enumerate(tqdm(id_list, desc="Generating")):
         # 释放显存
-        gc.collect()
-        torch.cuda.empty_cache()
+        if i % 10 == 0:
+            gc.collect()
+            torch.cuda.empty_cache()
 
-        example = dataset[i]
-        # load result
-        file_path = get_output_path(args, example['id'])
-        if os.path.exists(file_path):
-            continue # 如果结果已经存在，则跳过
-        
+        assert example_id in data_dict, f"Example id {example_id} not found in dataset {args.dataset_json_file}."
+        example = data_dict[example_id]
+        output_path = os.path.join(args.output_dir, f"{example_id}.pkl")
+        if not args.override and os.path.exists(output_path): # 若不覆盖且结果已存在
+            continue
+
+        # 构造prompt
         if args.use_context:
             if args.irrelevant_context:
                 prompt = make_brief_prompt(example['question'], example['irrelevant_context'])
@@ -89,41 +104,28 @@ def main(args):
                 prompt = make_brief_prompt(example['question'], example['context'])
         else:
             prompt = make_brief_prompt(example['question'], None)
-        
-        def generate_responses(prompt):
-            last_error = None
-            for _ in range(args.retry_times):
-                output = model.predict(prompt, temperature=args.temperature, return_latent=args.return_latent)
-                if 'error' not in output:
-                    return output
-                last_error = output['error']
-            if last_error is not None:
-                return {'error': last_error}
 
+        # 生成回答
         result = {
             'example_id': example['id'],
             'args': args,
             'responses': [],
         }
-
         for _ in range(args.num_generations):
             response = generate_responses(prompt)
             result['responses'].append(response)
 
-        # save result
-        with open(file_path, 'wb') as f:
+        # 保存结果
+        with open(output_path, 'wb') as f:
             pickle.dump(result, f)
 
 def get_parser():
     '''
-    python generate_responses.py --dataset squad --split train --model Qwen/Qwen2.5-7B-Instruct --num_samples 2000 --num_generations 10 --temperature 1.0 --use_context --irrelevant_context --return_latent
+    python generate_responses.py --output_dir output/train/generation/Qwen/Qwen2.5-7B-Instruct/squad/sample_golden --model Qwen/Qwen2.5-7B-Instruct --num_generations 10 --retry_times 3 --temperature 1.0 --max_new_tokens 50 --use_context --irrelevant_context --return_latent --dataset_json_file output/dataset/squad_train.json --override
     '''
     parser = argparse.ArgumentParser()
-    parser.add_argument('--output_dir', type=str, default='output')
-    parser.add_argument('--dataset', type=str, default='squad')
-    parser.add_argument('--split', type=str, default='train')
-    parser.add_argument('--model', type=str, default='Qwen/Qwen2.5-1.5B-Instruct')
-    parser.add_argument('--num_samples', type=int, default=2000)
+    parser.add_argument('--output_dir', type=str, default='output/train/generation/Qwen/Qwen2.5-7B-Instruct/squad/sample_golden')
+    parser.add_argument('--model', type=str, default='Qwen/Qwen2.5-7B-Instruct')
     parser.add_argument('--num_generations', type=int, default=10)
     parser.add_argument('--retry_times', type=int, default=3)
     parser.add_argument('--temperature', type=float, default=1.0)
@@ -132,6 +134,7 @@ def get_parser():
     parser.add_argument("--irrelevant_context", default=False, action=argparse.BooleanOptionalAction)
     parser.add_argument("--return_latent", default=False, action=argparse.BooleanOptionalAction)
     parser.add_argument("--dataset_json_file", type=str, default=None)
+    parser.add_argument("--override", default=False, action=argparse.BooleanOptionalAction)
     return parser
 
 if __name__ == '__main__':
