@@ -37,9 +37,6 @@ conda activate frag
 # generate.py
 - 生成答案
 
-# 本地配置
-- `core.models.base_model.huggingface_models`中`MAX_MEMORY_CONFIG`
-
 # output目录规则
 - `output`表示根目录，默认存放`train`的结果
 - `output/clustered`表示聚类结果，重写

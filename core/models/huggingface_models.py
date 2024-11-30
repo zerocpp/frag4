@@ -24,11 +24,6 @@ dotenv.load_dotenv()
 # 使用镜像
 os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 
-# 获取配置并解析为字典
-max_memory_config = os.getenv("MAX_MEMORY_CONFIG")
-MAX_MEMORY_CONFIG = ast.literal_eval(max_memory_config)  # 转换为 Python 字典
-
-
 # 默认优先级: cuda > mps > cpu
 DEFAULT_DEVICE = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
 # 设备
@@ -122,7 +117,6 @@ class HuggingfaceModel(BaseModel):
             self.model = AutoModelForCausalLM.from_pretrained(
                 model_name, 
                 # device_map="auto",
-                max_memory=MAX_MEMORY_CONFIG,
                 trust_remote_code=True,
                 torch_dtype=torch.bfloat16,
             ).to(DEVICE)
@@ -138,7 +132,6 @@ class HuggingfaceModel(BaseModel):
             self.model = AutoModelForCausalLM.from_pretrained(
                 model_name, 
                 # device_map="auto",
-                max_memory=MAX_MEMORY_CONFIG,
                 trust_remote_code=True,
                 torch_dtype=torch.bfloat16,
             ).to(DEVICE)
@@ -154,7 +147,6 @@ class HuggingfaceModel(BaseModel):
         #     self.model = AutoModelForCausalLM.from_pretrained(
         #         model_id,
         #         device_map='auto',
-        #         max_memory=MAX_MEMORY_CONFIG,
         #         trust_remote_code=True,
         #     )
 
@@ -167,7 +159,6 @@ class HuggingfaceModel(BaseModel):
         #     self.model = AutoModelForCausalLM.from_pretrained(
         #         model_id,
         #         device_map='auto',
-        #         max_memory=MAX_MEMORY_CONFIG,
         #         trust_remote_code=True,
         #     )
         # elif 'phi' in model_name.lower():
@@ -180,7 +171,6 @@ class HuggingfaceModel(BaseModel):
         #     self.model = AutoModelForCausalLM.from_pretrained(
         #         model_id,
         #         device_map='auto',
-        #         max_memory=MAX_MEMORY_CONFIG,
         #         trust_remote_code=True,
         #     )
         # elif 'gemma' in model_name:
@@ -191,7 +181,6 @@ class HuggingfaceModel(BaseModel):
         #     self.model = AutoModelForCausalLM.from_pretrained(
         #         model_id,
         #         device_map='auto',
-        #         max_memory=MAX_MEMORY_CONFIG,
         #         trust_remote_code=True,
         #         torch_dtype=torch.bfloat16
         #     )

@@ -43,7 +43,7 @@ def make_brief_prompt(question, context=None):
 
 def get_output_path(args, example_id):
     '''返回输出文件路径'''
-    # `./output/Qwen/Qwen2.5-1.5B-Instruct/squad/greedy_golden/1.pkl`
+    # `./output/train/generation/Qwen/Qwen2.5-1.5B-Instruct/squad/greedy_golden/1.pkl`
     sample = "greedy" if args.temperature < GREEDY_TEMPERATURE_THRESHOLD else "sample"
     context = ""
     if args.use_context:
@@ -54,14 +54,13 @@ def get_output_path(args, example_id):
     else:
         context = "without"
     sample_context = f"{sample}_{context}"
-    dir_path = f"{args.output_dir}/{args.model}/{args.dataset}/{sample_context}"
+    dir_path = f"{args.output_dir}/{args.split}/generation/{args.model}/{args.dataset}/{sample_context}"
     if not os.path.exists(dir_path):
         os.makedirs(dir_path)
     return os.path.join(dir_path, f"{example_id}.pkl")
 
 
 def main(args):
-    print(f"model:{args.model}, dataset:{args.dataset}, split:{args.split}, use_context:{args.use_context}, irrelevant_context:{args.irrelevant_context}, return_latent:{args.return_latent}")
     dataset = load_ds(args.dataset, args.split)
     model = HuggingfaceModel(args.model, stop_sequences='default', max_new_tokens=args.max_new_tokens)
     # model.predict(input_data, temperature, return_full=False, return_latent=False)
@@ -117,7 +116,7 @@ def main(args):
 
 def get_parser():
     '''
-    python generate_responses.py --dataset squad --split train --model Qwen/Qwen2.5-1.5B-Instruct --num_samples 2000 --num_generations 10 --retry_times 3 --temperature 1.0 --max_new_tokens 50 --use_context --irrelevant_context --return_latent
+    python generate_responses.py --dataset squad --split train --model Qwen/Qwen2.5-7B-Instruct --num_samples 2000 --num_generations 10 --temperature 1.0 --use_context --irrelevant_context --return_latent
     '''
     parser = argparse.ArgumentParser()
     parser.add_argument('--output_dir', type=str, default='output')
@@ -136,15 +135,11 @@ def get_parser():
 
 if __name__ == '__main__':
     setup_logger()
-
     parser = get_parser()
     args, unknown = parser.parse_known_args()
-    logging.info('Starting new run with args: %s', args)
-
     if unknown:
         raise ValueError(f'Unkown args: {unknown}')
-
-    logging.info('STARTING `generate_answers`!')
+    print(f"args: {args}")
     main(args)
-    logging.info('FINISHED `generate_answers`!')
+    print("Done!")
 

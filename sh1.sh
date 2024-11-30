@@ -1,23 +1,11 @@
-# cluster triviaqa llama8b
-DEVICE=cuda:1 python cluster_responses.py --model microsoft/deberta-v2-xxlarge-mnli --dataset triviaqa --split train --num_samples 2000 --input_dir output/meta-llama/Llama-3.1-8B-Instruct/triviaqa/sample_golden --output_dir output/clustered/meta-llama/Llama-3.1-8B-Instruct/triviaqa/sample_golden
-DEVICE=cuda:1 python cluster_responses.py --model microsoft/deberta-v2-xxlarge-mnli --dataset triviaqa --split train --num_samples 2000 --input_dir output/meta-llama/Llama-3.1-8B-Instruct/triviaqa/sample_without --output_dir output/clustered/meta-llama/Llama-3.1-8B-Instruct/triviaqa/sample_without
-DEVICE=cuda:1 python cluster_responses.py --model microsoft/deberta-v2-xxlarge-mnli --dataset triviaqa --split train --num_samples 2000 --input_dir output/meta-llama/Llama-3.1-8B-Instruct/triviaqa/sample_irrelevant --output_dir output/clustered/meta-llama/Llama-3.1-8B-Instruct/triviaqa/sample_irrelevant
-
-
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset triviaqa --split train --model meta-llama/Llama-3.1-8B-Instruct --num_samples 2000 --num_generations 10 --retry_times 3 --temperature 1.0 --max_new_tokens 50 --use_context --no-irrelevant_context
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset triviaqa --split train --model meta-llama/Llama-3.1-8B-Instruct --num_samples 2000 --num_generations 10 --retry_times 3 --temperature 1.0 --max_new_tokens 50 --use_context --irrelevant_context
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset triviaqa --split train --model meta-llama/Llama-3.1-8B-Instruct --num_samples 2000 --num_generations 10 --retry_times 3 --temperature 1.0 --max_new_tokens 50 --no-use_context --irrelevant_context
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset triviaqa --split train --model meta-llama/Llama-3.1-8B-Instruct --num_samples 2000 --num_generations 1 --retry_times 3 --temperature 0.1 --max_new_tokens 50 --use_context --no-irrelevant_context --return_latent
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset triviaqa --split train --model meta-llama/Llama-3.1-8B-Instruct --num_samples 2000 --num_generations 1 --retry_times 3 --temperature 0.1 --max_new_tokens 50 --use_context --irrelevant_context --return_latent
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset triviaqa --split train --model meta-llama/Llama-3.1-8B-Instruct --num_samples 2000 --num_generations 1 --retry_times 3 --temperature 0.1 --max_new_tokens 50 --no-use_context --irrelevant_context --return_latent
-
-
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset squad --split train --model Qwen/Qwen2.5-7B-Instruct --num_samples 2000 --num_generations 10 --retry_times 3 --temperature 1.0 --max_new_tokens 50 --use_context --irrelevant_context
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset squad --split train --model Qwen/Qwen2.5-7B-Instruct --num_samples 2000 --num_generations 10 --retry_times 3 --temperature 1.0 --max_new_tokens 50 --no-use_context --irrelevant_context
-
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset squad --split train --model meta-llama/Llama-3.1-8B-Instruct --num_samples 2000 --num_generations 10 --retry_times 3 --temperature 1.0 --max_new_tokens 50 --use_context --no-irrelevant_context
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset squad --split train --model meta-llama/Llama-3.1-8B-Instruct --num_samples 2000 --num_generations 10 --retry_times 3 --temperature 1.0 --max_new_tokens 50 --use_context --irrelevant_context
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset squad --split train --model meta-llama/Llama-3.1-8B-Instruct --num_samples 2000 --num_generations 10 --retry_times 3 --temperature 1.0 --max_new_tokens 50 --no-use_context --irrelevant_context
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset squad --split train --model meta-llama/Llama-3.1-8B-Instruct --num_samples 2000 --num_generations 1 --retry_times 3 --temperature 0.1 --max_new_tokens 50 --use_context --no-irrelevant_context --return_latent
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset squad --split train --model meta-llama/Llama-3.1-8B-Instruct --num_samples 2000 --num_generations 1 --retry_times 3 --temperature 0.1 --max_new_tokens 50 --use_context --irrelevant_context --return_latent
-# DEVICE=cuda:1 MAX_MEMORY_CONFIG='{0:"0GIB", 1:"24GIB"}' python generate_responses.py --dataset squad --split train --model meta-llama/Llama-3.1-8B-Instruct --num_samples 2000 --num_generations 1 --retry_times 3 --temperature 0.1 --max_new_tokens 50 --no-use_context --irrelevant_context --return_latent
+# Description: Generate greedy responses on SQuAD-test
+cuda=1
+models=("meta-llama/Llama-3.1-8B-Instruct")
+datasets=("squad" "triviaqa")
+for model in "${models[@]}"; do
+    for dataset in "${datasets[@]}"; do
+        DEVICE=cuda:${cuda} python generate_responses.py --dataset "${dataset}" --split test --model "${model}" --num_samples 1000 --num_generations 1 --temperature 0.1 --use_context --irrelevant_context --return_latent
+        DEVICE=cuda:${cuda} python generate_responses.py --dataset "${dataset}" --split test --model "${model}" --num_samples 1000 --num_generations 1 --temperature 0.1 --use_context --no-irrelevant_context --return_latent
+        DEVICE=cuda:${cuda} python generate_responses.py --dataset "${dataset}" --split test --model "${model}" --num_samples 1000 --num_generations 1 --temperature 0.1 --no-use_context --irrelevant_context --return_latent
+    done
+done

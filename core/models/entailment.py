@@ -13,11 +13,6 @@ import torch.nn.functional as F
 # 使用镜像
 os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 
-# 获取配置并解析为字典
-# max_memory_config = os.getenv("MAX_MEMORY_CONFIG")
-# MAX_MEMORY_CONFIG = ast.literal_eval(max_memory_config)  # 转换为 Python 字典
-
-
 # 默认优先级: cuda > mps > cpu
 DEFAULT_DEVICE = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
 # 设备
