@@ -9,7 +9,7 @@ import torch
 from transformers import AutoTokenizer
 from transformers import AutoModelForCausalLM
 from transformers import StoppingCriteriaList
-from core.data.data_utils import load_ds
+from core.data.data_utils import load_ds, load_ds_from_json
 
 # Load environment variables from .env file
 from dotenv import load_dotenv
@@ -89,19 +89,17 @@ def model_based_metric(predicted_answer, example, model: BaseLLM, temperature: f
 def get_parser():
     '''
     示例：
-    python evaluate_responses.py --eval_model_type ollama --eval_model_name qwen2.5:72b-instruct-q4_0 --temperature 0.01 --scores_key qwen_scores --input_dir output/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden --output_dir output/eval/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden --dataset squad --split train --num_samples 2000 --no-override
+    python evaluate_responses.py --eval_model_type ollama --eval_model_name qwen2.5:72b-instruct-q4_0 --temperature 0.01 --scores_key qwen_scores --input_dir output/train/generation/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden --output_dir output/train/evaluation/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden --no-override --dataset_json_file data/squad_dev.json
     '''
     parser = argparse.ArgumentParser()
     parser.add_argument("--eval_model_type", type=str, default="ollama")
     parser.add_argument("--eval_model_name", type=str, default="qwen2.5:72b-instruct-q4_0")
     parser.add_argument("--temperature", type=float, default=0.01)
     parser.add_argument("--scores_key", type=str, default="qwen_scores")
-    parser.add_argument("--input_dir", type=str, default="output/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden")
-    parser.add_argument("--output_dir", type=str, default="output/eval/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden")
-    parser.add_argument('--dataset', type=str, default='squad')
-    parser.add_argument('--split', type=str, default='train')
-    parser.add_argument('--num_samples', type=int, default=2000)
+    parser.add_argument("--input_dir", type=str, default="output/train/generation/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden")
+    parser.add_argument("--output_dir", type=str, default="output/train/evaluation/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden")
     parser.add_argument("--override", default=False, action=argparse.BooleanOptionalAction)
+    parser.add_argument("--dataset_json_file", type=str, default=None)
     return parser
 
 def main(args):
@@ -112,39 +110,29 @@ def main(args):
         os.makedirs(args.output_dir)
 
     # 加载数据集
-    dataset = load_ds(args.dataset, args.split)
-    data_dict = defaultdict(dict)
-    for i in tqdm(range(args.num_samples)):
-        data = dataset[i]
-        data_dict[data['id']] = data
+    assert args.dataset_json_file, f"Dataset json file is required. Got {args.dataset_json_file}"
+    id_list, data_dict = load_ds_from_json(args.dataset_json_file)
     
-    for file in tqdm(os.listdir(args.input_dir), desc=f"Evaluating"):
-        # 判断结果是否已存在
-        if not args.override: # 若不覆盖
-            output_path = os.path.join(args.output_dir, file)
-            if os.path.exists(output_path): # 若结果已存在
-                continue # 跳过
-
-        input_path = os.path.join(args.input_dir, file)
-        data = load_pickle_file(input_path)
-        example_id = data['example_id']
-        assert example_id in data_dict
+    for example_id in tqdm(id_list, desc="Evaluating"):
+        assert example_id in data_dict, f"Example id {example_id} not found in dataset {args.dataset_json_file}."
         example = data_dict[example_id]
+        eval_path = os.path.join(args.output_dir, f"{example_id}.pkl")
+        if not args.override and os.path.exists(eval_path): # 若不覆盖且结果已存在
+            continue
 
-        scores = []
-        for response in data['responses']:
+        gen_path = os.path.join(args.input_dir, f"{example_id}.pkl")
+        if not os.path.exists(gen_path):
+            # logging.warning(f"Generation result not found for example {example_id}. Skipping evaluation.")
+            continue
+        result = {
+            'example_id': example_id,
+            args.scores_key: [],
+        }
+        responses = load_pickle_file(gen_path)['responses']
+        for response in responses:
             evaluate_score = model_based_metric(response.get('text', ''), example, eval_model, args.temperature)
-            scores.append(evaluate_score)
-
-        output_path = os.path.join(args.output_dir, file)
-        if os.path.exists(output_path):
-            result = load_pickle_file(output_path)    
-        else:
-            result = {
-                'example_id': data['example_id'],
-            }
-        result[args.scores_key] = scores
-        save_pickle_file(output_path, result)
+            result[args.scores_key] = evaluate_score
+        save_pickle_file(eval_path, result)
 
 if __name__ == '__main__':
     parser = get_parser()

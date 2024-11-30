@@ -1,3 +1,37 @@
+# # Description: Generate greedy responses on SQuAD-test
+# cuda=1
+# models=("meta-llama/Llama-3.1-8B-Instruct")
+
+# datasets=("squad" "triviaqa")
+# splits=("test" "validation")
+# for model in "${models[@]}"; do
+#     for dataset in "${datasets[@]}"; do
+#         for split in "${splits[@]}"; do
+#             DEVICE=cuda:${cuda} python generate_responses.py --dataset "${dataset}" --split "${split}" --model "${model}" --num_samples 1000 --num_generations 1 --temperature 0.1 --use_context --irrelevant_context --return_latent
+#             DEVICE=cuda:${cuda} python generate_responses.py --dataset "${dataset}" --split "${split}" --model "${model}" --num_samples 1000 --num_generations 1 --temperature 0.1 --use_context --no-irrelevant_context --return_latent
+#             DEVICE=cuda:${cuda} python generate_responses.py --dataset "${dataset}" --split "${split}" --model "${model}" --num_samples 1000 --num_generations 1 --temperature 0.1 --no-use_context --irrelevant_context --return_latent
+#         done
+#     done
+# done
+
+
+# # Description: Generate greedy responses on SQuAD-test
+# cuda=0
+# models=("Qwen/Qwen2.5-7B-Instruct")
+
+# datasets=("squad" "triviaqa")
+# splits=("test" "validation")
+# for model in "${models[@]}"; do
+#     for dataset in "${datasets[@]}"; do
+#         for split in "${splits[@]}"; do
+#             DEVICE=cuda:${cuda} python generate_responses.py --dataset "${dataset}" --split "${split}" --model "${model}" --num_samples 1000 --num_generations 1 --temperature 0.1 --use_context --irrelevant_context --return_latent
+#             DEVICE=cuda:${cuda} python generate_responses.py --dataset "${dataset}" --split "${split}" --model "${model}" --num_samples 1000 --num_generations 1 --temperature 0.1 --use_context --no-irrelevant_context --return_latent
+#             DEVICE=cuda:${cuda} python generate_responses.py --dataset "${dataset}" --split "${split}" --model "${model}" --num_samples 1000 --num_generations 1 --temperature 0.1 --no-use_context --irrelevant_context --return_latent
+#         done
+#     done
+# done
+
+
 # cluster squad llama8b
 # DEVICE=cuda:0 python cluster_responses.py --model microsoft/deberta-v2-xxlarge-mnli --dataset squad --split train --num_samples 2000 --input_dir output/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden --output_dir output/clustered/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden
 # DEVICE=cuda:0 python cluster_responses.py --model microsoft/deberta-v2-xxlarge-mnli --dataset squad --split train --num_samples 2000 --input_dir output/meta-llama/Llama-3.1-8B-Instruct/squad/sample_without --output_dir output/clustered/meta-llama/Llama-3.1-8B-Instruct/squad/sample_without

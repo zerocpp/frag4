@@ -1,0 +1,26 @@
+{
+    "train-Qwen/Qwen2.5-7B-Instruct-greedy_golden": {
+        "squad": "0.88",
+        "triviaqa": "0.82"
+    },
+    "train-Qwen/Qwen2.5-7B-Instruct-greedy_without": {
+        "squad": "0.26",
+        "triviaqa": "0.62"
+    },
+    "train-Qwen/Qwen2.5-7B-Instruct-greedy_irrelevant": {
+        "squad": "0.11",
+        "triviaqa": "0.42"
+    },
+    "train-meta-llama/Llama-3.1-8B-Instruct-greedy_golden": {
+        "squad": "0.76",
+        "triviaqa": "0.69"
+    },
+    "train-meta-llama/Llama-3.1-8B-Instruct-greedy_without": {
+        "squad": "0.28",
+        "triviaqa": "0.74"
+    },
+    "train-meta-llama/Llama-3.1-8B-Instruct-greedy_irrelevant": {
+        "squad": "0.24",
+        "triviaqa": "0.60"
+    }
+}

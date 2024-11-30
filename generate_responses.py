@@ -131,6 +131,7 @@ def get_parser():
     parser.add_argument("--use_context", default=False, action=argparse.BooleanOptionalAction)
     parser.add_argument("--irrelevant_context", default=False, action=argparse.BooleanOptionalAction)
     parser.add_argument("--return_latent", default=False, action=argparse.BooleanOptionalAction)
+    parser.add_argument("--dataset_json_file", type=str, default=None)
     return parser
 
 if __name__ == '__main__':
