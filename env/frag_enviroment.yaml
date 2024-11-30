@@ -1,0 +1,19 @@
+name: frag
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.6
+  - pytorch
+  - torchvision
+  - torchaudio
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - transformers
+  - sentencepiece
+  - tqdm
+  - requests
+  - pyyaml
