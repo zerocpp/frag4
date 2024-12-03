@@ -30,12 +30,7 @@ class EntailmentDeberta(BaseEntailment):
     def __init__(self, model_name="microsoft/deberta-v2-xxlarge-mnli"):
         self.model_name = model_name
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        if DEVICE == 'auto':
-            self.model = AutoModelForSequenceClassification.from_pretrained(
-                model_name,
-                device_map='auto')
-        else:
-            self.model = AutoModelForSequenceClassification.from_pretrained(
+        self.model = AutoModelForSequenceClassification.from_pretrained(
                 model_name).to(DEVICE)
 
     def check_implication(self, text1, text2, prefix=None) -> int:
@@ -47,10 +42,7 @@ class EntailmentDeberta(BaseEntailment):
         if prefix:
             text1 = f'{prefix} {text1}'
             text2 = f'{prefix} {text2}'
-        if DEVICE == 'auto':
-            inputs = self.tokenizer(text1, text2, return_tensors="pt").to(DEVICE)
-        else:
-            inputs = self.tokenizer(text1, text2, return_tensors="pt")
+        inputs = self.tokenizer(text1, text2, return_tensors="pt").to(DEVICE)
         # The model checks if text1 -> text2, i.e. if text2 follows from text1.
         # check_implication('The weather is good', 'The weather is good and I like you') --> 1
         # check_implication('The weather is good and I like you', 'The weather is good') --> 2
@@ -89,23 +81,3 @@ if __name__ == '__main__':
         ]:
         res1 = entail.check_implication(text1, text2)
         print(text1, '|', text2, '| check_implication', res1)
-        # label_mapping = ['contradiction', 'neutral', 'entailment']
-        # print(text1, '|', text2, '| check_implication', res1, label_mapping[res1])
-        # res2 = entail.check_mutual_implication(text1, text2)
-        # print(text1, '|', text2, '| mutual_implication', res2, [label_mapping[res] for res in res2])
-
-    # from transformers import AutoTokenizer, AutoModelForSequenceClassification
-    # import torch
-
-    # model = AutoModelForSequenceClassification.from_pretrained('cross-encoder/nli-deberta-v3-large')
-    # tokenizer = AutoTokenizer.from_pretrained('cross-encoder/nli-deberta-v3-large')
-
-    # features = tokenizer(['A man is eating pizza', 'A black race car starts up in front of a crowd of people.'], ['A man eats something', 'A man is driving down a lonely road.'],  padding=True, truncation=True, return_tensors="pt")
-
-    # model.eval()
-    # with torch.no_grad():
-    #     scores = model(**features).logits
-    #     label_mapping = ['contradiction', 'entailment', 'neutral']
-    #     labels = [label_mapping[score_max] for score_max in scores.argmax(dim=1)]
-    #     print(labels)
-
