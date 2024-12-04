@@ -7,6 +7,46 @@
 - high-t generations
 - cluster_ids
 2. 计算语义熵
+
+最终格式like:
+{
+	"example": {
+		"id": "id1",
+		"question": "q1",
+		"context": "c1",
+		"answers": ["a1"]
+	},
+	"golden": {
+		"greedy": {
+			"text": "",
+			"tbg_emb": Tensor(),
+			"slt_emb": Tensor()
+		},
+		"sample": ["r1","r2"],
+		"cluster_ids": [0,1],
+		"entropy": 1.5
+	},
+	"irrelevant": {
+		"greedy": {
+			"text": "",
+			"tbg_emb": Tensor(),
+			"slt_emb": Tensor()
+		},
+		"sample": ["r1","r2"],
+		"cluster_ids": [0,1],
+		"entropy": 1.5
+	},
+	"without": {
+		"greedy": {
+			"text": "",
+			"tbg_emb": Tensor(),
+			"slt_emb": Tensor()
+		},
+		"sample": ["r1","r2"],
+		"cluster_ids": [0,1],
+		"entropy": 1.5
+	},
+}
 '''
 
 import os
@@ -34,11 +74,21 @@ def get_parser():
     parser.add_argument("--root_dir", type=str, default=".")
     return parser
 
+def load_text_responses(generation_file_path):
+    responses = []
+    if os.path.exists(generation_file_path):
+        res = load_pickle_file(generation_file_path)
+        for r in res['responses']:
+            if 'error' in r:
+                continue
+            responses.append(r['text'])
+    return responses
+
+
 def load_responses(generation_file_path):
     responses = []
     if os.path.exists(generation_file_path):
         res = load_pickle_file(generation_file_path)
-        # d['greedy_golden']['responses'][0]['hidden_states']['sec_last_token_embedding']
         for r in res['responses']:
             if 'error' in r:
                 continue
@@ -46,9 +96,15 @@ def load_responses(generation_file_path):
             if 'text' in r:
                 it['text'] = r['text']
             if 'hidden_states' in r:
-                it['slt_embedding'] = r['hidden_states']['sec_last_token_embedding']
+                it['slt_emb'] = r['hidden_states']['sec_last_token_embedding']
+                it['tbg_emb'] = r['hidden_states']['emb_last_tok_before_gen']
             responses.append(it)
     return responses
+
+def load_greedy_response(generation_file_path):
+    responses = load_responses(generation_file_path)
+    assert len(responses) <= 1, f"More than one response found in {generation_file_path}."
+    return responses[0] if responses else None
 
 def load_cluster_ids(clustered_file_path):
     cluster_ids = []
@@ -57,19 +113,11 @@ def load_cluster_ids(clustered_file_path):
         cluster_ids = res.get('cluster_ids', [])
     return cluster_ids
 
-def merge_responses_and_cluster_ids(responses, cluster_ids):
-    for i, r in enumerate(responses):
-        if len(cluster_ids) == len(responses):
-            r['cluster_id'] = cluster_ids[i]
-        else:
-            r['cluster_id'] = -1
-    return responses
-
 def prepare_data(dataset_name, split, model_name):
     model_short_name = model_name.split("/")[0]
     # 加载数据集
     dataset_json_file = os.path.join(args.root_dir, f"output/dataset/{dataset_name}_{split}.json")
-    assert os.path.exists(dataset_json_file), f"Dataset json file {dataset_json_path} not found."
+    assert os.path.exists(dataset_json_file), f"Dataset json file {dataset_json_file} not found."
     id_list, data_dict = load_ds_from_json(dataset_json_file)
 
     result = {
@@ -86,20 +134,17 @@ def prepare_data(dataset_name, split, model_name):
             example_result[sample_suffix] = {}
 
             # greedy
-            generation_file_path = os.path.join(args.root_dir, f"output/{split}/generation/{model_name}/{dataset_name}/greedy_{sample_suffix}/{example_id}.pkl")
-            greedy_responses = load_responses(generation_file_path)
-            if len(greedy_responses) == 1:
-                example_result[sample_suffix]['greedy'] = greedy_responses[0]
-            else:
-                example_result[sample_suffix]['greedy'] = {}
+            greedy_gen_path = os.path.join(args.root_dir, f"output/{split}/generation/{model_name}/{dataset_name}/greedy_{sample_suffix}/{example_id}.pkl")
+            example_result[sample_suffix]['greedy'] = load_greedy_response(greedy_gen_path)    
             
             # sample
-            generation_file_path = os.path.join(args.root_dir, f"output/{split}/generation/{model_name}/{dataset_name}/sample_{sample_suffix}/{example_id}.pkl")
-            sample_responses = load_responses(generation_file_path)
-            clustered_file_path = os.path.join(args.root_dir, f"output/{split}/clustered/{model_name}/{dataset_name}/sample_{sample_suffix}/{example_id}.pkl")
-            cluster_ids = load_cluster_ids(clustered_file_path)
-            sample_responses = merge_responses_and_cluster_ids(sample_responses, cluster_ids)
-            example_result[sample_suffix]['sample'] = sample_responses
+            sample_gen_path = os.path.join(args.root_dir, f"output/{split}/generation/{model_name}/{dataset_name}/sample_{sample_suffix}/{example_id}.pkl")
+            example_result[sample_suffix]['sample'] = load_text_responses(sample_gen_path)
+
+            # cluster_ids
+            cluster_path = os.path.join(args.root_dir, f"output/{split}/clustered/{model_name}/{dataset_name}/sample_{sample_suffix}/{example_id}.pkl")
+            cluster_ids = load_cluster_ids(cluster_path)
+            example_result[sample_suffix]['cluster_ids'] = cluster_ids
 
         result['data'][example_id] = example_result
 
