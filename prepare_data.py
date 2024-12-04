@@ -20,30 +20,36 @@
 		"greedy": {
 			"text": "",
 			"tbg_emb": Tensor(),
-			"slt_emb": Tensor()
+			"slt_emb": Tensor(),
+            "accuracy": 1.0,
 		},
 		"sample": ["r1","r2"],
 		"cluster_ids": [0,1],
+        "accuracy": [1.0, 0.0],
 		"entropy": 1.5
 	},
 	"irrelevant": {
 		"greedy": {
 			"text": "",
 			"tbg_emb": Tensor(),
-			"slt_emb": Tensor()
+			"slt_emb": Tensor(),
+            "accuracy": 1.0,
 		},
 		"sample": ["r1","r2"],
 		"cluster_ids": [0,1],
+        "accuracy": [1.0, 0.0],
 		"entropy": 1.5
 	},
 	"without": {
 		"greedy": {
 			"text": "",
 			"tbg_emb": Tensor(),
-			"slt_emb": Tensor()
+			"slt_emb": Tensor(),
+            "accuracy": 1.0,
 		},
 		"sample": ["r1","r2"],
 		"cluster_ids": [0,1],
+        "accuracy": [1.0, 0.0],
 		"entropy": 1.5
 	},
 }
@@ -84,14 +90,14 @@ def load_text_responses(generation_file_path):
             responses.append(r['text'])
     return responses
 
-
 def load_responses(generation_file_path):
     responses = []
     if os.path.exists(generation_file_path):
         res = load_pickle_file(generation_file_path)
         for r in res['responses']:
-            if 'error' in r:
-                continue
+            # 暂时不能跳过，因为eval和这个列表一一对应
+            # if 'error' in r:
+            #     continue
             it = {}
             if 'text' in r:
                 it['text'] = r['text']
@@ -112,6 +118,18 @@ def load_cluster_ids(clustered_file_path):
         res = load_pickle_file(clustered_file_path)
         cluster_ids = res.get('cluster_ids', [])
     return cluster_ids
+
+def load_accuracy(eval_file_path):
+    accuracy = []
+    if os.path.exists(eval_file_path):
+        res = load_pickle_file(eval_file_path)
+        accuracy = res.get('qwen_scores', [])
+    return accuracy
+
+def load_greedy_accuracy(eval_file_path):
+    accuracy = load_accuracy(eval_file_path)
+    assert len(accuracy) <= 1, f"More than one accuracy found in {eval_file_path}."
+    return accuracy[0] if accuracy else None
 
 def prepare_data(dataset_name, split, model_name):
     model_short_name = model_name.split("/")[0]
@@ -135,11 +153,19 @@ def prepare_data(dataset_name, split, model_name):
 
             # greedy
             greedy_gen_path = os.path.join(args.root_dir, f"output/{split}/generation/{model_name}/{dataset_name}/greedy_{sample_suffix}/{example_id}.pkl")
-            example_result[sample_suffix]['greedy'] = load_greedy_response(greedy_gen_path)    
+            example_result[sample_suffix]['greedy'] = load_greedy_response(greedy_gen_path)
+
+            # greedy accuracy
+            eval_path = os.path.join(args.root_dir, f"output/{split}/evaluation/{model_name}/{dataset_name}/greedy_{sample_suffix}/{example_id}.pkl")
+            example_result[sample_suffix]['greedy']['accuracy'] = load_greedy_accuracy(eval_path)
             
             # sample
             sample_gen_path = os.path.join(args.root_dir, f"output/{split}/generation/{model_name}/{dataset_name}/sample_{sample_suffix}/{example_id}.pkl")
             example_result[sample_suffix]['sample'] = load_text_responses(sample_gen_path)
+
+            # sample accuracy
+            eval_path = os.path.join(args.root_dir, f"output/{split}/evaluation/{model_name}/{dataset_name}/sample_{sample_suffix}/{example_id}.pkl")
+            example_result[sample_suffix]['accuracy'] = load_accuracy(eval_path)
 
             # cluster_ids
             cluster_path = os.path.join(args.root_dir, f"output/{split}/clustered/{model_name}/{dataset_name}/sample_{sample_suffix}/{example_id}.pkl")
