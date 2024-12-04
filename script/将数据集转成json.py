@@ -10,7 +10,8 @@ import json
 
 datasets=["squad", "triviaqa"]
 splits=["train", "test", "validation"]
-num_samples = [10000, 1000, 1000]
+# num_samples = [10000, 1000, 1000]
+num_samples = [2000, 100, 100]
 
 for dataset in datasets:
     for split, num_sample in zip(splits, num_samples):
