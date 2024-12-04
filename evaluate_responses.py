@@ -131,7 +131,7 @@ def main(args):
         responses = load_pickle_file(gen_path)['responses']
         for response in responses:
             evaluate_score = model_based_metric(response.get('text', ''), example, eval_model, args.temperature)
-            result[args.scores_key] = evaluate_score
+            result[args.scores_key].append(evaluate_score)
         save_pickle_file(eval_path, result)
 
 if __name__ == '__main__':
