@@ -21,7 +21,7 @@ splits=("train" "test" "validation")
 num_samples=(2000 100 100)
 
 gen_override="--no-override"
-cluster_override="--override"
+cluster_override="--no-override"
 root_dir="."
 
 # 任务计数器
@@ -73,7 +73,7 @@ for model in "${models[@]}"; do # 1
                 task_counter=$((task_counter + 1))
                 echo "Task2: $task_counter/$task_total"
                 sample="sample_${sample_suffix}"
-                dataset_json_file="$root_dir/output/dataset/${dataset}_${split}.json"
+                dataset_json_file="$root_dir/output/dataset/${dataset}_${split}_${num_sample}.json"
                 input_dir="$root_dir/output/${split}/generation/${model}/${dataset}/${sample}"
                 output_dir="$root_dir/output/${split}/clustered/${model}/${dataset}/${sample}"
                 cmd="DEVICE=cuda:$cuda python cluster_responses.py --dataset_json_file $dataset_json_file --input_dir $input_dir --output_dir $output_dir $cluster_override"
