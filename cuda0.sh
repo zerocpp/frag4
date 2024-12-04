@@ -19,6 +19,7 @@ latents=("--return_latent" "--no-return_latent")
 datasets=("squad" "triviaqa")
 splits=("train" "test" "validation")
 num_samples=(2000 100 100)
+# num_samples=(10000 1000 1000)
 
 gen_override="--no-override"
 cluster_override="--override"
