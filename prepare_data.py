@@ -97,7 +97,7 @@ def load_responses(generation_file_path):
                 it['text'] = r['text']
             if 'hidden_states' in r:
                 it['slt_emb'] = r['hidden_states']['sec_last_token_embedding']
-                it['tbg_emb'] = r['hidden_states']['emb_last_tok_before_gen']
+                it['tbg_emb'] = r['hidden_states']['last_tok_bef_gen_embedding']
             responses.append(it)
     return responses
 
