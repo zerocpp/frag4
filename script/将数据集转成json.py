@@ -6,6 +6,7 @@ dotenv.load_dotenv()
 import numpy as np
 from collections import defaultdict
 from core.data.data_utils import load_ds
+import json
 
 datasets=["squad", "triviaqa"]
 splits=["train", "test", "validation"]
@@ -24,5 +25,5 @@ for dataset in datasets:
             new_data["id"].append(data["id"])
             new_data["data"][data["id"]] = data
         
-        file = f"output/dataset/{dataset}_{split}.json"
+        file = f"output/dataset/{dataset}_{split}_{num_sample}.json"
         json.dump(new_data, open(file, "w"), indent=4)
