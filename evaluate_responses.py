@@ -89,7 +89,7 @@ def model_based_metric(predicted_answer, example, model: BaseLLM, temperature: f
 def get_parser():
     '''
     示例：
-    python evaluate_responses.py --eval_model_type ollama --eval_model_name qwen2.5:72b-instruct-q4_0 --temperature 0.01 --scores_key qwen_scores --input_dir output/train/generation/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden --output_dir output/train/evaluation/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden --no-override --dataset_json_file data/squad_dev.json
+    python evaluate_responses.py --eval_model_type ollama --eval_model_name qwen2.5:72b-instruct-q4_0 --temperature 0.01 --scores_key qwen_scores --input_dir output/train/generation/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden --output_dir output/train/evaluation/meta-llama/Llama-3.1-8B-Instruct/squad/sample_golden --dataset_json_file data/squad/sample_golden.json
     '''
     parser = argparse.ArgumentParser()
     parser.add_argument("--eval_model_type", type=str, default="ollama")
