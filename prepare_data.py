@@ -201,7 +201,7 @@ def prepare_data(dataset_name, split, model_name):
 
 def main(args):
     for dataset_name in ["squad", "triviaqa"]:
-        for split in ["train", "validation"]:
+        for split in ["train", "validation", "test"]:
             for model_name in ["Qwen/Qwen2.5-7B-Instruct", "meta-llama/Llama-3.1-8B-Instruct"]:
                 result = prepare_data(dataset_name, split, model_name)
                 output_path = os.path.join(args.root_dir, "output/result", model_name, f"{dataset_name}_{split}.pkl")
