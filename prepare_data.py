@@ -95,15 +95,17 @@ def load_responses(generation_file_path):
     if os.path.exists(generation_file_path):
         res = load_pickle_file(generation_file_path)
         for r in res['responses']:
-            # 暂时不能跳过，因为eval和这个列表一一对应
-            # if 'error' in r:
-            #     continue
+            if 'error' in r:
+                continue
             it = {}
-            if 'text' in r:
-                it['text'] = r['text']
-            if 'hidden_states' in r:
-                it['slt_emb'] = r['hidden_states']['sec_last_token_embedding']
-                it['tbg_emb'] = r['hidden_states']['last_tok_bef_gen_embedding']
+            it['text'] = r['text']
+            it['slt_emb'] = r['hidden_states']['sec_last_token_embedding']
+            it['tbg_emb'] = r['hidden_states']['last_tok_bef_gen_embedding']
+            # if 'text' in r:
+            #     it['text'] = r['text']
+            # if 'hidden_states' in r:
+            #     it['slt_emb'] = r['hidden_states']['sec_last_token_embedding']
+            #     it['tbg_emb'] = r['hidden_states']['last_tok_bef_gen_embedding']
             responses.append(it)
     return responses
 
@@ -131,10 +133,28 @@ def load_greedy_accuracy(eval_file_path):
     assert len(accuracy) <= 1, f"More than one accuracy found in {eval_file_path}."
     return accuracy[0] if accuracy else None
 
+def get_dataset_json_filename(dataset_name, split, size='small'):
+    assert size in ['small', 'large'], f"Invalid size {size}."
+    size_map = {
+        'small': {
+            'train': 2000,
+            'validation': 100,
+            'test': 100,
+        },
+        'large': {
+            'train': 10000,
+            'validation': 1000,
+            'test': 1000,
+        }
+    }
+    num_samples = size_map[size][split]
+    return f"{dataset_name}_{split}_{num_samples}.json"
+
+
 def prepare_data(dataset_name, split, model_name):
     model_short_name = model_name.split("/")[0]
     # 加载数据集
-    dataset_json_file = os.path.join(args.root_dir, f"output/dataset/{dataset_name}_{split}.json")
+    dataset_json_file = os.path.join(args.root_dir, f"output/dataset/{get_dataset_json_filename(dataset_name, split)}")
     assert os.path.exists(dataset_json_file), f"Dataset json file {dataset_json_file} not found."
     id_list, data_dict = load_ds_from_json(dataset_json_file)
 
@@ -153,11 +173,14 @@ def prepare_data(dataset_name, split, model_name):
 
             # greedy
             greedy_gen_path = os.path.join(args.root_dir, f"output/{split}/generation/{model_name}/{dataset_name}/greedy_{sample_suffix}/{example_id}.pkl")
-            example_result[sample_suffix]['greedy'] = load_greedy_response(greedy_gen_path)
+            greedy_dict = load_greedy_response(greedy_gen_path)
+            example_result[sample_suffix]['greedy'] = greedy_dict
 
             # greedy accuracy
-            eval_path = os.path.join(args.root_dir, f"output/{split}/evaluation/{model_name}/{dataset_name}/greedy_{sample_suffix}/{example_id}.pkl")
-            example_result[sample_suffix]['greedy']['accuracy'] = load_greedy_accuracy(eval_path)
+            # 如果greedy_dict为dict，则计算accuracy
+            if type(greedy_dict) == dict:
+                eval_path = os.path.join(args.root_dir, f"output/{split}/evaluation/{model_name}/{dataset_name}/greedy_{sample_suffix}/{example_id}.pkl")
+                example_result[sample_suffix]['greedy']['accuracy'] = load_greedy_accuracy(eval_path)
             
             # sample
             sample_gen_path = os.path.join(args.root_dir, f"output/{split}/generation/{model_name}/{dataset_name}/sample_{sample_suffix}/{example_id}.pkl")
