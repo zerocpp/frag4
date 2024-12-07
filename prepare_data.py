@@ -62,6 +62,7 @@ from collections import defaultdict
 import argparse
 from core.models.entailment import EntailmentDeberta
 from core.data.data_utils import load_ds_from_json
+from core.computation.uncertainty_measure import cluster_assignment_entropy
 
 def load_pickle_file(file_path):
     with open(file_path, 'rb') as f:
@@ -150,6 +151,17 @@ def get_dataset_json_filename(dataset_name, split, size='small'):
     num_samples = size_map[size][split]
     return f"{dataset_name}_{split}_{num_samples}.json"
 
+# 计算准确率
+def compute_accuracy(scores):
+    if len(scores) == 0:
+        return -1
+    return sum(1 for score in scores if score >= 0.5) / len(scores)
+
+# 计算语义熵
+def compute_entropy(cluster_ids):
+    if len(cluster_ids) == 0:
+        return -1
+    return cluster_assignment_entropy(cluster_ids)
 
 def prepare_data(dataset_name, split, model_name):
     model_short_name = model_name.split("/")[0]
@@ -194,6 +206,9 @@ def prepare_data(dataset_name, split, model_name):
             cluster_path = os.path.join(args.root_dir, f"output/{split}/clustered/{model_name}/{dataset_name}/sample_{sample_suffix}/{example_id}.pkl")
             cluster_ids = load_cluster_ids(cluster_path)
             example_result[sample_suffix]['cluster_ids'] = cluster_ids
+
+            # entropy
+            example_result[sample_suffix]['entropy'] = compute_entropy(cluster_ids)
 
         result['data'][example_id] = example_result
 
