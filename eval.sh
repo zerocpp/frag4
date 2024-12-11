@@ -4,7 +4,8 @@
 models=("meta-llama/Llama-3.1-8B-Instruct" "Qwen/Qwen2.5-7B-Instruct")
 datasets=("squad" "triviaqa")
 splits=("train" "test" "validation")
-num_samples=(2000 100 100)
+# num_samples=(2000 100 100)
+num_samples=(10000 1000 1000)
 samples=("greedy_golden" "greedy_without" "greedy_irrelevant")
 root_dir="."
 eval_override="--override"
