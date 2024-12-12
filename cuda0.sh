@@ -6,6 +6,12 @@ cuda=0
 models=("Qwen/Qwen2.5-7B-Instruct")
 # models=("Qwen/Qwen2.5-7B-Instruct" "meta-llama/Llama-3.1-8B-Instruct")
 
+
+# 记录开始时间
+start_time=$(date "+%Y-%m-%d %H:%M:%S")
+echo "Start time: $start_time"
+
+
 #################generate##################
 
 context_types=("irrelevant" "golden" "without")
@@ -85,3 +91,16 @@ for model in "${models[@]}"; do # 1
         done
     done
 done
+
+
+# 记录结束时间
+end_time=$(date "+%Y-%m-%d %H:%M:%S")
+echo "Start time: $start_time"
+echo "End time: $end_time"
+
+# 计算时间差
+start_seconds=$(date --date="$start_time" +%s)
+end_seconds=$(date --date="$end_time" +%s)
+echo "Time cost: $((end_seconds-start_seconds))s"
+# 按时分秒显示时间差
+echo "Time cost: $(date -d "1970-01-01 $((end_seconds-start_seconds)) sec" +"%H:%M:%S")"
