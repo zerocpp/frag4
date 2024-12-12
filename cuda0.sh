@@ -12,7 +12,7 @@ context_types=("irrelevant" "golden" "without")
 contexts=("--use_context --irrelevant_context" "--use_context --no-irrelevant_context" "--no-use_context --irrelevant_context")
 
 sample_prefixs=("greedy" "sample")
-num_generations=(1 10)
+num_generations=(1 30)
 temperatures=(0.1 1.0)
 latents=("--return_latent" "--no-return_latent")
 
