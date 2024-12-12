@@ -16,10 +16,11 @@ num_generations=(1 10)
 temperatures=(0.1 1.0)
 latents=("--return_latent" "--no-return_latent")
 
-datasets=("squad" "triviaqa")
+# datasets=("squad" "triviaqa")
+datasets=("bioasq")
 splits=("train" "test" "validation")
-# num_samples=(2000 100 100)
-num_samples=(10000 1000 1000)
+num_samples=(2000 100 100)
+# num_samples=(10000 1000 1000)
 
 gen_override="--no-override"
 cluster_override="--no-override"
@@ -46,7 +47,7 @@ for model in "${models[@]}"; do # 1
                     temperature="${temperatures[$j]}"
                     latent="${latents[$j]}"
                     sample="${sample_prefix}_${context_type}"
-                    dataset_json_file="$root_dir/output/dataset/${dataset}_${split}_${num_sample}.json"
+                    dataset_json_file="$root_dir/dataset/json/${dataset}_${split}_${num_sample}.json"
                     output_dir="$root_dir/output/${split}/generation/${model}/${dataset}/${sample}"
                     cmd="DEVICE=cuda:$cuda python generate_responses.py --output_dir $output_dir --model $model --num_generations $num_generation --temperature $temperature $context $latent --dataset_json_file $dataset_json_file $gen_override"
                     echo "> $cmd"
@@ -74,7 +75,7 @@ for model in "${models[@]}"; do # 1
                 task_counter=$((task_counter + 1))
                 echo "Task2: $task_counter/$task_total"
                 sample="sample_${sample_suffix}"
-                dataset_json_file="$root_dir/output/dataset/${dataset}_${split}_${num_sample}.json"
+                dataset_json_file="$root_dir/dataset/json/${dataset}_${split}_${num_sample}.json"
                 input_dir="$root_dir/output/${split}/generation/${model}/${dataset}/${sample}"
                 output_dir="$root_dir/output/${split}/clustered/${model}/${dataset}/${sample}"
                 cmd="DEVICE=cuda:$cuda python cluster_responses.py --dataset_json_file $dataset_json_file --input_dir $input_dir --output_dir $output_dir $cluster_override"
