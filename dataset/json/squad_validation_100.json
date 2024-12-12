@@ -1,0 +1,1106 @@
+{
+    "id": [
+        "56bec6de3aeaaa14008c9407",
+        "5725b8f638643c19005acbcb",
+        "5705e3a452bb89140068965a",
+        "56d1162117492d1400aab8e5",
+        "57281e0fff5b5019007d9d7c",
+        "57108f32a58dae1900cd6a25",
+        "5725f28989a1e219009ac0de",
+        "57312518497a881900248bbd",
+        "56de64cf4396321400ee2878",
+        "570a5bbf4103511400d59659",
+        "5733f55e4776f419006615ad",
+        "56eaa7590030b61400a3500d",
+        "572a13e71d04691400779746",
+        "572a518ab8ce0319002e2a94",
+        "57112926b654c5140001fbf5",
+        "56e75b5300c9c71400d77009",
+        "57265877dd62a815002e8244",
+        "572e90dccb0c0d14000f12b4",
+        "572a38ae1d0469140077985f",
+        "572ab07b111d821400f38cce",
+        "5735ac9bdc94161900571f0d",
+        "5731826ca5e9cc1400cdbffa",
+        "572833d43acd2414000df6de",
+        "572ee0cc03f9891900756ab3",
+        "56f9d96b9e9bad19000a0b11",
+        "56ce4f64aab44d1400b886a5",
+        "5727784d708984140094de7b",
+        "57268716dd62a815002e883d",
+        "57112c66a58dae1900cd6cf5",
+        "57106dc3b654c5140001f8fb",
+        "56fa09098f12f319006300a2",
+        "5729724c1d04691400779487",
+        "56e7ca0937bdd419002c4402",
+        "56f7fb59aef2371900625d22",
+        "57316811e6313a140071cefe",
+        "56d63d821c85041400947055",
+        "572b5e0834ae481900deadd7",
+        "572971f23f37b319004783df",
+        "5726fa9cdd62a815002e96c0",
+        "57276b96dd62a815002e9c97",
+        "56e7b1e900c9c71400d77505",
+        "57096d4bed30961900e840f3",
+        "570b03a2ec8fbc190045b7dc",
+        "5726872cf1498d1400e8e2dc",
+        "5726262f89a1e219009ac3db",
+        "572963fb3f37b31900478317",
+        "57264fdcf1498d1400e8dbdb",
+        "572a7db5f75d5e190021fae6",
+        "56f8954b9b226e1400dd0c4d",
+        "5728116c3acd2414000df3a5",
+        "5731920ce6313a140071d0b2",
+        "57266767f1498d1400e8de80",
+        "5726df6d708984140094d43d",
+        "56d1d5e8e7d4791d00902283",
+        "5728ac94ff5b5019007da442",
+        "56cee003aab44d1400b88bb2",
+        "56fa49f9f34c681400b0c060",
+        "5729483faf94a219006aa252",
+        "56f9906d9e9bad19000a0ad4",
+        "572ffdb7947a6a140053cf03",
+        "572c0480dfb02c14005c6b5f",
+        "5726a7695951b619008f7936",
+        "56de2e934396321400ee2646",
+        "56f7e9f4a6d7ea1400e172b2",
+        "56de2995cffd8e1900b4b5ea",
+        "5726563add62a815002e81e6",
+        "57265b12f1498d1400e8dd06",
+        "5733b06ad058e614000b605c",
+        "56f8e0bc9b226e1400dd116c",
+        "572f2a9bb2c2fd1400567f54",
+        "571a81c14faf5e1900b8a9f4",
+        "5730246604bcaa1900d77217",
+        "571a8c844faf5e1900b8aa6a",
+        "5725f02bec44d21400f3d766",
+        "5728d8654b864d1900164f63",
+        "5725c41889a1e219009abe2e",
+        "57251b2c0a492a1900435703",
+        "5726ad55f1498d1400e8e6e5",
+        "57314b13497a881900248d69",
+        "570a71dd6d058f1900182e70",
+        "5725cd5838643c19005acd35",
+        "572940edaf94a219006aa1f3",
+        "56e0856a7aa994140058e5a6",
+        "5729b86a3f37b31900478543",
+        "572ea6d5cb0c0d14000f13f3",
+        "56f83111aef2371900625ed9",
+        "572947721d04691400779244",
+        "570e5b3b0dc6ce1900204f8b",
+        "5726f4ddf1498d1400e8f0f1",
+        "56f8dbb99e9bad19000a060a",
+        "5726bbc15951b619008f7c57",
+        "5728af434b864d1900164c1f",
+        "56e0fedde3433e1400422a74",
+        "572b550a34ae481900dead91",
+        "56f8c6b29e9bad19000a0497",
+        "572806e03acd2414000df28e",
+        "572850984b864d1900164932",
+        "572fa8c9947a6a140053cb14",
+        "5731e1420fdd8d15006c65f6",
+        "5731085a05b4da19006bccfa"
+    ],
+    "data": {
+        "56bec6de3aeaaa14008c9407": {
+            "id": "56bec6de3aeaaa14008c9407",
+            "question": "Beyonce has a fan base that is referred to as what?",
+            "context": "The Bey Hive is the name given to Beyonc\u00e9's fan base. Fans were previously titled \"The Beyontourage\", (a portmanteau of Beyonc\u00e9 and entourage). The name Bey Hive derives from the word beehive, purposely misspelled to resemble her first name, and was penned by fans after petitions on the online social networking service Twitter and online news reports during competitions.",
+            "answers": [
+                "The Bey Hive"
+            ],
+            "irrelevant_id": "57326693b9d445190005eae8",
+            "irrelevant_context": "The religion's failure to report abuse allegations to authorities has also been criticized. The Watch Tower Society's policy is that elders inform authorities when required by law to do so, but otherwise leave that action up to the victim and his or her family. The Australian Royal Commission into Institutional Responses to Child Sexual Abuse found that of 1006 alleged perpetrators of child sexual abuse identified by the Jehovah's Witnesses within their organization since 1950, \"not one was reported by the church to secular authorities.\" William Bowen, a former Jehovah's Witness elder who established the Silentlambs organization to assist sex abuse victims within the religion, has claimed Witness leaders discourage followers from reporting incidents of sexual misconduct to authorities, and other critics claim the organization is reluctant to alert authorities in order to protect its \"crime-free\" reputation. In court cases in the United Kingdom and the United States the Watch Tower Society has been found to have been negligent in its failure to protect children from known sex offenders within the congregation and the Society has settled other child abuse lawsuits out of court, reportedly paying as much as $780,000 to one plaintiff without admitting wrongdoing."
+        },
+        "5725b8f638643c19005acbcb": {
+            "id": "5725b8f638643c19005acbcb",
+            "question": "When did British troops occupy the city of Montevideo?",
+            "context": "On 3 February 1807, British troops under the command of General Samuel Auchmuty and Admiral Charles Stirling occupied the city during the Battle of Montevideo (1807), but it was recaptured by the Spanish in the same year on 2 September when John Whitelocke was forced to surrender to troops formed by forces of the Banda Oriental\u2014roughly the same area as modern Uruguay\u2014and of Buenos Aires. After this conflict, the governor of Montevideo Francisco Javier de El\u00edo opposed the new viceroy Santiago de Liniers, and created a government Junta when the Peninsular War started in Spain, in defiance of Liniers. El\u00edo disestablished the Junta when Liniers was replaced by Baltasar Hidalgo de Cisneros.",
+            "answers": [
+                "3 February 1807"
+            ],
+            "irrelevant_id": "56d4d0c32ccc5a1400d83252",
+            "irrelevant_context": "Beyonc\u00e9 is believed to have first started a relationship with Jay Z after a collaboration on \"'03 Bonnie & Clyde\", which appeared on his seventh album The Blueprint 2: The Gift & The Curse (2002). Beyonc\u00e9 appeared as Jay Z's girlfriend in the music video for the song, which would further fuel speculation of their relationship. On April 4, 2008, Beyonc\u00e9 and Jay Z were married without publicity. As of April 2014, the couple have sold a combined 300 million records together. The couple are known for their private relationship, although they have appeared to become more relaxed in recent years. Beyonc\u00e9 suffered a miscarriage in 2010 or 2011, describing it as \"the saddest thing\" she had ever endured. She returned to the studio and wrote music in order to cope with the loss. In April 2011, Beyonc\u00e9 and Jay Z traveled to Paris in order to shoot the album cover for her 4, and unexpectedly became pregnant in Paris."
+        },
+        "5705e3a452bb89140068965a": {
+            "id": "5705e3a452bb89140068965a",
+            "question": "What is one name used to refer to the jurisdiction of NCT of Delhi?",
+            "context": "Although colloquially Delhi and New Delhi as names are used interchangeably to refer to the jurisdiction of NCT of Delhi, these are two distinct entities, and the latter is a small part of the former.",
+            "answers": [
+                "Delhi"
+            ],
+            "irrelevant_id": "57300bb704bcaa1900d7707d",
+            "irrelevant_context": "Georgian architecture is the name given in most English-speaking countries to the set of architectural styles current between 1714 and 1830. It is eponymous for the first four British monarchs of the House of Hanover\u2014George I, George II, George III, and George IV\u2014who reigned in continuous succession from August 1714 to June 1830. The style was revived in the late 19th century in the United States as Colonial Revival architecture and in the early 20th century in Great Britain as Neo-Georgian architecture; in both it is also called Georgian Revival architecture. In America the term \"Georgian\" is generally used to describe all building from the period, regardless of style; in Britain it is generally restricted to buildings that are \"architectural in intention\", and have stylistic characteristics that are typical of the period, though that covers a wide range."
+        },
+        "56d1162117492d1400aab8e5": {
+            "id": "56d1162117492d1400aab8e5",
+            "question": "What artist worked with Kanye on his album Graduation?",
+            "context": "West's fifth album, My Beautiful Dark Twisted Fantasy, has been noted by writers for its maximalist aesthetic and its incorporation of elements from West's previous four albums. Entertainment Weekly's Simon Vozick-Levinson perceives that such elements \"all recur at various points\", namely \"the luxurious soul of 2004's The College Dropout, the symphonic pomp of Late Registration, the gloss of 2007's Graduation, and the emotionally exhausted electro of 2008's 808s & Heartbreak\". Sean Fennessey of The Village Voice writes that West \"absorb[ed] the gifts of his handpicked collaborators, and occasionally elevat[ed] them\" on previous studio albums, noting collaborators and elements as Jon Brion for Late Registration, DJ Toomp for Graduation, and Kid Cudi for 808s & Heartbreak.",
+            "answers": [
+                "DJ Toomp"
+            ],
+            "irrelevant_id": "56d24217b329da140004ec8b",
+            "irrelevant_context": "Samatha meditation starts from being mindful of an object or idea, which is expanded to one's body, mind and entire surroundings, leading to a state of total concentration and tranquility (jh\u0101na). There are many variations in the style of meditation, from sitting cross-legged or kneeling to chanting or walking. The most common method of meditation is to concentrate on one's breath (anapanasati), because this practice can lead to both samatha and vipassana'."
+        },
+        "57281e0fff5b5019007d9d7c": {
+            "id": "57281e0fff5b5019007d9d7c",
+            "question": "Due to fighting, what threatened people in the NorthWest?",
+            "context": "In 2006, due to ongoing violence, over 50,000 people in the country's northwest were at risk of starvation but this was averted due to assistance from the United Nations.[citation needed] On 8 January 2008, the UN Secretary-General Ban Ki-Moon declared that the Central African Republic was eligible to receive assistance from the Peacebuilding Fund. Three priority areas were identified: first, the reform of the security sector; second, the promotion of good governance and the rule of law; and third, the revitalization of communities affected by conflicts. On 12 June 2008, the Central African Republic requested assistance from the UN Peacebuilding Commission, which was set up in 2005 to help countries emerging from conflict avoid devolving back into war or chaos.",
+            "answers": [
+                "risk of starvation"
+            ],
+            "irrelevant_id": "57274eb3f1498d1400e8f60b",
+            "irrelevant_context": "A considerable amount of new knowledge about plant function comes from studies of the molecular genetics of model plants such as the Thale cress, Arabidopsis thaliana, a weedy species in the mustard family (Brassicaceae). The genome or hereditary information contained in the genes of this species is encoded by about 135 million base pairs of DNA, forming one of the smallest genomes among flowering plants. Arabidopsis was the first plant to have its genome sequenced, in 2000. The sequencing of some other relatively small genomes, of rice (Oryza sativa) and Brachypodium distachyon, has made them important model species for understanding the genetics, cellular and molecular biology of cereals, grasses and monocots generally."
+        },
+        "57108f32a58dae1900cd6a25": {
+            "id": "57108f32a58dae1900cd6a25",
+            "question": "What was the term for the oppositional literary sphere of a \"multitude of versifiers and would-be-authors\"?",
+            "context": "In France, the established men of letters (gens de lettres) had fused with the elites (les grands) of French society by the mid-18th century. This led to the creation of an oppositional literary sphere, Grub Street, the domain of a \"multitude of versifiers and would-be authors\". These men came to London to become authors, only to discover that the literary market simply could not support large numbers of writers, who, in any case, were very poorly remunerated by the publishing-bookselling guilds.",
+            "answers": [
+                "Grub Street"
+            ],
+            "irrelevant_id": "572f9165a23a5019007fc771",
+            "irrelevant_context": "FETs are further divided into depletion-mode and enhancement-mode types, depending on whether the channel is turned on or off with zero gate-to-source voltage. For enhancement mode, the channel is off at zero bias, and a gate potential can \"enhance\" the conduction. For the depletion mode, the channel is on at zero bias, and a gate potential (of the opposite polarity) can \"deplete\" the channel, reducing conduction. For either mode, a more positive gate voltage corresponds to a higher current for n-channel devices and a lower current for p-channel devices. Nearly all JFETs are depletion-mode because the diode junctions would forward bias and conduct if they were enhancement-mode devices; most IGFETs are enhancement-mode types."
+        },
+        "5725f28989a1e219009ac0de": {
+            "id": "5725f28989a1e219009ac0de",
+            "question": "Before Hellenestic influence, Greek colonies were on the shores of the Taman and what other peninsula?",
+            "context": "Before the Hellenistic period, Greek colonies had been established on the coast of the Crimean and Taman peninsulas. The Bosporan Kingdom was a multi-ethnic kingdom of Greek city states and local tribal peoples such as the Maeotians, Thracians, Crimean Scythians and Cimmerians under the Spartocid dynasty (438\u2013110 BCE). The Spartocids were a hellenized Thracian family from Panticapaeum. The Bosporans had long lasting trade contacts with the Scythian peoples of the Pontic-Caspian steppe, and Hellenistic influence can be seen in the Scythian settlements of the Crimea, such as in the Scythian Neapolis. Scythian pressure on the Bosporan kingdom under Paerisades V led to its eventual vassalage under the Pontic king Mithradates VI for protection, circa 107 BCE. It later became a Roman client state. Other Scythians on the steppes of Central Asia came into contact with Hellenistic culture through the Greeks of Bactria. Many Scythian elites purchased Greek products and some Scythian art shows Greek influences. At least some Scythians seem to have become Hellenized, because we know of conflicts between the elites of the Scythian kingdom over the adoption of Greek ways. These Hellenized Scythians were known as the \"young Scythians\". The peoples around Pontic Olbia, known as the Callipidae, were intermixed and Hellenized Greco-Scythians.",
+            "answers": [
+                "Crimean"
+            ],
+            "irrelevant_id": "5725b349b80e561500fa6f3e",
+            "irrelevant_context": "The names Land of Israel and Children of Israel have historically been used to refer to the biblical Kingdom of Israel and the entire Jewish people respectively. The name \"Israel\" (Standard Yisra\u02beel, Isr\u0101\u02be\u012bl; Septuagint Greek: \u1f38\u03c3\u03c1\u03b1\u03ae\u03bb Isra\u0113l; 'El(God) persists/rules' though, after Hosea 12:4 often interpreted as \"struggle with God\") in these phrases refers to the patriarch Jacob who, according to the Hebrew Bible, was given the name after he successfully wrestled with the angel of the Lord. Jacob's twelve sons became the ancestors of the Israelites, also known as the Twelve Tribes of Israel or Children of Israel. Jacob and his sons had lived in Canaan but were forced by famine to go into Egypt for four generations, lasting 430 years, until Moses, a great-great grandson of Jacob, led the Israelites back into Canaan during the \"Exodus\". The earliest known archaeological artifact to mention the word \"Israel\" is the Merneptah Stele of ancient Egypt (dated to the late 13th century BCE)."
+        },
+        "57312518497a881900248bbd": {
+            "id": "57312518497a881900248bbd",
+            "question": "What group did the Manchus take over to add strength to their numbers?",
+            "context": "There were too few ethnic Manchus to conquer China, so they gained strength by defeating and absorbing Mongols, but more importantly, adding Han Chinese to the Eight Banners. The Manchus had to create an entire \"Jiu Han jun\" (Old Han Army) due to the massive amount of Han Chinese soldiers which were absorbed into the Eight Banners by both capture and defection, Ming artillery was responsible for many victories against the Manchus, so the Manchus established an artillery corps made out of Han Chinese soldiers in 1641 and the swelling of Han Chinese numbers in the Eight Banners led in 1642 of all Eight Han Banners being created. It was defected Ming Han Chinese armies which conquered southern China for the Qing.",
+            "answers": [
+                "Mongols"
+            ],
+            "irrelevant_id": "5706beac0eeca41400aa0df3",
+            "irrelevant_context": "The term \"Moors\" has been used in Europe in a broader, somewhat derogatory sense to refer to Muslims, especially those of Arab or Berber descent, whether living in North Africa or Iberia. Moors were not a distinct or self-defined people. Medieval and early modern Europeans applied the name to Muslim Arabs, Berbers, Black Africans and Europeans alike."
+        },
+        "56de64cf4396321400ee2878": {
+            "id": "56de64cf4396321400ee2878",
+            "question": "In what county is Plymouth located?",
+            "context": "Plymouth (i/\u02c8pl\u026am\u0259\u03b8/) is a city on the south coast of Devon, England, about 37 miles (60 km) south-west of Exeter and 190 miles (310 km) west-south-west of London, between the mouths of the rivers Plym to the east and Tamar to the west where they join Plymouth Sound to form the boundary with Cornwall.",
+            "answers": [
+                "Devon"
+            ],
+            "irrelevant_id": "56e3c6788c00841900fbaef7",
+            "irrelevant_context": "During the Perestroika era, The Law on the Status of the Estonian Language was adopted in January 1989. The collapse of the Soviet Union led to the restoration of Republic of Estonia's independence. Estonian went back to being the only state language in Estonia which in practice meant that use of Estonian was promoted while the use of Russian was discouraged."
+        },
+        "570a5bbf4103511400d59659": {
+            "id": "570a5bbf4103511400d59659",
+            "question": "What was Imperial's total expenditure for the financial year that ended on the 31 July 2013?",
+            "context": "In the financial year ended 31 July 2013, Imperial had a total net income of \u00a3822.0 million (2011/12 \u2013 \u00a3765.2 million) and total expenditure of \u00a3754.9 million (2011/12 \u2013 \u00a3702.0 million). Key sources of income included \u00a3329.5 million from research grants and contracts (2011/12 \u2013 \u00a3313.9 million), \u00a3186.3 million from academic fees and support grants (2011/12 \u2013 \u00a3163.1 million), \u00a3168.9 million from Funding Council grants (2011/12 \u2013 \u00a3172.4 million) and \u00a312.5 million from endowment and investment income (2011/12 \u2013 \u00a38.1 million). During the 2012/13 financial year Imperial had a capital expenditure of \u00a3124 million (2011/12 \u2013 \u00a3152 million).",
+            "answers": [
+                "\u00a3754.9 million"
+            ],
+            "irrelevant_id": "572e7d44dfa6aa1500f8d02c",
+            "irrelevant_context": "The young Feynman was heavily influenced by his father, who encouraged him to ask questions to challenge orthodox thinking, and who was always ready to teach Feynman something new. From his mother he gained the sense of humor that he had throughout his life. As a child, he had a talent for engineering, maintained an experimental laboratory in his home, and delighted in repairing radios. When he was in grade school, he created a home burglar alarm system while his parents were out for the day running errands."
+        },
+        "5733f55e4776f419006615ad": {
+            "id": "5733f55e4776f419006615ad",
+            "question": "How large is Punjab?",
+            "context": "Punjab (Urdu, Punjabi: \u067e\u0646\u062c\u0627\u0628, panj-\u0101b, \"five waters\":  listen (help\u00b7info)), also spelled Panjab, is the most populous of the four provinces of Pakistan. It has an area of 205,344 square kilometres (79,284 square miles) and a population of 91.379.615 in 2011, approximately 56% of the country's total population. Its provincial capital and largest city is Lahore. Punjab is bordered by the Indian states of Jammu and Kashmir to the northeast and Punjab and Rajasthan to the east. In Pakistan it is bordered by Sindh to the south, Balochist\u0101n and Khyber Pakhtunkhwa to the west, and Islamabad and Azad Kashmir to the north.",
+            "answers": [
+                "205,344 square kilometres (79,284 square miles)"
+            ],
+            "irrelevant_id": "5728121c2ca10214002d9d35",
+            "irrelevant_context": "On New Year's Day in 1930, von Neumann married Mariette K\u00f6vesi, who had studied economics at the Budapest University. Before his marriage he was baptized a Catholic. Max had died in 1929. None of the family had converted to Christianity while he was alive, but afterwards they all did. They had one child, a daughter, Marina, who is now a distinguished professor of business administration and public policy at the University of Michigan. The couple divorced in 1937. In October 1938, von Neumann married Klara Dan, whom he had met during his last trips back to Budapest prior to the outbreak of World War II."
+        },
+        "56eaa7590030b61400a3500d": {
+            "id": "56eaa7590030b61400a3500d",
+            "question": "What is the public official's share called when involved in corrupt bidding?",
+            "context": "A kickback is an official's share of misappropriated funds allocated from his or her organization to an organization involved in corrupt bidding. For example, suppose that a politician is in charge of choosing how to spend some public funds. He can give a contract to a company that is not the best bidder, or allocate more than they deserve. In this case, the company benefits, and in exchange for betraying the public, the official receives a kickback payment, which is a portion of the sum the company received. This sum itself may be all or a portion of the difference between the actual (inflated) payment to the company and the (lower) market-based price that would have been paid had the bidding been competitive.",
+            "answers": [
+                "kickback"
+            ],
+            "irrelevant_id": "570c57f5fed7b91900d458dd",
+            "irrelevant_context": "John was deeply suspicious of the barons, particularly those with sufficient power and wealth to potentially challenge the king. Numerous barons were subjected to John's malevolentia, even including William Marshal, a famous knight and baron normally held up as a model of utter loyalty. The most infamous case, which went beyond anything considered acceptable at the time, proved to be that of William de Braose, a powerful marcher lord with lands in Ireland. De Braose was subjected to punitive demands for money, and when he refused to pay a huge sum of 40,000 marks (equivalent to \u00a326,666 at the time),[nb 13] his wife and one of his sons were imprisoned by John, which resulted in their deaths. De Braose died in exile in 1211, and his grandsons remained in prison until 1218. John's suspicions and jealousies meant that he rarely enjoyed good relationships with even the leading loyalist barons."
+        },
+        "572a13e71d04691400779746": {
+            "id": "572a13e71d04691400779746",
+            "question": "What did St. Augustine comment on in Book 11, regarding thinking about time?",
+            "context": "In Book 11 of St. Augustine's Confessions, he ruminates on the nature of time, asking, \"What then is time? If no one asks me, I know: if I wish to explain it to one that asketh, I know not.\" He goes on to comment on the difficulty of thinking about time, pointing out the inaccuracy of common speech: \"For but few things are there of which we speak properly; of most things we speak improperly, still the things intended are understood.\"  But Augustine presented the first philosophical argument for the reality of Creation (against Aristotle) in the context of his discussion of time, saying that knowledge of time depends on the knowledge of the movement of things, and therefore time cannot be where there are no creatures to measure its passing (Confessions Book XI \u00b630; City of God Book XI ch.6).",
+            "answers": [
+                "the difficulty"
+            ],
+            "irrelevant_id": "57302728947a6a140053d1a5",
+            "irrelevant_context": "The Special Clerical Court handles crimes allegedly committed by clerics, although it has also taken on cases involving lay people. The Special Clerical Court functions independently of the regular judicial framework and is accountable only to the Supreme Leader. The Court's rulings are final and cannot be appealed. The Assembly of Experts, which meets for one week annually, comprises 86 \"virtuous and learned\" clerics elected by adult suffrage for eight-year terms. As with the presidential and parliamentary elections, the Guardian Council determines candidates' eligibility. The Assembly elects the Supreme Leader and has the constitutional authority to remove the Supreme Leader from power at any time. It has not challenged any of the Supreme Leader's decisions."
+        },
+        "572a518ab8ce0319002e2a94": {
+            "id": "572a518ab8ce0319002e2a94",
+            "question": "What dominated all economic and political interests?",
+            "context": "By developing commercial centres and routes, encouraging people to extend the area of cultivated land in the country and international trade through its dominions, the state performed basic economic functions in the Empire. But in all this the financial and political interests of the state were dominant. Within the social and political system they were living in Ottoman administrators could not have comprehended or seen the desirability of the dynamics and principles of the capitalist and mercantile economies developing in Western Europe.",
+            "answers": [
+                "interests of the state"
+            ],
+            "irrelevant_id": "57318a1305b4da19006bd25e",
+            "irrelevant_context": "Islamic architecture used mosaic technique to decorate religious buildings and palaces after the Muslim conquests of the eastern provinces of the Byzantine Empire. In Syria and Egypt the Arabs were influenced by the great tradition of Roman and Early Christian mosaic art. During the Umayyad Dynasty mosaic making remained a flourishing art form in Islamic culture and it is continued in the art of zellige and azulejo in various parts of the Arab world, although tile was to become the main Islamic form of wall decoration."
+        },
+        "57112926b654c5140001fbf5": {
+            "id": "57112926b654c5140001fbf5",
+            "question": "What year was there a shortage of DRAM and ROM chips?",
+            "context": "Nintendo was not as restrictive as Sega, which did not permit third-party publishing until Mediagenic in late summer 1988. Nintendo's intention, however, was to reserve a large part of NES game revenue for itself. Nintendo required that they be the sole manufacturer of all cartridges, and that the publisher had to pay in full before the cartridges for that game be produced. Cartridges could not be returned to Nintendo, so publishers assumed all the risk. As a result, some publishers lost more money due to distress sales of remaining inventory at the end of the NES era than they ever earned in profits from sales of the games. Because Nintendo controlled the production of all cartridges, it was able to enforce strict rules on its third-party developers, which were required to sign a contract by Nintendo that would obligate these parties to develop exclusively for the system, order at least 10,000 cartridges, and only make five games per year. A 1988 shortage of DRAM and ROM chips also reportedly caused Nintendo to only permit 25% of publishers' requests for cartridges. This was an average figure, with some publishers receiving much higher amounts and others almost none. GameSpy noted that Nintendo's \"iron-clad terms\" made the company many enemies during the 1980s. Some developers tried to circumvent the five game limit by creating additional company brands like Konami's Ultra Games label; others tried circumventing the 10NES chip.",
+            "answers": [
+                "1988"
+            ],
+            "irrelevant_id": "5726e9c5f1498d1400e8efb3",
+            "irrelevant_context": "While he was imprisoned in the castle of Fardajan near Hamadhan, Avicenna wrote his famous \"Floating Man\" \u2013 literally falling man \u2013 thought experiment to demonstrate human self-awareness and the substantiality and immateriality of the soul. Avicenna believed his \"Floating Man\" thought experiment demonstrated that the soul is a substance, and claimed humans cannot doubt their own consciousness, even in a situation that prevents all sensory data input. The thought experiment told its readers to imagine themselves created all at once while suspended in the air, isolated from all sensations, which includes no sensory contact with even their own bodies. He argued that, in this scenario, one would still have self-consciousness. Because it is conceivable that a person, suspended in air while cut off from sense experience, would still be capable of determining his own existence, the thought experiment points to the conclusions that the soul is a perfection, independent of the body, and an immaterial substance. The conceivability of this \"Floating Man\" indicates that the soul is perceived intellectually, which entails the soul's separateness from the body. Avicenna referred to the living human intelligence, particularly the active intellect, which he believed to be the hypostasis by which God communicates truth to the human mind and imparts order and intelligibility to nature. Following is an English translation of the argument:"
+        },
+        "56e75b5300c9c71400d77009": {
+            "id": "56e75b5300c9c71400d77009",
+            "question": "What is the shiniest type of coated paper?",
+            "context": "Paper at this point is uncoated. Coated paper has a thin layer of material such as calcium carbonate or china clay applied to one or both sides in order to create a surface more suitable for high-resolution halftone screens. (Uncoated papers are rarely suitable for screens above 150 lpi.) Coated or uncoated papers may have their surfaces polished by calendering. Coated papers are divided into matte, semi-matte or silk, and gloss. Gloss papers give the highest optical density in the printed image.",
+            "answers": [
+                "Gloss"
+            ],
+            "irrelevant_id": "57269adedd62a815002e8ad9",
+            "irrelevant_context": "Acting on State Secretary Acheson's recommendation, President Truman ordered General MacArthur to transfer mat\u00e9riel to the Army of the Republic of Korea while giving air cover to the evacuation of U.S. nationals. The President disagreed with advisers who recommended unilateral U.S. bombing of the North Korean forces, and ordered the US Seventh Fleet to protect the Republic of China (Taiwan), whose government asked to fight in Korea. The United States denied ROC's request for combat, lest it provoke a communist Chinese retaliation. Because the United States had sent the Seventh Fleet to \"neutralize\" the Taiwan Strait, Chinese premier Zhou Enlai criticized both the UN and U.S. initiatives as \"armed aggression on Chinese territory.\""
+        },
+        "57265877dd62a815002e8244": {
+            "id": "57265877dd62a815002e8244",
+            "question": "Requiring written records enforces what kind of bias?",
+            "context": "Another limitation of current U.S. Intellectual Property legislation is its focus on individual and joint works; thus, copyright protection can only be obtained in 'original' works of authorship. This definition excludes any works that are the result of community creativity, for example Native American songs and stories; current legislation does not recognize the uniqueness of indigenous cultural \"property\" and its ever-changing nature. Simply asking native cultures to 'write down' their cultural artifacts on tangible mediums ignores their necessary orality and enforces a Western bias of the written form as more authoritative.",
+            "answers": [
+                "Western"
+            ],
+            "irrelevant_id": "5728052d4b864d190016424b",
+            "irrelevant_context": "IN and OUT tokens contain a seven-bit device number and four-bit function number (for multifunction devices) and command the device to transmit DATAx packets, or receive the following DATAx packets, respectively. An IN token expects a response from a device. The response may be a NAK or STALL response, or a DATAx frame. In the latter case, the host issues an ACK handshake if appropriate. An OUT token is followed immediately by a DATAx frame. The device responds with ACK, NAK, NYET, or STALL, as appropriate."
+        },
+        "572e90dccb0c0d14000f12b4": {
+            "id": "572e90dccb0c0d14000f12b4",
+            "question": "Where did Joy Division hail from?",
+            "context": "Weeks after ending the Sex Pistols, Lydon formed the experimental group Public Image Ltd and declared the project to be \"anti music of any kind\". Public Image and other acts such as the Pop Group and the Slits had begun experimenting with dance music, dub production techniques and the avant-garde, while punk-indebted Manchester acts such as Joy Division, The Fall and A Certain Ratio developed unique styles which drew on a similarly disparate range of influences across music and modernist literature. Bands such as Scritti Politti, Gang of Four and This Heat incorporated Leftist political philosophy and their own art school studies in their work.",
+            "answers": [
+                "Manchester"
+            ],
+            "irrelevant_id": "57269f33dd62a815002e8b3b",
+            "irrelevant_context": "In 1744, Burke started at Trinity College Dublin, a Protestant establishment, which up until 1793, did not permit Catholics to take degrees. In 1747, he set up a debating society, \"Edmund Burke's Club\", which, in 1770, merged with TCD's Historical Club to form the College Historical Society; it is the oldest undergraduate society in the world. The minutes of the meetings of Burke's Club remain in the collection of the Historical Society. Burke graduated from Trinity in 1748. Burke's father wanted him to read Law, and with this in mind he went to London in 1750, where he entered the Middle Temple, before soon giving up legal study to travel in Continental Europe. After eschewing the Law, he pursued a livelihood through writing."
+        },
+        "572a38ae1d0469140077985f": {
+            "id": "572a38ae1d0469140077985f",
+            "question": "What is required to view over-the-air broadcasts?",
+            "context": "On March 5, 2005, CBC Television launched a high definition simulcast of its Toronto (CBLT-DT) and Montreal (CBMT-DT) stations. Since that time, the network has also launched HD simulcasts in Vancouver (CBUT-DT), Ottawa (CBOT-DT), Edmonton (CBXT-DT), Calgary (CBRT-DT), Halifax (CBHT-DT), Windsor, (CBET-DT), Winnipeg (CBWT-DT) and St. John's (CBNT-DT). CBC HD is available nationally via satellite and on digital cable as well as for free over-the-air using a regular TV antenna and a digital tuner (included in most new television sets) on the following channels:",
+            "answers": [
+                "a regular TV antenna and a digital tuner"
+            ],
+            "irrelevant_id": "57261826271a42140099d474",
+            "irrelevant_context": "Prompted by legislation in various countries mandating increased bulb efficiency, new \"hybrid\" incandescent bulbs have been introduced by Philips. The \"Halogena Energy Saver\" incandescents can produce about 23 lm/W; about 30 percent more efficient than traditional incandescents, by using a reflective capsule to reflect formerly wasted infrared radiation back to the filament from which it can be re-emitted as visible light. This concept was pioneered by Duro-Test in 1980 with a commercial product that produced 29.8 lm/W. More advanced reflectors based on interference filters or photonic crystals can theoretically result in higher efficiency, up to a limit of about 270 lm/W (40% of the maximum efficacy possible). Laboratory proof-of-concept experiments have produced as much as 45 lm/W, approaching the efficacy of compact fluorescent bulbs."
+        },
+        "572ab07b111d821400f38cce": {
+            "id": "572ab07b111d821400f38cce",
+            "question": "Where was the Declaration of Independence signed?",
+            "context": "Philadelphia is home to many national historical sites that relate to the founding of the United States. Independence National Historical Park is the center of these historical landmarks being one of the country's 22 UNESCO World Heritage Sites. Independence Hall, where the Declaration of Independence was signed, and the Liberty Bell are the city's most famous attractions. Other historic sites include homes for Edgar Allan Poe, Betsy Ross, and Thaddeus Kosciuszko, early government buildings like the First and Second Banks of the United States, Fort Mifflin, and the Gloria Dei (Old Swedes') Church. Philadelphia alone has 67 National Historic Landmarks, the third most of any city in the country.",
+            "answers": [
+                "Independence National Historical Park"
+            ],
+            "irrelevant_id": "56de82f5cffd8e1900b4b9b3",
+            "irrelevant_context": "The Warsaw Pact (formally, the Treaty of Friendship, Co-operation, and Mutual Assistance, sometimes, informally WarPac, akin in format to NATO) was a collective defense treaty among Soviet Union and seven Soviet satellite states in Central and Eastern Europe in existence during the Cold War. The Warsaw Pact was the military complement to the Council for Mutual Economic Assistance (CoMEcon), the regional economic organization for the communist states of Central and Eastern Europe. The Warsaw Pact was created in reaction to the integration of West Germany into NATO in 1955 per the Paris Pacts of 1954, but it is also considered to have been motivated by Soviet desires to maintain control over military forces in Central and Eastern Europe."
+        },
+        "5735ac9bdc94161900571f0d": {
+            "id": "5735ac9bdc94161900571f0d",
+            "question": "Approximately what portion of Nepal's GDP is produced by the Kathmandu metropolitan area?",
+            "context": "The economic output of the metropolitan area alone is worth more than one third of national GDP around $6.5billion in terms of nominal GDP NR.s 550 billion approximately per year $2200 per capital income approx three times national average. Kathmandu exports handicrafts, artworks, garments, carpets, pashmina, paper; trade accounts for 21% of its finances.[which?] Manufacturing is also important and accounts for 19% of the revenue that Kathmandu generates. Garments and woolen carpets are the most notable manufactured products. Other economic sectors in Kathmandu include agriculture (9%), education (6%), transport (6%), and hotels and restaurants (5%). Kathmandu is famous for lokta paper and pashmina shawls.",
+            "answers": [
+                "one third"
+            ],
+            "irrelevant_id": "572f6e82947a6a140053c94a",
+            "irrelevant_context": "The deliberate separation of the Luftwaffe from the rest of the military structure encouraged the emergence of a major \"communications gap\" between Hitler and the Luftwaffe, which other factors helped to exacerbate. For one thing, G\u00f6ring's fear of Hitler led him to falsify or misrepresent what information was available in the direction of an uncritical and over-optimistic interpretation of air strength. When G\u00f6ring decided against continuing Wever's original heavy bomber programme in 1937, the Reichsmarschall's own explanation was that Hitler wanted to know only how many bombers there were, not how many engines each had. In July 1939, G\u00f6ring arranged a display of the Luftwaffe's most advanced equipment at Rechlin, to give the impression the air force was more prepared for a strategic air war than was actually the case."
+        },
+        "5731826ca5e9cc1400cdbffa": {
+            "id": "5731826ca5e9cc1400cdbffa",
+            "question": "When did the Jefara plain land redistribution end?",
+            "context": "In 1979, the committees began the redistribution of land in the Jefara plain, continuing through 1981. In May 1980, measures to redistribute and equalize wealth were implemented; anyone with over 1000 dinar in his bank account saw that extra money expropriated. The following year, the GPC announced that the government would take control of all import, export and distribution functions, with state supermarkets replacing privately owned businesses; this led to a decline in the availability of consumer goods and the development of a thriving black market.",
+            "answers": [
+                "1981"
+            ],
+            "irrelevant_id": "5726bc32dd62a815002e8eb4",
+            "irrelevant_context": "Raleigh-Durham International Airport, the region's primary airport and the second-largest in North Carolina, located northwest of downtown Raleigh via Interstate-40 between Raleigh and Durham, serves the city and greater Research Triangle metropolitan region, as well as much of eastern North Carolina. The airport offers service to more than 35 domestic and international destinations and serves approximately 10 million passengers a year. The airport also offers facilities for cargo and general aviation. The airport authority tripled the size of its Terminal 2 (formerly Terminal C) in January 2011."
+        },
+        "572833d43acd2414000df6de": {
+            "id": "572833d43acd2414000df6de",
+            "question": "How did the federal war end? ",
+            "context": "The Federal War ended in 1863 with the signing of the Treaty of Coche by both the centralist government of the time and the Federal Forces. The United States of Venezuela were subsequently incorporated under a \"Federation of Sovereign States\" upon principles borrowed from the Articles of Confederation of the United States of America. In this Federation, each State had a \"President\" of its own that controlled almost every issue, even the creation of \"State Armies,\" while the Federal Army was required to obtain presidential permission to enter any given state.",
+            "answers": [
+                "with the signing of the Treaty of Coche by both the centralist government of the time and the Federal Forces"
+            ],
+            "irrelevant_id": "56dff1be231d4119001abee5",
+            "irrelevant_context": "The Fitzroy Tavern is a pub situated at 16 Charlotte Street in the Fitzrovia district, to which it gives its name. It became famous (or according to others, infamous) during a period spanning the 1920s to the mid-1950s as a meeting place for many of London's artists, intellectuals and bohemians such as Dylan Thomas, Augustus John, and George Orwell. Several establishments in Soho, London, have associations with well-known, post-war literary and artistic figures, including the Pillars of Hercules, The Colony Room and the Coach and Horses. The Canonbury Tavern, Canonbury, was the prototype for Orwell's ideal English pub, The Moon Under Water."
+        },
+        "572ee0cc03f9891900756ab3": {
+            "id": "572ee0cc03f9891900756ab3",
+            "question": "How many transistors make up a logic gate?",
+            "context": "Although several companies each produce over a billion individually packaged (known as discrete) transistors every year, the vast majority of transistors are now produced in integrated circuits (often shortened to IC, microchips or simply chips), along with diodes, resistors, capacitors and other electronic components, to produce complete electronic circuits. A logic gate consists of up to about twenty transistors whereas an advanced microprocessor, as of 2009, can use as many as 3 billion transistors (MOSFETs). \"About 60 million transistors were built in 2002\u2026 for [each] man, woman, and child on Earth.\"",
+            "answers": [
+                "up to about twenty transistors"
+            ],
+            "irrelevant_id": "572a1b551d04691400779795",
+            "irrelevant_context": "Leibniz describes a space that exists only as a relation between objects, and which has no existence apart from the existence of those objects. Motion exists only as a relation between those objects. Newtonian space provided the absolute frame of reference within which objects can have motion. In Newton's system, the frame of reference exists independently of the objects contained within it. These objects can be described as moving in relation to space itself. For many centuries, the evidence of a concave water surface held authority."
+        },
+        "56f9d96b9e9bad19000a0b11": {
+            "id": "56f9d96b9e9bad19000a0b11",
+            "question": "Which country developed the 441-line system?",
+            "context": "The British high-definition TV service started trials in August 1936 and a regular service on 2 November 1936 using both the (mechanical) Baird 240 line sequential scan (later to be inaccurately rechristened 'progressive') and the (electronic) Marconi-EMI 405 line interlaced systems. The Baird system was discontinued in February 1937. In 1938 France followed with their own 441-line system, variants of which were also used by a number of other countries. The US NTSC 525-line system joined in 1941. In 1949 France introduced an even higher-resolution standard at 819 lines, a system that should have been high definition even by today's standards, but was monochrome only and the technical limitations of the time prevented it from achieving the definition of which it should have been capable. All of these systems used interlacing and a 4:3 aspect ratio except the 240-line system which was progressive (actually described at the time by the technically correct term \"sequential\") and the 405-line system which started as 5:4 and later changed to 4:3. The 405-line system adopted the (at that time) revolutionary idea of interlaced scanning to overcome the flicker problem of the 240-line with its 25 Hz frame rate. The 240-line system could have doubled its frame rate but this would have meant that the transmitted signal would have doubled in bandwidth, an unacceptable option as the video baseband bandwidth was required to be not more than 3 MHz.",
+            "answers": [
+                "France"
+            ],
+            "irrelevant_id": "571b55a832177014007ea078",
+            "irrelevant_context": "Selenizza is mainly used as an additive in the road construction sector. It is mixed with traditional bitumen to improve both the viscoelastic properties and the resistance to ageing. It may be blended with the hot bitumen in tanks, but its granular form allows it to be fed in the mixer or in the recycling ring of normal asphalt plants. Other typical applications include the production of mastic asphalts for sidewalks, bridges, car-parks and urban roads as well as drilling fluid additives for the oil and gas industry. Selenizza is available in powder or in granular material of various particle sizes and is packaged in big bags or in thermal fusible polyethylene bags."
+        },
+        "56ce4f64aab44d1400b886a5": {
+            "id": "56ce4f64aab44d1400b886a5",
+            "question": "According to Kolma\u0161 who accepted an invite from a Manchu to send envoys to the capital at Mukden?",
+            "context": "Meanwhile, the Chinese Ming dynasty fell to the rebellion of Li Zicheng (1606\u20131645) in 1644, yet his short-lived Shun dynasty was crushed by the Manchu invasion and the Han Chinese general Wu Sangui (1612\u20131678). China Daily states that when the following Qing dynasty replaced the Ming dynasty, it merely \"strengthened administration of Tibet.\" However, Kolma\u0161 states that the Dalai Lama was very observant of what was going on in China and accepted a Manchu invitation in 1640 to send envoys to their capital at Mukden in 1642, before the Ming collapsed. Dawa Norbu, William Rockhill, and George N. Patterson write that when the Shunzhi Emperor (r. 1644\u20131661) of the subsequent Qing dynasty invited the fifth Dalai Lama Lozang Gyatso to Beijing in 1652, Shunzhi treated the Dalai Lama as an independent sovereign of Tibet. Patterson writes that this was an effort of Shunzhi to secure an alliance with Tibet that would ultimately lead to the establishment of Manchu rule over Mongolia. In this meeting with the Qing emperor, Goldstein asserts that the Dalai Lama was not someone to be trifled with due to his alliance with Mongol tribes, some of which were declared enemies of the Qing. Van Praag states that Tibet and the Dalai Lama's power was recognized by the \"Manchu Emperor, the Mongolian Khans and Princes, and the rulers of Ladakh, Nepal, India, Bhutan, and Sikkim.\"",
+            "answers": [
+                "the Dalai Lama"
+            ],
+            "irrelevant_id": "57266881f1498d1400e8deb1",
+            "irrelevant_context": "Greek citizens who are Roman Catholic are estimated to be at around 50,000 with the Roman Catholic immigrant community in the country approximately 200,000. Old Calendarists account for 500,000 followers. Protestants, including Greek Evangelical Church and Free Evangelical Churches, stand at about 30,000. Assemblies of God, International Church of the Foursquare Gospel and other Pentecostal churches of the Greek Synod of Apostolic Church have 12,000 members. Independent Free Apostolic Church of Pentecost is the biggest Protestant denomination in Greece with 120 churches. There are not official statistics about Free Apostolic Church of Pentecost, but the Orthodox Church estimates the followers as 20,000. The Jehovah's Witnesses report having 28,874 active members. In recent years there has been a small-scale revival of the ancient Greek religion, with estimates of 2,000 people active practitioners, and 100,000 \"sympathisers\"."
+        },
+        "5727784d708984140094de7b": {
+            "id": "5727784d708984140094de7b",
+            "question": "Who was crucified with Jesus per Mark?",
+            "context": "In Mark, Jesus is crucified along with two rebels, and the day goes dark for three hours. Jesus calls out to God, then gives a shout and dies. The curtain of the Temple is torn in two. Matthew follows Mark, adding an earthquake and the resurrection of saints. Luke also follows Mark, though he describes the rebels as common criminals, one of whom defends Jesus, who in turn promises that he (Jesus) and the criminal will be together in paradise. Luke portrays Jesus as impassive in the face of his crucifixion. John includes several of the same elements as those found in Mark, though they are treated differently.",
+            "answers": [
+                "two rebels"
+            ],
+            "irrelevant_id": "56e70aba6fe0821900b8ec9b",
+            "irrelevant_context": "Originally named the Institute of British Architects in London, it was formed in 1834 by several prominent architects, including Philip Hardwick, Thomas Allom, William Donthorne, Thomas Leverton Donaldson, William Adams Nicholson, John Buonarotti Papworth, and Thomas de Grey, 2nd Earl de Grey."
+        },
+        "57268716dd62a815002e883d": {
+            "id": "57268716dd62a815002e883d",
+            "question": "Which country despite converting to Islam has retained many forms of Hindu practices, culture, art & literature?",
+            "context": "Puppetry and shadow plays were also a favoured form of entertainment in past centuries, a famous one being Wayang from Indonesia. The arts and literature in some of Southeast Asia is quite influenced by Hinduism, which was brought to them centuries ago. Indonesia, despite conversion to Islam which opposes certain forms of art, has retained many forms of Hindu-influenced practices, culture, art and literature. An example is the Wayang Kulit (Shadow Puppet) and literature like the Ramayana. The wayang kulit show has been recognized by UNESCO on November 7, 2003, as a Masterpiece of Oral and Intangible Heritage of Humanity.",
+            "answers": [
+                "Indonesia"
+            ],
+            "irrelevant_id": "56f976429b226e1400dd1471",
+            "irrelevant_context": "The invention of electronic computers in the 1940s, along with the development of mathematical information theory, led to a realization that brains can potentially be understood as information processing systems. This concept formed the basis of the field of cybernetics, and eventually gave rise to the field now known as computational neuroscience. The earliest attempts at cybernetics were somewhat crude in that they treated the brain as essentially a digital computer in disguise, as for example in John von Neumann's 1958 book, The Computer and the Brain. Over the years, though, accumulating information about the electrical responses of brain cells recorded from behaving animals has steadily moved theoretical concepts in the direction of increasing realism."
+        },
+        "57112c66a58dae1900cd6cf5": {
+            "id": "57112c66a58dae1900cd6cf5",
+            "question": "What was the name of the clone in Poland?",
+            "context": "A thriving market of unlicensed NES hardware clones emerged during the climax of the console's popularity. Initially, such clones were popular in markets where Nintendo never issued a legitimate version of the console. In particular, the Dendy (Russian: \u0414\u0435\u0301\u043d\u0434\u0438), an unlicensed hardware clone produced in Taiwan and sold in the former Soviet Union, emerged as the most popular video game console of its time in that setting and it enjoyed a degree of fame roughly equivalent to that experienced by the NES/Famicom in North America and Japan. A Famicom clone was marketed in Argentina under the name of \"Family Game\", resembling the original hardware design. The Micro Genius (Simplified Chinese: \u5c0f\u5929\u624d) was marketed in Southeast Asia as an alternative to the Famicom; Samurai was the popular PAL alternative to the NES; and in Central Europe, especially Poland, the Pegasus was available. Samurai was also available in India in early 90s which was the first instance of console gaming in India.",
+            "answers": [
+                "Pegasus"
+            ],
+            "irrelevant_id": "5731e35d0fdd8d15006c6612",
+            "irrelevant_context": "The name Anabaptist, meaning \"one who baptizes again\", was given them by their persecutors in reference to the practice of re-baptizing converts who already had been baptized as infants. Anabaptists required that baptismal candidates be able to make their own confessions of faith and so rejected baptism of infants. The early members of this movement did not accept the name Anabaptist, claiming that since infant baptism was unscriptural and null and void, the baptizing of believers was not a re-baptism but in fact their first real baptism. As a result of their views on the nature of baptism and other issues, Anabaptists were heavily persecuted during the 16th century and into the 17th by both Magisterial Protestants and Roman Catholics.[aa] While most Anabaptists adhered to a literal interpretation of the Sermon on the Mount, which precluded taking oaths, participating in military actions, and participating in civil government, some who practiced re-baptism felt otherwise.[ab] They were thus technically Anabaptists, even though conservative Amish, Mennonites, and Hutterites and some historians tend to consider them as outside of true Anabaptism. Anabaptist reformers of the Radical Reformation are diveded into Radical and the so-called Second Front. Some important Radical Reformation theologians were John of Leiden, Thomas M\u00fcntzer, Kaspar Schwenkfeld, Sebastian Franck, Menno Simons. Second Front Reformers included Hans Denck, Conrad Grebel, Balthasar Hubmaier and Felix Manz."
+        },
+        "57106dc3b654c5140001f8fb": {
+            "id": "57106dc3b654c5140001f8fb",
+            "question": "In what year did the aristocracy move from the King's palace at Versailles to Paris?",
+            "context": "The creation of the public sphere has been associated with two long-term historical trends: the rise of the modern nation state and the rise of capitalism. The modern nation state, in its consolidation of public power, created by counterpoint a private realm of society independent of the state, which allowed for the public sphere. Capitalism also increased society's autonomy and self-awareness, and an increasing need for the exchange of information. As the nascent public sphere expanded, it embraced a large variety of institutions; the most commonly cited were coffee houses and caf\u00e9s, salons and the literary public sphere, figuratively localized in the Republic of Letters. In France, the creation of the public sphere was helped by the aristocracy's move from the King's palace at Versailles to Paris in about 1720, since their rich spending stimulated the trade in luxuries and artistic creations, especially fine paintings.",
+            "answers": [
+                "1720"
+            ],
+            "irrelevant_id": "573171d105b4da19006bd19f",
+            "irrelevant_context": "In May 1970, the Revolutionary Intellectuals Seminar was held to bring intellectuals in line with the revolution, while that year's Legislative Review and Amendment united secular and religious law codes, introducing sharia into the legal system. Ruling by decree, the RCC maintained the monarchy's ban on political parties, in May 1970 banned trade unions, and in 1972 outlawed workers' strikes and suspended newspapers. In September 1971, Gaddafi resigned, claiming to be dissatisfied with the pace of reform, but returned to his position within a month. In February 1973, he resigned again, once more returning the following month."
+        },
+        "56fa09098f12f319006300a2": {
+            "id": "56fa09098f12f319006300a2",
+            "question": "What type of properties of heartwood and sapwood is often the same even if their colors are very different?",
+            "context": "In species which show a distinct difference between heartwood and sapwood the natural color of heartwood is usually darker than that of the sapwood, and very frequently the contrast is conspicuous (see section of yew log above). This is produced by deposits in the heartwood of chemical substances, so that a dramatic color difference does not mean a dramatic difference in the mechanical properties of heartwood and sapwood, although there may be a dramatic chemical difference.",
+            "answers": [
+                "mechanical"
+            ],
+            "irrelevant_id": "56e797ad00c9c71400d7732c",
+            "irrelevant_context": "A few days before the fall of the city, the National Government of China was relocated to the southwestern city Chungking (Chongqing) and resumed Chinese resistance. In 1940, a Japanese-collaborationist government known as the \"Nanjing Regime\" or \"Reorganized National Government of China\" led by Wang Jingwei was established in Nanjing as a rival to Chiang Kai-shek's government in Chongqing. In 1946, after the Surrender of Japan, the KMT relocated its central government back to Nanjing."
+        },
+        "5729724c1d04691400779487": {
+            "id": "5729724c1d04691400779487",
+            "question": "If the effects are valid, for RK = n/e2, what is the measurement of KJ2RK equal to?",
+            "context": "A watt balance is an instrument for comparing two powers, one of which is measured in SI watts and the other of which is measured in conventional electrical units. From the definition of the conventional watt W90, this gives a measure of the product KJ2RK in SI units, where RK is the von Klitzing constant which appears in the quantum Hall effect. If the theoretical treatments of the Josephson effect and the quantum Hall effect are valid, and in particular assuming that RK = h/e2, the measurement of KJ2RK is a direct determination of the Planck constant.",
+            "answers": [
+                "the Planck constant"
+            ],
+            "irrelevant_id": "572f98fa04bcaa1900d76acb",
+            "irrelevant_context": "Over the course of the 20th century, the world's per-capita gross domestic product grew by a factor of five, much more than all earlier centuries combined (including the 19th with its Industrial Revolution). Many economists make the case that this understates the magnitude of growth, as many of the goods and services consumed at the end of the 20th century, such as improved medicine (causing world life expectancy to increase by more than two decades) and communications technologies, were not available at any price at its beginning. However, the gulf between the world's rich and poor grew wider, and the majority of the global population remained in the poor side of the divide."
+        },
+        "56e7ca0937bdd419002c4402": {
+            "id": "56e7ca0937bdd419002c4402",
+            "question": "What was the name of the race the boat was damaged in?",
+            "context": "On November 2011, the sailing boat Puma's Mar Mostro participant in Volvo Ocean Race arrived to the island after her mast broke in the first leg from Alicante and Cape Town. This event made the island, its inhabitants and lifestyle known worldwide thanks to the media reports.",
+            "answers": [
+                "Volvo Ocean Race"
+            ],
+            "irrelevant_id": "56f7227a711bf01900a449c3",
+            "irrelevant_context": "The \"standard complement\" of double winds and brass in the orchestra from the first half of the 19th century is generally attributed to Beethoven. The exceptions to this are his Symphony No. 4, Violin Concerto, and Piano Concerto No. 4, which each specify a single flute. The composer's instrumentation usually included paired flutes, oboes, clarinets, bassoons, horns and trumpets. Beethoven carefully calculated the expansion of this particular timbral \"palette\" in Symphonies 3, 5, 6, and 9 for an innovative effect. The third horn in the \"Eroica\" Symphony arrives to provide not only some harmonic flexibility, but also the effect of \"choral\" brass in the Trio. Piccolo, contrabassoon, and trombones add to the triumphal finale of his Symphony No. 5. A piccolo and a pair of trombones help deliver \"storm\" and \"sunshine\" in the Sixth. The Ninth asks for a second pair of horns, for reasons similar to the \"Eroica\" (four horns has since become standard); Beethoven's use of piccolo, contrabassoon, trombones, and untuned percussion\u2014plus chorus and vocal soloists\u2014in his finale, are his earliest suggestion that the timbral boundaries of symphony should be expanded. For several decades after he died, symphonic instrumentation was faithful to Beethoven's well-established model, with few exceptions."
+        },
+        "56f7fb59aef2371900625d22": {
+            "id": "56f7fb59aef2371900625d22",
+            "question": "What formed an important part of European colonization?",
+            "context": "Treaties formed an important part of European colonization and, in many parts of the world, Europeans attempted to legitimize their sovereignty by signing treaties with indigenous peoples. In most cases these treaties were in extremely disadvantageous terms to the native people, who often did not appreciate the implications of what they were signing.",
+            "answers": [
+                "Treaties"
+            ],
+            "irrelevant_id": "57311f8b05b4da19006bcdd0",
+            "irrelevant_context": "The Tuvalu Media Department of the Government of Tuvalu operates Radio Tuvalu which broadcasts from Funafuti. In 2011 the Japanese government provided financial support to construct a new AM broadcast studio. The installation of upgraded transmission equipment allows Radio Tuvalu to be heard on all nine islands of Tuvalu. The new AM radio transmitter on Funafuti replaced the FM radio service to the outer islands and freed up satellite bandwidth for mobile services. Fenui \u2013 news from Tuvalu is a free digital publication of the Tuvalu Media Department that is emailed to subscribers and operates a Facebook page, which publishes news about government activities and news about Tuvaluan events, such as a special edition covering the results of the 2015 general election."
+        },
+        "57316811e6313a140071cefe": {
+            "id": "57316811e6313a140071cefe",
+            "question": "Who did the navicella mosaic depict walking on water?",
+            "context": "The great Navicella mosaic (1305\u20131313) in the atrium of the Old St. Peter's is attributed to Giotto di Bondone. The giant mosaic, commissioned by Cardinal Jacopo Stefaneschi, was originally situated on the eastern porch of the old basilica and occupied the whole wall above the entrance arcade facing the courtyard. It depicted St. Peter walking on the waters. This extraordinary work was mainly destroyed during the construction of the new St. Peter's in the 17th century. Navicella means \"little ship\" referring to the large boat which dominated the scene, and whose sail, filled by the storm, loomed over the horizon. Such a natural representation of a seascape was known only from ancient works of art.",
+            "answers": [
+                "St. Peter"
+            ],
+            "irrelevant_id": "5724f58b0ba9f01400d97be7",
+            "irrelevant_context": "On 17 March 1883, she fell down some stairs at Windsor, which left her lame until July; she never fully recovered and was plagued with rheumatism thereafter. Brown died 10 days after her accident, and to the consternation of her private secretary, Sir Henry Ponsonby, Victoria began work on a eulogistic biography of Brown. Ponsonby and Randall Davidson, Dean of Windsor, who had both seen early drafts, advised Victoria against publication, on the grounds that it would stoke the rumours of a love affair. The manuscript was destroyed. In early 1884, Victoria did publish More Leaves from a Journal of a Life in the Highlands, a sequel to her earlier book, which she dedicated to her \"devoted personal attendant and faithful friend John Brown\". On the day after the first anniversary of Brown's death, Victoria was informed by telegram that her youngest son, Leopold, had died in Cannes. He was \"the dearest of my dear sons\", she lamented. The following month, Victoria's youngest child, Beatrice, met and fell in love with Prince Henry of Battenberg at the wedding of Victoria's granddaughter Princess Victoria of Hesse and by Rhine to Henry's brother Prince Louis of Battenberg. Beatrice and Henry planned to marry, but Victoria opposed the match at first, wishing to keep Beatrice at home to act as her companion. After a year, she was won around to the marriage by Henry and Beatrice's promise to remain living with and attending her."
+        },
+        "56d63d821c85041400947055": {
+            "id": "56d63d821c85041400947055",
+            "question": "Thousands of years ago, dogs were depicted on the walls of what?",
+            "context": "Cultural depictions of dogs in art extend back thousands of years to when dogs were portrayed on the walls of caves. Representations of dogs became more elaborate as individual breeds evolved and the relationships between human and canine developed. Hunting scenes were popular in the Middle Ages and the Renaissance. Dogs were depicted to symbolize guidance, protection, loyalty, fidelity, faithfulness, watchfulness, and love.",
+            "answers": [
+                "caves."
+            ],
+            "irrelevant_id": "56de16894396321400ee25c3",
+            "irrelevant_context": "After successfully completing a diploma at a polytechnic, students can gain lateral entry to engineering degree (under graduate) courses called BE, which are conducted by engineering colleges affiliated to universities or University of Engineering & Technology or University of Engineering Sciences."
+        },
+        "572b5e0834ae481900deadd7": {
+            "id": "572b5e0834ae481900deadd7",
+            "question": "What is the current Zip Code range in Guam?",
+            "context": "In 1899, the local postage stamps were overprinted \"Guam\" as was done for the other former Spanish colonies, but this was discontinued shortly thereafter and regular U.S. postage stamps have been used ever since. Because Guam is also part of the U.S. Postal System (postal abbreviation: GU, ZIP code range: 96910\u201396932), mail to Guam from the U.S. mainland is considered domestic and no additional charges are required. Private shipping companies, such as FedEx, UPS, and DHL, however, have no obligation to do so, and do not regard Guam as domestic.",
+            "answers": [
+                "96910\u201396932"
+            ],
+            "irrelevant_id": "56ce829baab44d1400b88828",
+            "irrelevant_context": "From the fifth-generation iPod on, Apple introduced a user-configurable volume limit in response to concerns about hearing loss. Users report that in the sixth-generation iPod, the maximum volume output level is limited to 100 dB in EU markets. Apple previously had to remove iPods from shelves in France for exceeding this legal limit. However, users that have bought a new sixth-generation iPod in late 2013 have reported a new option that allowed them to disable the EU volume limit. It has been said that these new iPods came with an updated software that allowed this change. Older sixth-generation iPods, however, are unable to update to this software version."
+        },
+        "572971f23f37b319004783df": {
+            "id": "572971f23f37b319004783df",
+            "question": "What was New Haven's nickname?",
+            "context": "New Haven has a long tradition of urban planning and a purposeful design for the city's layout. The city could be argued to have some of the first preconceived layouts in the country. Upon founding, New Haven was laid out in a grid plan of nine square blocks; the central square was left open, in the tradition of many New England towns, as the city green (a commons area). The city also instituted the first public tree planting program in America. As in other cities, many of the elms that gave New Haven the nickname \"Elm City\" perished in the mid-20th century due to Dutch Elm disease, although many have since been replanted. The New Haven Green is currently home to three separate historic churches which speak to the original theocratic nature of the city. The Green remains the social center of the city today. It was named a National Historic Landmark in 1970.",
+            "answers": [
+                "Elm City\""
+            ],
+            "irrelevant_id": "5726431a38643c19005ad3c4",
+            "irrelevant_context": "Conflict between the Germanic tribes and the forces of Rome under Julius Caesar forced major Germanic tribes to retreat to the east bank of the Rhine. Roman emperor Augustus in 12 BC ordered the conquest of the Germans, but the catastrophic Roman defeat at the Battle of the Teutoburg Forest resulted in the Roman Empire abandoning its plans to completely conquer Germany. Germanic peoples in Roman territory were culturally Romanized, and although much of Germany remained free of direct Roman rule, Rome deeply influenced the development of German society, especially the adoption of Christianity by the Germans who obtained it from the Romans. In Roman-held territories with Germanic populations, the Germanic and Roman peoples intermarried, and Roman, Germanic, and Christian traditions intermingled. The adoption of Christianity would later become a major influence in the development of a common German identity."
+        },
+        "5726fa9cdd62a815002e96c0": {
+            "id": "5726fa9cdd62a815002e96c0",
+            "question": "When was the Antikythera mechanism used?",
+            "context": "The astronomer Aristarchus of Samos was the first known person to propose a heliocentric model of the solar system, while the geographer Eratosthenes accurately calculated the circumference of the Earth. Hipparchus (c. 190 \u2013 c. 120 BC) produced the first systematic star catalog. The level of achievement in Hellenistic astronomy and engineering is impressively shown by the Antikythera mechanism (150-100 BC), an analog computer for calculating the position of planets. Technological artifacts of similar complexity did not reappear until the 14th century, when mechanical astronomical clocks appeared in Europe.",
+            "answers": [
+                "150-100 BC"
+            ],
+            "irrelevant_id": "57321aceb9d445190005e7f7",
+            "irrelevant_context": "In the judgment of political scientist Randall Ripley, since 1883 \"the candidate for Speaker nominated by the minority party has clearly been the Minority Leader.\" However, this assertion is subject to dispute. On December 3, 1883, the House elected Democrat John G. Carlisle of Kentucky as Speaker. Republicans placed in nomination for the speakership J. Warren Keifer of Ohio, who was Speaker the previous Congress. Clearly, Keifer was not the Republicans' minority leader. He was a discredited leader in part because as Speaker he arbitrarily handed out \"choice jobs to close relatives ... all at handsome salaries.\" Keifer received \"the empty honor of the minority nomination. But with it came a sting -- for while this naturally involves the floor leadership, he was deserted by his [partisan] associates and his career as a national figure terminated ingloriously.\" Representative Thomas Reed, R-ME, who later became Speaker, assumed the de facto role of minority floor leader in Keifer's stead. \"[A]lthough Keifer was the minority's candidate for Speaker, Reed became its acknowledged leader, and ever after, so long as he served in the House, remained the most conspicuous member of his party."
+        },
+        "57276b96dd62a815002e9c97": {
+            "id": "57276b96dd62a815002e9c97",
+            "question": "Where can all the traditional costumes be seen parading on the Sunday of the festival?",
+            "context": "The Carnival of Malmedy is locally called Cwarm\u00ea. Even if Malmedy is located in the east Belgium, near the German-speaking area, the Cwarm\u00ea is a pure walloon and Latin carnival. The celebration takes place during 4 days before the Shrove Tuesday. The Cwarm\u00ea Sunday is the most important and insteresting to see. All the old traditional costumes parade in the street. The Cwarm\u00ea is a \"street carnival\" and is not only a parade. People who are disguised pass through the crowd and perform a part of the traditional costume they wear. The famous traditional costumes at the Cwarm\u00ea of Malmedy are the Hagu\u00e8te, the Longu\u00e8s-Br\u00e8sses and the Long-N\u00e9.",
+            "answers": [
+                "in the street"
+            ],
+            "irrelevant_id": "570e6f710dc6ce1900205064",
+            "irrelevant_context": "The Melbourne rail network has its origins in privately built lines from the 1850s gold rush era, and today the suburban network consists of 209 suburban stations on 16 lines which radiate from the City Loop, a partially underground metro section of the network beneath the Central Business District (Hoddle Grid). Flinders Street Station is Melbourne's busiest railway station, and was the world's busiest passenger station in 1926. It remains a prominent Melbourne landmark and meeting place. The city has rail connections with regional Victorian cities, as well as direct interstate rail services to Sydney and Adelaide and beyond which depart from Melbourne's other major rail terminus, Southern Cross Station in Spencer Street. In the 2013\u20132014 financial year, the Melbourne rail network recorded 232.0 million passenger trips, the highest in its history. Many rail lines, along with dedicated lines and rail yards are also used for freight. The Overland to Adelaide departs Southern Cross twice a week, while the XPT to Sydney departs twice a day."
+        },
+        "56e7b1e900c9c71400d77505": {
+            "id": "56e7b1e900c9c71400d77505",
+            "question": "During the summer in Nome, about how many hours ahead of the sun do they set their clocks?",
+            "context": "Western France, Spain, and other areas skew time zones and shift clocks, in effect observing DST in winter with an extra hour in summer. Nome, Alaska, is at 165\u00b024\u2032 W longitude, which is just west of center of the idealized Samoa Time Zone (165\u00b0 W), but Nome observes Alaska Time (135\u00b0 W) with DST, so it is slightly more than two hours ahead of the sun in winter and three in summer. Double daylight saving time has been used on occasion; for example, it was used in some European countries during and shortly after World War II when it was referred to as \"Double Summer Time\". See British Double Summer Time and Central European Midsummer Time for details.",
+            "answers": [
+                "three"
+            ],
+            "irrelevant_id": "5727d7f52ca10214002d97de",
+            "irrelevant_context": "Prominent theatre companies in Oklahoma include, in the capital city, Oklahoma City Theatre Company, Carpenter Square Theatre, Oklahoma Shakespeare in the Park, and CityRep. CityRep is a professional company affording equity points to those performers and technical theatre professionals. In Tulsa, Oklahoma's oldest resident professional company is American Theatre Company, and Theatre Tulsa is the oldest community theatre company west of the Mississippi. Other companies in Tulsa include Heller Theatre and Tulsa Spotlight Theater. The cities of Norman, Lawton, and Stillwater, among others, also host well-reviewed community theatre companies."
+        },
+        "57096d4bed30961900e840f3": {
+            "id": "57096d4bed30961900e840f3",
+            "question": "The Neo-Eriksonian identity status paradigm focuses on what twin concepts?",
+            "context": "The \"Neo-Eriksonian\" identity status paradigm emerged in later years[when?], driven largely by the work of James Marcia. This paradigm focuses upon the twin concepts of exploration and commitment. The central idea is that any individual's sense of identity is determined in large part by the explorations and commitments that he or she makes regarding certain personal and social traits. It follows that the core of the research in this paradigm investigates the degrees to which a person has made certain explorations, and the degree to which he or she displays a commitment to those explorations.",
+            "answers": [
+                "exploration and commitment"
+            ],
+            "irrelevant_id": "5726dda25951b619008f808d",
+            "irrelevant_context": "Nigeria is a Federal Republic modelled after the United States, with executive power exercised by the president. It is influenced by the Westminster System model[citation needed] in the composition and management of the upper and lower houses of the bicameral legislature. The president presides as both Head of State and head of the national executive; the leader is elected by popular vote to a maximum of two 4-year terms. In the March 28, 2015 presidential election, General Muhammadu Buhari emerged victorious to become the Federal President of Nigeria, defeating then incumbent Goodluck Jonathan."
+        },
+        "570b03a2ec8fbc190045b7dc": {
+            "id": "570b03a2ec8fbc190045b7dc",
+            "question": "By the time of Lilius where was the equinox falling?",
+            "context": "Lilius's proposals had two components. Firstly, he proposed a correction to the length of the year. The mean tropical year is 365.24219 days long. As the average length of a Julian year is 365.25 days, the Julian year is almost 11 minutes longer than the mean tropical year. The discrepancy results in a drift of about three days every 400 years. Lilius's proposal resulted in an average year of 365.2425 days (see Accuracy). At the time of Gregory's reform there had already been a drift of 10 days since the Council of Nicaea, resulting in the vernal equinox falling on 10 or 11 March instead of the ecclesiastically fixed date of 21 March, and if unreformed it would drift further. Lilius proposed that the 10-day drift should be corrected by deleting the Julian leap day on each of its ten occurrences over a period of forty years, thereby providing for a gradual return of the equinox to 21 March.",
+            "answers": [
+                "10 or 11 March"
+            ],
+            "irrelevant_id": "572990e16aef051400154fdd",
+            "irrelevant_context": "From the middle of the 18th century, exploration and publication changed the course of British architecture towards a purer vision of the Ancient Greco-Roman ideal. James 'Athenian' Stuart's work The Antiquities of Athens and Other Monuments of Greece was very influential in this regard, as were Robert Wood's Palmyra and Baalbec. A combination of simple forms and high levels of enrichment was adopted by the majority of contemporary British architects and designers. The revolution begun by Stuart was soon to be eclipsed by the work of the Adam Brothers, James Wyatt, Sir William Chambers, George Dance, James Gandon and provincially based architects such as John Carr and Thomas Harrison of Chester."
+        },
+        "5726872cf1498d1400e8e2dc": {
+            "id": "5726872cf1498d1400e8e2dc",
+            "question": "Through which islands was European classical music introduced to the Greeks?",
+            "context": "Regarding the classical music, it was through the Ionian islands (which were under western rule and influence) that all the major advances of the western European classical music were introduced to mainland Greeks. The region is notable for the birth of the first School of modern Greek classical music (Heptanesean or Ionian School, Greek: \u0395\u03c0\u03c4\u03b1\u03bd\u03b7\u03c3\u03b9\u03b1\u03ba\u03ae \u03a3\u03c7\u03bf\u03bb\u03ae), established in 1815. Prominent representatives of this genre include Nikolaos Mantzaros, Spyridon Xyndas, Spyridon Samaras and Pavlos Carrer. Manolis Kalomiris is considered the founder of the Greek National School of Music.",
+            "answers": [
+                "Ionian"
+            ],
+            "irrelevant_id": "56f8a3099e9bad19000a0239",
+            "irrelevant_context": "The total complement of genes in an organism or cell is known as its genome, which may be stored on one or more chromosomes. A chromosome consists of a single, very long DNA helix on which thousands of genes are encoded.:4.2 The region of the chromosome at which a particular gene is located is called its locus. Each locus contains one allele of a gene; however, members of a population may have different alleles at the locus, each with a slightly different gene sequence."
+        },
+        "5726262f89a1e219009ac3db": {
+            "id": "5726262f89a1e219009ac3db",
+            "question": "Shell operated companies in how many countries?",
+            "context": "Traditionally, Shell was a heavily decentralised business worldwide (especially in the downstream) with companies in over 100 countries, each of which operated with a high degree of independence. The upstream tended to be far more centralised with much of the technical and financial direction coming from the central offices in The Hague. Nevertheless, there were very large \"exploration and production\" companies in a few major oil and gas production centres such as the United Kingdom (Shell Expro, a Joint Venture with Exxon), Nigeria, Brunei, and Oman.",
+            "answers": [
+                "over 100"
+            ],
+            "irrelevant_id": "571a704810f8ca140030502f",
+            "irrelevant_context": "Declarative memory can be further sub-divided into semantic memory, concerning principles and facts taken independent of context; and episodic memory, concerning information specific to a particular context, such as a time and place. Semantic memory allows the encoding of abstract knowledge about the world, such as \"Paris is the capital of France\". Episodic memory, on the other hand, is used for more personal memories, such as the sensations, emotions, and personal associations of a particular place or time. Episodic memories often reflect the \"firsts\" in life such as a first kiss, first day of school or first time winning a championship. These are key events in one's life that can be remembered clearly. Autobiographical memory - memory for particular events within one's own life - is generally viewed as either equivalent to, or a subset of, episodic memory. Visual memory is part of memory preserving some characteristics of our senses pertaining to visual experience. One is able to place in memory information that resembles objects, places, animals or people in sort of a mental image. Visual memory can result in priming and it is assumed some kind of perceptual representational system underlies this phenomenon.[citation needed]"
+        },
+        "572963fb3f37b31900478317": {
+            "id": "572963fb3f37b31900478317",
+            "question": "After what treaty did Savoia gain control of Italy?",
+            "context": "After the Treaty of Utrecht (1713), Sicily was handed over to the Savoia, but by 1734 it was again a Bourbon possession. Charles III chose Palermo for his coronation as King of Sicily. Charles had new houses built for the growing population, while trade and industry grew as well. However, by now Palermo was now just another provincial city as the Royal Court resided in Naples. Charles' son Ferdinand, though disliked by the population, took refuge in Palermo after the French Revolution in 1798. His son Alberto died on the way to Palermo and is buried in the city. When the Kingdom of the Two Sicilies was founded, the original capital city was Palermo (1816) but a year later moved to Naples.",
+            "answers": [
+                "Treaty of Utrecht (1713)"
+            ],
+            "irrelevant_id": "56f6fbeb711bf01900a448c8",
+            "irrelevant_context": "Treaties can be loosely compared to contracts: both are means of willing parties assuming obligations among themselves, and a party to either that fails to live up to their obligations can be held liable under international law."
+        },
+        "57264fdcf1498d1400e8dbdb": {
+            "id": "57264fdcf1498d1400e8dbdb",
+            "question": "Beginning what year were cameras built with the ASA meter?",
+            "context": "General Electric switched to use the ASA scale in 1946. Meters manufactured since February 1946 were equipped with the ASA scale (labeled \"Exposure Index\") already. For some of the older meters with scales in \"Film Speed\" or \"Film Value\" (e.g. models DW-48, DW-49 as well as early DW-58 and GW-68 variants), replaceable hoods with ASA scales were available from the manufacturer. The company continued to publish recommended film values after that date, however, they were now aligned to the ASA scale.",
+            "answers": [
+                "1946"
+            ],
+            "irrelevant_id": "572821522ca10214002d9e8e",
+            "irrelevant_context": "Summers are generally warm and sometimes hot. London's average July high is 24 \u00b0C (75.2 \u00b0F). On average London will see 31 days above 25 \u00b0C (77.0 \u00b0F) each year, and 4.2 days above 30.0 \u00b0C (86.0 \u00b0F) every year. During the 2003 European heat wave there were 14 consecutive days above 30 \u00b0C (86.0 \u00b0F) and 2 consecutive days where temperatures reached 38 \u00b0C (100.4 \u00b0F), leading to hundreds of heat related deaths. Winters are generally cool and damp with little temperature variation. Snowfall does occur from time to time, and can cause travel disruption when this happens. Spring and autumn are mixed seasons and can be pleasant. As a large city, London has a considerable urban heat island effect, making the centre of London at times 5 \u00b0C (9 \u00b0F) warmer than the suburbs and outskirts. The effect of this can be seen below when comparing London Heathrow, 15 miles west of London, with the London Weather Centre, in the city centre."
+        },
+        "572a7db5f75d5e190021fae6": {
+            "id": "572a7db5f75d5e190021fae6",
+            "question": "What band performed the song \"Conga\"?",
+            "context": "In the early 1970s, the Miami disco sound came to life with TK Records, featuring the music of KC and the Sunshine Band, with such hits as \"Get Down Tonight\", \"(Shake, Shake, Shake) Shake Your Booty\" and \"That's the Way (I Like It)\"; and the Latin-American disco group, Foxy (band), with their hit singles \"Get Off\" and \"Hot Number\". Miami-area natives George McCrae and Teri DeSario were also popular music artists during the 1970s disco era. The Bee Gees moved to Miami in 1975 and have lived here ever since then. Miami-influenced, Gloria Estefan and the Miami Sound Machine, hit the popular music scene with their Cuban-oriented sound and had hits in the 1980s with \"Conga\" and \"Bad Boys\".",
+            "answers": [
+                "Gloria Estefan and the Miami Sound Machine"
+            ],
+            "irrelevant_id": "5727e339ff5b5019007d97a5",
+            "irrelevant_context": "The Rule of Law is especially important as an influence on the economic development in developing and transitional countries. To date, the term \u201crule of law\u201d has been used primarily in the English-speaking countries, and it is not yet fully clarified even with regard to such well-established democracies as, for instance, Sweden, Denmark, France, Germany, or Japan. A common language between lawyers of common law and civil law countries as well as between legal communities of developed and developing countries is critically important for research of links between the rule of law and real economy."
+        },
+        "56f8954b9b226e1400dd0c4d": {
+            "id": "56f8954b9b226e1400dd0c4d",
+            "question": "Which leading literary figure often mentioned Virgin in his poetry?",
+            "context": "Sometime after the publication of the Eclogues (probably before 37 BC), Virgil became part of the circle of Maecenas, Octavian's capable agent d'affaires who sought to counter sympathy for Antony among the leading families by rallying Roman literary figures to Octavian's side. Virgil came to know many of the other leading literary figures of the time, including Horace, in whose poetry he is often mentioned, and Varius Rufus, who later helped finish the Aeneid.",
+            "answers": [
+                "Horace"
+            ],
+            "irrelevant_id": "57278bfcf1498d1400e8fb8e",
+            "irrelevant_context": "Historians trace the earliest church labeled \"Baptist\" back to 1609 in Amsterdam, with English Separatist John Smyth as its pastor. In accordance with his reading of the New Testament, he rejected baptism of infants and instituted baptism only of believing adults. Baptist practice spread to England, where the General Baptists considered Christ's atonement to extend to all people, while the Particular Baptists believed that it extended only to the elect. In 1638, Roger Williams established the first Baptist congregation in the North American colonies. In the mid-18th century, the First Great Awakening increased Baptist growth in both New England and the South. The Second Great Awakening in the South in the early 19th century increased church membership, as did the preachers' lessening of support for abolition and manumission of slavery, which had been part of the 18th-century teachings. Baptist missionaries have spread their church to every continent."
+        },
+        "5728116c3acd2414000df3a5": {
+            "id": "5728116c3acd2414000df3a5",
+            "question": "Why do EU institutions and national governments have to respect the independence of the ECB?",
+            "context": "The independence of the ECB is instrumental in maintaining price stability. Not only must the bank not seek influence, but EU institutions and national governments are bound by the treaties to respect the ECB's independence. To offer some accountability, the ECB is bound to publish reports on its activities and has to address its annual report to the European Parliament, the European Commission, the Council of the European Union and the European Council. The European Parliament also gets to question and then issue its opinion on candidates to the executive board.",
+            "answers": [
+                "bound by the treaties"
+            ],
+            "irrelevant_id": "5710a004a58dae1900cd6ad4",
+            "irrelevant_context": "The \"Radical Enlightenment\" promoted the concept of separating church and state, an idea that often credited to English philosopher John Locke (1632\u20131704). According to his principle of the social contract, Locke said that the government lacked authority in the realm of individual conscience, as this was something rational people could not cede to the government for it or others to control. For Locke, this created a natural right in the liberty of conscience, which he said must therefore remain protected from any government authority."
+        },
+        "5731920ce6313a140071d0b2": {
+            "id": "5731920ce6313a140071d0b2",
+            "question": "How many Oscar nominations did 'The Color Purple' get?",
+            "context": "In 1985, Spielberg released The Color Purple, an adaptation of Alice Walker's Pulitzer Prize-winning novel of the same name, about a generation of empowered African-American women during depression-era America. Starring Whoopi Goldberg and future talk-show superstar Oprah Winfrey, the film was a box office smash and critics hailed Spielberg's successful foray into the dramatic genre. Roger Ebert proclaimed it the best film of the year and later entered it into his Great Films archive. The film received eleven Academy Award nominations, including two for Goldberg and Winfrey. However, much to the surprise of many, Spielberg did not get a Best Director nomination.",
+            "answers": [
+                "eleven"
+            ],
+            "irrelevant_id": "5726715df1498d1400e8dfd4",
+            "irrelevant_context": "Bonaparte began with an army of 13,000 men; 1,500 were reported missing, 1,200 died in combat, and thousands perished from disease\u2014mostly bubonic plague. He failed to reduce the fortress of Acre, so he marched his army back to Egypt in May. To speed up the retreat, Bonaparte ordered plague-stricken men to be poisoned with opium; the number who died remains disputed, ranging from a low of 30 to a high of 580. He also brought out 1,000 wounded men. Back in Egypt on 25 July, Bonaparte defeated an Ottoman amphibious invasion at Abukir."
+        },
+        "57266767f1498d1400e8de80": {
+            "id": "57266767f1498d1400e8de80",
+            "question": "How long a book is the De Materia Medica?",
+            "context": "Another work from Ancient Greece that made an early impact on botany is De Materia Medica, a five-volume encyclopedia about herbal medicine written in the middle of the first century by Greek physician and pharmacologist Pedanius Dioscorides. De Materia Medica was widely read for more than 1,500 years. Important contributions from the medieval Muslim world include Ibn Wahshiyya's Nabatean Agriculture, Ab\u016b \u1e24an\u012bfa D\u012bnawar\u012b's (828\u2013896) the Book of Plants, and Ibn Bassal's The Classification of Soils. In the early 13th century, Abu al-Abbas al-Nabati, and Ibn al-Baitar (d. 1248) wrote on botany in a systematic and scientific manner.",
+            "answers": [
+                "five-volume"
+            ],
+            "irrelevant_id": "570c25c4ec8fbc190045bca4",
+            "irrelevant_context": "The Uniform Crime Reports (UCR) compile data from over 17,000 law enforcement agencies across the country. They provide detailed data regarding the volume of crimes to include arrest, clearance (or closing a case), and law enforcement officer information. The UCR focuses its data collection on violent crimes, hate crimes, and property crimes. Created in the 1920s, the UCR system has not proven to be as uniform as its name implies. The UCR data only reflect the most serious offense in the case of connected crimes and has a very restrictive definition of rape. Since about 93% of the data submitted to the FBI is in this format, the UCR stands out as the publication of choice as most states require law enforcement agencies to submit this data."
+        },
+        "5726df6d708984140094d43d": {
+            "id": "5726df6d708984140094d43d",
+            "question": "In what year did Count Karl von Buol deliver the Vienna Conference news to the Russians?",
+            "context": "The European powers continued to pursue diplomatic avenues. The representatives of the four neutral Great Powers\u2014the United Kingdom, France, Austria and Prussia\u2014met in Vienna, where they drafted a note that they hoped would be acceptable to both the Russians and the Ottomans. The peace terms arrived at by the four powers at the Vienna Conference were delivered to the Russians by the Austrian Foreign Minister Count Karl von Buol on 5 December 1853. The note met with the approval of Nicholas I; however, Abd\u00fclmecid I rejected the proposal, feeling that the document's poor phrasing left it open to many different interpretations. The United Kingdom, France, and Austria united in proposing amendments to mollify the Sultan, but the court of St. Petersburg ignored their suggestions.:143 The UK and France then set aside the idea of continuing negotiations, but Austria and Prussia did not believe that the rejection of the proposed amendments justified the abandonment of the diplomatic process.",
+            "answers": [
+                "1853"
+            ],
+            "irrelevant_id": "56cdcbb762d2951400fa683b",
+            "irrelevant_context": "Official figures (as of July 21, 2008 12:00 CST) stated that 69,197 were confirmed dead, including 68,636 in Sichuan province, and 374,176 injured, with 18,222 listed as missing. The earthquake left about 4.8 million people homeless, though the number could be as high as 11 million. Approximately 15 million people lived in the affected area. It was the deadliest earthquake to hit China since the 1976 Tangshan earthquake, which killed at least 240,000 people, and the strongest in the country since the 1950 Chayu earthquake, which registered at 8.5 on the Richter magnitude scale. It is the 21st deadliest earthquake of all time. On November 6, 2008, the central government announced that it would spend 1 trillion RMB (about US $146.5 billion) over the next three years to rebuild areas ravaged by the earthquake, as part of the Chinese economic stimulus program."
+        },
+        "56d1d5e8e7d4791d00902283": {
+            "id": "56d1d5e8e7d4791d00902283",
+            "question": "The Four Immeasurables are taught as a form of what?",
+            "context": "While he searched for enlightenment, Gautama combined the yoga practice of his teacher Kalama with what later became known as \"the immeasurables\".[dubious \u2013 discuss] Gautama thus invented a new kind of human, one without egotism.[dubious \u2013 discuss] What Thich Nhat Hanh calls the \"Four Immeasurable Minds\" of love, compassion, joy, and equanimity[full citation needed] are also known as brahmaviharas, divine abodes, or simply as four immeasurables.[web 5] Pema Ch\u00f6dr\u00f6n calls them the \"four limitless ones\". Of the four, mett\u0101 or loving-kindness meditation is perhaps the best known.[web 5] The Four Immeasurables are taught as a form of meditation that cultivates \"wholesome attitudes towards all sentient beings.\"[web 6][web 7]",
+            "answers": [
+                "meditation"
+            ],
+            "irrelevant_id": "570cf06efed7b91900d45b1b",
+            "irrelevant_context": "Originally, the hardware architecture was so closely tied to the Mac OS operating system that it was impossible to boot an alternative operating system. The most common workaround, is to boot into Mac OS and then to hand over control to a Mac OS-based bootloader application. Used even by Apple for A/UX and MkLinux, this technique is no longer necessary since the introduction of Open Firmware-based PCI Macs, though it was formerly used for convenience on many Old World ROM systems due to bugs in the firmware implementation.[citation needed] Now, Mac hardware boots directly from Open Firmware in most PowerPC-based Macs or EFI in all Intel-based Macs."
+        },
+        "5728ac94ff5b5019007da442": {
+            "id": "5728ac94ff5b5019007da442",
+            "question": "Which famous clothing company was BYU alumnus Matthew K. McCauley CEO of?",
+            "context": "BYU alumni in academia include former Dean of the Harvard Business School Kim B. Clark, two time world's most influential business thinker Clayton M. Christensen, Michael K. Young '73, current president of the University of Washington, Matthew S. Holland, current president of Utah Valley University, Stan L. Albrecht, current president of Utah State University, Teppo Felin, Professor at the University of Oxford, and Stephen D. Nadauld, previous president of Dixie State University. The University also graduated Nobel Prize winner Paul D. Boyer, as well as Philo Farnsworth (inventor of the electronic television) and Harvey Fletcher (inventor of the hearing aid). Four of BYU's thirteen presidents were alumni of the University. Additionally, alumni of BYU who have served as business leaders include Citigroup CFO Gary Crittenden '76, former Dell CEO Kevin Rollins '84, Deseret Book CEO Sheri L. Dew, and Matthew K. McCauley, CEO of children's clothing company Gymboree.",
+            "answers": [
+                "Gymboree"
+            ],
+            "irrelevant_id": "573056242461fd1900a9cd61",
+            "irrelevant_context": "Some writers claim the Air Staff ignored a critical lesson, however: British morale did not break. Targeting German morale, as Bomber Command would do, was no more successful. Aviation strategists dispute that morale was ever a major consideration for Bomber Command. Throughout 1933\u201339 none of the 16 Western Air Plans drafted mentioned morale as a target. The first three directives in 1940 did not mention civilian populations or morale in any way. Morale was not mentioned until the ninth wartime directive on 21 September 1940. The 10th directive in October 1940 mentioned morale by name. However, industrial cities were only to be targeted if weather denied strikes on Bomber Command's main concern, oil."
+        },
+        "56cee003aab44d1400b88bb2": {
+            "id": "56cee003aab44d1400b88bb2",
+            "question": "What was the principal credited with?",
+            "context": "Ye Zhiping, the principal of Sangzao Middle School in Sangzao, one of the largest in An County, has been credited with proactive action that spared the lives of all 2,323 pupils in attendance when the earthquake happened. During a three-year period that ended in 2007, he oversaw a major overhaul of his school. During that time he obtained more than 400,000 yuan (US$60,000) from the county education department, money used to widen and strengthen concrete pillars and the balcony railing of all four storeys of his school, as well as secure its concrete floors.",
+            "answers": [
+                "proactive action that spared the lives of all 2,323 pupils in attendance when the earthquake happened"
+            ],
+            "irrelevant_id": "572f3d1f04bcaa1900d767b3",
+            "irrelevant_context": "Around the end of the 19th century and into the 20th century, the Meiji era was marked by the reign of the Meiji Emperor. During this time, Japan started its modernization and rose to world power status. This era name means \"Enlightened Rule\". In Japan, the Meiji Restoration started in the 1860s, marking the rapid modernization by the Japanese themselves along European lines. Much research has focused on the issues of discontinuity versus continuity with the previous Tokugawa Period. In the 1960s younger Japanese scholars led by Irokawa Daikichi, reacted against the bureaucratic superstate, and began searching for the historic role of the common people . They avoided the elite, and focused not on political events but on social forces and attitudes. They rejected both Marxism and modernization theory as alien and confining. They stressed the importance of popular energies in the development of modern Japan. They enlarged history by using the methods of social history. It was not until the beginning of the Meiji Era that the Japanese government began taking modernization seriously. Japan expanded its military production base by opening arsenals in various locations. The hyobusho (war office) was replaced with a War Department and a Naval Department. The samurai class suffered great disappointment the following years."
+        },
+        "56fa49f9f34c681400b0c060": {
+            "id": "56fa49f9f34c681400b0c060",
+            "question": "What plumbing component was once made out of elm?",
+            "context": "Wood has been an important construction material since humans began building shelters, houses and boats. Nearly all boats were made out of wood until the late 19th century, and wood remains in common use today in boat construction. Elm in particular was used for this purpose as it resisted decay as long as it was kept wet (it also served for water pipe before the advent of more modern plumbing).",
+            "answers": [
+                "water pipe"
+            ],
+            "irrelevant_id": "5726d1a8708984140094d238",
+            "irrelevant_context": "The president serves as a chief of state and commander in chief of the armed forces. A prime minister appointed by the president serves as head of government and in turn appoints the Council of Ministers. The unicameral National Assembly is Mali's sole legislative body, consisting of deputies elected to five-year terms. Following the 2007 elections, the Alliance for Democracy and Progress held 113 of 160 seats in the assembly. The assembly holds two regular sessions each year, during which it debates and votes on legislation that has been submitted by a member or by the government."
+        },
+        "5729483faf94a219006aa252": {
+            "id": "5729483faf94a219006aa252",
+            "question": "What two countries emerged as competitors after the Congress of Vienna?",
+            "context": "The Napoleonic Wars were the cause of the final dissolution of the Holy Roman Empire, and ultimately the cause for the quest for a German nation state in 19th-century German nationalism. After the Congress of Vienna, Austria and Prussia emerged as two competitors. Austria, trying to remain the dominant power in Central Europe, led the way in the terms of the Congress of Vienna. The Congress of Vienna was essentially conservative, assuring that little would change in Europe and preventing Germany from uniting. These terms came to a sudden halt following the Revolutions of 1848 and the Crimean War in 1856, paving the way for German unification in the 1860s. By the 1820s, large numbers of Jewish German women had intermarried with Christian German men and had converted to Christianity. Jewish German Eduard Lasker was a prominent German nationalist figure who promoted the unification of Germany in the mid-19th century.",
+            "answers": [
+                "Austria and Prussia"
+            ],
+            "irrelevant_id": "5726fd08f1498d1400e8f1ce",
+            "irrelevant_context": "To allow for greater movement while dancing and singing, Madonna was one of the earliest adopters of hands-free radio-frequency headset microphones, with the headset fastened over the ears or the top of the head, and the microphone capsule on a boom arm that extended to the mouth. Because of her prominent usage, the microphone design came to be known as the \"Madonna mic\". Metz noted that Madonna represents a paradox as she is often perceived as living her whole life as a performance. While her big-screen performances are panned, her live performances are critical successes. Madonna was the first artist to have her concert tours as reenactment of her music videos. Author Elin Diamond explained that reciprocally, the fact that images from Madonna's videos can be recreated in a live setting enhances the realism of the original videos. Thus her live performances have become the means by which mediatized representations are naturalized. Taraborrelli said that encompassing multimedia, latest technology and sound systems, Madonna's concerts and live performances are deemed as \"extravagant show piece, a walking art show.\""
+        },
+        "56f9906d9e9bad19000a0ad4": {
+            "id": "56f9906d9e9bad19000a0ad4",
+            "question": "According to the locality, in addition to \"Three Rectifications and One Demolition\", what was another name for these measures?",
+            "context": "The rapid development of religions in Zhejiang has driven the local committee of ethnic and religious affairs to enact measures to rationalise them in 2014, variously named \"Three Rectifications and One Demolition\" operations or \"Special Treatment Work on Illegally Constructed Sites of Religious and Folk Religion Activities\" according to the locality. These regulations have led to cases of demolition of churches and folk religion temples, or the removal of crosses from churches' roofs and spires. An exemplary case was that of the Sanjiang Church.",
+            "answers": [
+                "Special Treatment Work on Illegally Constructed Sites of Religious and Folk Religion Activities"
+            ],
+            "irrelevant_id": "571a7b2b10f8ca1400305098",
+            "irrelevant_context": "As Ashkenazi Jews moved away from Europe, mostly in the form of aliyah to Israel, or immigration to North America, and other English-speaking areas; and Europe (particularly France) and Latin America, the geographic isolation that gave rise to Ashkenazim has given way to mixing with other cultures, and with non-Ashkenazi Jews who, similarly, are no longer isolated in distinct geographic locales. Hebrew has replaced Yiddish as the primary Jewish language for many Ashkenazi Jews, although many Hasidic and Hareidi groups continue to use Yiddish in daily life. (There are numerous Ashkenazi Jewish anglophones and Russian-speakers as well, although English and Russian are not originally Jewish languages.)"
+        },
+        "572ffdb7947a6a140053cf03": {
+            "id": "572ffdb7947a6a140053cf03",
+            "question": "Who created the astrolabe?",
+            "context": "In astronomy, Mu\u1e25ammad ibn J\u0101bir al-\u1e24arr\u0101n\u012b al-Batt\u0101n\u012b improved the precision of the measurement of the precession of the Earth's axis. The corrections made to the geocentric model by al-Battani, Averroes, Nasir al-Din al-Tusi, Mu'ayyad al-Din al-'Urdi and Ibn al-Shatir were later incorporated into the Copernican heliocentric model. Heliocentric theories were also discussed by several other Muslim astronomers such as Al-Biruni, Al-Sijzi, Qotb al-Din Shirazi, and Najm al-D\u012bn al-Qazw\u012bn\u012b al-K\u0101tib\u012b. The astrolabe, though originally developed by the Greeks, was perfected by Islamic astronomers and engineers, and was subsequently brought to Europe.",
+            "answers": [
+                "the Greeks"
+            ],
+            "irrelevant_id": "57307593396df91900096123",
+            "irrelevant_context": "Relying exclusively on unedited machine translation, however, ignores the fact that communication in human language is context-embedded and that it takes a person to comprehend the context of the original text with a reasonable degree of probability. It is certainly true that even purely human-generated translations are prone to error; therefore, to ensure that a machine-generated translation will be useful to a human being and that publishable-quality translation is achieved, such translations must be reviewed and edited by a human."
+        },
+        "572c0480dfb02c14005c6b5f": {
+            "id": "572c0480dfb02c14005c6b5f",
+            "question": "Who argues that there are lots of supernatural things in the world?",
+            "context": "Pascal Boyer argues that while there is a wide array of supernatural concepts found around the world, in general, supernatural beings tend to behave much like people. The construction of gods and spirits like persons is one of the best known traits of religion. He cites examples from Greek mythology, which is, in his opinion, more like a modern soap opera than other religious systems. Bertrand du Castel and Timothy Jurgensen demonstrate through formalization that Boyer's explanatory model matches physics' epistemology in positing not directly observable entities as intermediaries. Anthropologist Stewart Guthrie contends that people project human features onto non-human aspects of the world because it makes those aspects more familiar. Sigmund Freud also suggested that god concepts are projections of one's father.",
+            "answers": [
+                "Pascal Boyer"
+            ],
+            "irrelevant_id": "570c22d96b8089140040fb4e",
+            "irrelevant_context": "Hoover began using wiretapping in the 1920s during Prohibition to arrest bootleggers. In the 1927 case Olmstead v. United States, in which a bootlegger was caught through telephone tapping, the United States Supreme Court ruled that FBI wiretaps did not violate the Fourth Amendment as unlawful search and seizure, as long as the FBI did not break into a person's home to complete the tapping. After Prohibition's repeal, Congress passed the Communications Act of 1934, which outlawed non-consensual phone tapping, but allowed bugging. In the 1939 case Nardone v. United States, the court ruled that due to the 1934 law, evidence the FBI obtained by phone tapping was inadmissible in court. After the 1967 case Katz v. United States overturned the 1927 case that had allowed bugging, Congress passed the Omnibus Crime Control Act, allowing public authorities to tap telephones during investigations as long as they obtain a warrant beforehand."
+        },
+        "5726a7695951b619008f7936": {
+            "id": "5726a7695951b619008f7936",
+            "question": "How can the location and amount of insects be changed?",
+            "context": "The term \"push-pull\" was established in 1987 as an approach for integrated pest management (IPM). This strategy uses a mixture of behavior-modifying stimuli to manipulate the distribution and abundance of insects. \"Push\" means the insects are repelled or deterred away from whatever resource that is being protected. \"Pull\" means that certain stimuli (semiochemical stimuli, pheromones, food additives, visual stimuli, genetically altered plants, etc.) are used to attract pests to trap crops where they will be killed. There are numerous different components involved in order to implement a Push-Pull Strategy in IPM.",
+            "answers": [
+                "behavior-modifying stimuli"
+            ],
+            "irrelevant_id": "5726b792dd62a815002e8de3",
+            "irrelevant_context": "State schools in Somerset are provided by three local education authorities: Bath and North East Somerset, North Somerset, and the larger Somerset County Council. All state schools are comprehensive. In some areas primary, infant and junior schools cater for ages four to eleven, after which the pupils move on to secondary schools. There is a three-tier system of first, middle and upper schools in the Cheddar Valley, and in West Somerset, while most other schools in the county use the two-tier system. Somerset has 30 state and 17 independent secondary schools; Bath and North East Somerset has 13 state and 5 independent secondary schools; and North Somerset has 10 state and 2 independent secondary schools, excluding sixth form colleges."
+        },
+        "56de2e934396321400ee2646": {
+            "id": "56de2e934396321400ee2646",
+            "question": "In what year did Mahbub ul Haq devise and launch the HDI?",
+            "context": "The origins of the HDI are found in the annual Development Reports of the United Nations Development Programme (UNDP). These were devised and launched by Pakistani economist Mahbub ul Haq in 1990 and had the explicit purpose \"to shift the focus of development economics from national income accounting to people-centered policies\". To produce the Human Development Reports, Mahbub ul Haq formed a group of development economists including Paul Streeten, Frances Stewart, Gustav Ranis, Keith Griffin, Sudhir Anand, and Meghnad Desai. Working alongside Nobel laureate Amartya Sen, they worked on capabilities and functions that provided the underlying conceptual framework. Haq was sure that a simple composite measure of human development was needed in order to convince the public, academics, and politicians that they can and should evaluate development not only by economic advances but also improvements in human well-being. Sen initially opposed this idea, but he soon went on to help Haq develop the Index. Sen was worried that it was going to be difficult to capture the full complexity of human capabilities in a single index, but Haq persuaded him that only a single number would shift the immediate attention of politicians from economic to human well-being.",
+            "answers": [
+                "1990"
+            ],
+            "irrelevant_id": "57283dd13acd2414000df7a3",
+            "irrelevant_context": "Along with four other scientists and various military personnel, von Neumann was included in the target selection committee responsible for choosing the Japanese cities of Hiroshima and Nagasaki as the first targets of the atomic bomb. Von Neumann oversaw computations related to the expected size of the bomb blasts, estimated death tolls, and the distance above the ground at which the bombs should be detonated for optimum shock wave propagation and thus maximum effect. The cultural capital Kyoto, which had been spared the bombing inflicted upon militarily significant cities, was von Neumann's first choice, a selection seconded by Manhattan Project leader General Leslie Groves. However, this target was dismissed by Secretary of War Henry L. Stimson."
+        },
+        "56f7e9f4a6d7ea1400e172b2": {
+            "id": "56f7e9f4a6d7ea1400e172b2",
+            "question": "An erroneous understanding of a fact or situation may only invalidate a state's consent to a treaty if what is also true about the erroneous understanding?",
+            "context": "A state's consent may be invalidated if there was an erroneous understanding of a fact or situation at the time of conclusion, which formed the \"essential basis\" of the state's consent. Consent will not be invalidated if the misunderstanding was due to the state's own conduct, or if the truth should have been evident.",
+            "answers": [
+                "formed the \"essential basis\" of the state's consent"
+            ],
+            "irrelevant_id": "56e874800b45c0140094cca8",
+            "irrelevant_context": "As of 2015, Bern's City Council is made up of two representatives of the SP (Social Democratic Party, of whom one is also the mayor), and one each of CVP (Christian Democratic Party), GB (Green Alliance of Berne), and FDP (FDP.The Liberals), giving the left parties a majority of three out of five seats. The last election was held on 25 November 2012."
+        },
+        "56de2995cffd8e1900b4b5ea": {
+            "id": "56de2995cffd8e1900b4b5ea",
+            "question": "What country's government, on which the US government was modeled, did not formally implement separation of powers?",
+            "context": "Strict separation of powers did not operate in The United Kingdom, the political structure of which served in most instances[citation needed] as a model for the government created by the U.S. Constitution.[citation needed] Under the UK Westminster system, based on parliamentary sovereignty and responsible government, Parliament (consisting of the Sovereign (King-in-Parliament), House of Lords and House of Commons) was the supreme lawmaking authority. The executive branch acted in the name of the King (\"His Majesty's Government\"), as did the judiciary. The King's Ministers were in most cases members of one of the two Houses of Parliament, and the Government needed to sustain the support of a majority in the House of Commons. One minister, the Lord Chancellor, was at the same time the sole judge in the Court of Chancery and the presiding officer in the House of Lords. Therefore, it may be seen that the three branches of British government often violated the strict principle of separation of powers, even though there were many occasions when the different branches of the government disagreed with each other. Some U.S. states did not observe a strict separation of powers in the 18th century. In New Jersey, the Governor also functioned as a member of the state's highest court and as the presiding officer of one house of the New Jersey Legislature. The President of Delaware was a member of the Court of Appeals; the presiding officers of the two houses of the state legislature also served in the executive department as Vice Presidents. In both Delaware and Pennsylvania, members of the executive council served at the same time as judges. On the other hand, many southern states explicitly required separation of powers. Maryland, Virginia, North Carolina and Georgia all kept the branches of government \"separate and distinct.\"",
+            "answers": [
+                "UK"
+            ],
+            "irrelevant_id": "56f8ef1c9e9bad19000a072b",
+            "irrelevant_context": "The change is evident in the reports of influential British travellers to the Balkans. In 1894, Sir Henry Norman, 1st Baronet, a journalist, travelled to the Far East, afterwards writing a book called The Peoples and Politics of the Far East, which came out in 1895. By \"Far East\" he meant Siberia, China, Japan, Korea, Siam and Malaya. As the book was a big success, he was off to the Balkan states with his wife in 1896 to develop detail for a sequel, The People and Politics of the Near East, which Scribners planned to publish in 1897. Mrs. Norman, a writer herself, wrote glowing letters of the home and person of Mme. Zakki, \"the wife of a Turkish cabinet minister,\" who, she said, was a cultivated woman living in a country home full of books. As for the natives of the Balkans, they were \"a semi-civilized people.\""
+        },
+        "5726563add62a815002e81e6": {
+            "id": "5726563add62a815002e81e6",
+            "question": "What was the English first name Farrokh Bulsara adopted?",
+            "context": "While attending Ealing Art College, Tim Staffell became friends with Farrokh Bulsara, a fellow student who had assumed the English name of Freddie. Bulsara felt that he and the band had the same tastes and soon became a keen fan of Smile. In late 1970, after Staffell left to join the band Humpy Bong, the remaining Smile members, encouraged by Bulsara, changed their name to \"Queen\" and continued working together. When asked about the name, Bulsara explained, \"I thought up the name Queen. It's just a name, but it's very regal obviously, and it sounds splendid. It's a strong name, very universal and immediate. It had a lot of visual potential and was open to all sorts of interpretations. I was certainly aware of gay connotations, but that was just one facet of it.\"",
+            "answers": [
+                "Freddie"
+            ],
+            "irrelevant_id": "5726b9e55951b619008f7bfe",
+            "irrelevant_context": "The first known European explorer to reach Bermuda was Spanish sea captain Juan de Berm\u00fadez in 1503, after whom the islands are named. He claimed the apparently uninhabited islands for the Spanish Empire. Paying two visits to the archipelago, Berm\u00fadez never landed on the islands, but did create a recognisable map of the archipelago. Shipwrecked Portuguese mariners are now thought to have been responsible for the 1543 inscription in Portuguese Rock (previously called Spanish Rock). Subsequent Spanish or other European parties are believed to have released pigs there, which had become feral and abundant on the island by the time European settlement began. In 1609, the English Virginia Company, which had established Jamestown in Virginia (a term originally applied to all of the North American continent) two years earlier, permanently settled Bermuda in the aftermath of a hurricane, when the crew and passengers of the Sea Venture steered the ship onto the surrounding reef to prevent its sinking, then landed ashore."
+        },
+        "57265b12f1498d1400e8dd06": {
+            "id": "57265b12f1498d1400e8dd06",
+            "question": "How many Indians helped build the infrastructure? ",
+            "context": "The city grew as the population did, coming up against the lake's waters. As the depth of the lake water fluctuated, Mexico City was subject to periodic flooding. A major labor draft, the desag\u00fce, compelled thousands of Indians over the colonial period to work on infrastructure to prevent flooding. Floods were not only an inconvenience but also a health hazard, since during flood periods human waste polluted the city's streets. By draining the area, the mosquito population dropped as did the frequency of the diseases they spread. However, draining the wetlands also changed the habitat for fish and birds and the areas accessible for Indian cultivation close to the capital.",
+            "answers": [
+                "thousands"
+            ],
+            "irrelevant_id": "56e7b55437bdd419002c43be",
+            "irrelevant_context": "The AFL currently runs as under the single-entity model, with the league owning the rights to the teams, players, and coaches. The single-entity model was adopted in 2010 when the league emerged from bankruptcy. Prior to that, the league followed the franchise model more common in North American professional sports leagues; each team essentially operated as its own business and the league itself was a separate entity which in exchange for franchise fees paid by the team owners provided rules, officials, scheduling and the other elements of organizational structure. A pool of money is allotted to teams to aid in travel costs."
+        },
+        "5733b06ad058e614000b605c": {
+            "id": "5733b06ad058e614000b605c",
+            "question": "Where is the main base for the Tajikistan air force?",
+            "context": "Russian border troops were stationed along the Tajik\u2013Afghan border until summer 2005. Since the September 11, 2001 attacks, French troops have been stationed at the Dushanbe Airport in support of air operations of NATO's International Security Assistance Force in Afghanistan. United States Army and Marine Corps personnel periodically visit Tajikistan to conduct joint training missions of up to several weeks duration. The Government of India rebuilt the Ayni Air Base, a military airport located 15 km southwest of Dushanbe, at a cost of $70 million, completing the repairs in September 2010. It is now the main base of the Tajikistan air force. There have been talks with Russia concerning use of the Ayni facility, and Russia continues to maintain a large base on the outskirts of Dushanbe.",
+            "answers": [
+                "t located 15 km southwest of Dushanbe"
+            ],
+            "irrelevant_id": "5726b0e15951b619008f7aa5",
+            "irrelevant_context": "The study of plants is vital because they underpin almost all animal life on Earth by generating a large proportion of the oxygen and food that provide humans and other organisms with aerobic respiration with the chemical energy they need to exist. Plants, algae and cyanobacteria are the major groups of organisms that carry out photosynthesis, a process that uses the energy of sunlight to convert water and carbon dioxide into sugars that can be used both as a source of chemical energy and of organic molecules that are used in the structural components of cells. As a by-product of photosynthesis, plants release oxygen into the atmosphere, a gas that is required by nearly all living things to carry out cellular respiration. In addition, they are influential in the global carbon and water cycles and plant roots bind and stabilise soils, preventing soil erosion. Plants are crucial to the future of human society as they provide food, oxygen, medicine, and products for people, as well as creating and preserving soil."
+        },
+        "56f8e0bc9b226e1400dd116c": {
+            "id": "56f8e0bc9b226e1400dd116c",
+            "question": "The terms \"Near East\" and \"Far East\" referring to areas of the globe in or contiguous to the former British Empire and the neighboring colonies fit together as a pair based on what? ",
+            "context": "The geographical terms \"Near East\" and \"Far East\" referring to areas of the globe in or contiguous to the former British Empire and the neighboring colonies of the Dutch, Portuguese, Spanish and Germans, fit together as a pair based on the opposites of far and near, suggesting that they were innovated together. They appear together in the journals of the mid-19th century. Both terms were used before then with local British and American meanings: the near or far east of a field, village or shire.",
+            "answers": [
+                "the opposites of far and near"
+            ],
+            "irrelevant_id": "56ddec6666d3e219004dae12",
+            "irrelevant_context": "In 1630, Pope Urban VIII decreed their title to be Eminence (previously, it had been \"illustrissimo\" and \"reverendissimo\")  and decreed that their secular rank would equate to Prince, making them secondary only to the Pope and crowned monarchs."
+        },
+        "572f2a9bb2c2fd1400567f54": {
+            "id": "572f2a9bb2c2fd1400567f54",
+            "question": "What did Newton's philosophy do when applied to life, ",
+            "context": "Following the Enlightenment's ideas, the reformers looked to the Scientific Revolution and industrial progress to solve the social problems which arose with the Industrial Revolution. Newton's natural philosophy combined a mathematics of axiomatic proof with the mechanics of physical observation, yielding a coherent system of verifiable predictions and replacing a previous reliance on revelation and inspired truth. Applied to public life, this approach yielded several successful campaigns for changes in social policy.",
+            "answers": [
+                "yielded several successful campaigns for changes in social policy."
+            ],
+            "irrelevant_id": "56e7a89837bdd419002c42e0",
+            "irrelevant_context": "Microsoft Windows keeps the system real-time clock in local time. This causes several problems, including compatibility when multi booting with operating systems that set the clock to UTC, and double-adjusting the clock when multi booting different Windows versions, such as with a rescue boot disk. This approach is a problem even in Windows-only systems: there is no support for per-user timezone settings, only a single system-wide setting. In 2008 Microsoft hinted that future versions of Windows will partially support a Windows registry entry RealTimeIsUniversal that had been introduced many years earlier, when Windows NT supported RISC machines with UTC clocks, but had not been maintained. Since then at least two fixes related to this feature have been published by Microsoft."
+        },
+        "571a81c14faf5e1900b8a9f4": {
+            "id": "571a81c14faf5e1900b8a9f4",
+            "question": "Levels of the Eu 19 (R1a) chromosome were seen in what percentage of the Ashkenazi Jewish population?",
+            "context": "A 2001 study by Nebel et al. showed that both Ashkenazi and Sephardic Jewish populations share the same overall paternal Near Eastern ancestries. In comparison with data available from other relevant populations in the region, Jews were found to be more closely related to groups in the north of the Fertile Crescent. The authors also report on Eu 19 (R1a) chromosomes, which are very frequent in Central and Eastern Europeans (54%\u201360%) at elevated frequency (12.7%) in Ashkenazi Jews. They hypothesized that the differences among Ashkenazim Jews could reflect low-level gene flow from surrounding European populations and/or genetic drift during isolation. A later 2005 study by Nebel et al., found a similar level of 11.5% of male Ashkenazim belonging to R1a1a (M17+), the dominant Y-chromosome haplogroup in Central and Eastern Europeans.",
+            "answers": [
+                "12.7%"
+            ],
+            "irrelevant_id": "572e9d0bcb0c0d14000f1366",
+            "irrelevant_context": "In recent years significant quantities of offshore natural gas have been discovered in the area known as Aphrodite in Cyprus' exclusive economic zone (EEZ), about 175 kilometres (109 miles) south of Limassol at 33\u00b05\u203240\u2033N and 32\u00b059\u20320\u2033E. However, Turkey's offshore drilling companies have accessed both natural gas and oil resources since 2013. Cyprus demarcated its maritime border with Egypt in 2003, and with Lebanon in 2007. Cyprus and Israel demarcated their maritime border in 2010, and in August 2011, the US-based firm Noble Energy entered into a production-sharing agreement with the Cypriot government regarding the block's commercial development."
+        },
+        "5730246604bcaa1900d77217": {
+            "id": "5730246604bcaa1900d77217",
+            "question": "Is the grass nake or the smooth snake native to Ireland?",
+            "context": "Few species of reptiles or amphibians are found in Great Britain or Ireland. Only three snakes are native to Great Britain: the common European adder, the grass snake and the smooth snake; none are native to Ireland. In general, Great Britain has slightly more variation and native wild life, with weasels, polecats, wildcats, most shrews, moles, water voles, roe deer and common toads also being absent from Ireland. This pattern is also true for birds and insects. Notable exceptions include the Kerry slug and certain species of wood lice native to Ireland but not Great Britain.",
+            "answers": [
+                "none are native to Ireland"
+            ],
+            "irrelevant_id": "56df51038bc80c19004e4a73",
+            "irrelevant_context": "Lighting fixtures come in a wide variety of styles for various functions. The most important functions are as a holder for the light source, to provide directed light and to avoid visual glare. Some are very plain and functional, while some are pieces of art in themselves. Nearly any material can be used, so long as it can tolerate the excess heat and is in keeping with safety codes."
+        },
+        "571a8c844faf5e1900b8aa6a": {
+            "id": "571a8c844faf5e1900b8aa6a",
+            "question": "As a child, Athanasius imitated what ritual?",
+            "context": "Rufinus relates a story that as Bishop Alexander stood by a window, he watched boys playing on the seashore below, imitating the ritual of Christian baptism. He sent for the children and discovered that one of the boys (Athanasius) had acted as bishop. After questioning Athanasius, Bishop Alexander informed him that the baptisms were genuine, as both the form and matter of the sacrament had been performed through the recitation of the correct words and the administration of water, and that he must not continue to do this as those baptized had not been properly catechized. He invited Athanasius and his playfellows to prepare for clerical careers.",
+            "answers": [
+                "ritual of Christian baptism"
+            ],
+            "irrelevant_id": "57277f0af1498d1400e8f9d8",
+            "irrelevant_context": "The Strumica Carnival (Macedonian: \u0421\u0442\u0440\u0443\u043c\u0438\u0447\u043a\u0438 \u041a\u0430\u0440\u043d\u0435\u0432\u0430\u043b, translated Strumichki Karneval) has been held since at least 1670, when the Turkish author Evlija Chelebija wrote while staying there, \"I came into a town located in the foothills of a high hillock and what I saw that night was masked people running house\u2013to\u2013house, with laughter, scream and song.\" The Carnival took an organized form in 1991; in 1994, Strumica became a member of FECC and in 1998 hosted the XVIII International Congress of Carnival Cities. The Strumica Carnival opens on a Saturday night at a masked ball where the Prince and Princess are chosen; the main Carnival night is on Tuesday, when masked participants (including groups from abroad) compete in various subjects. As of 2000, the Festival of Caricatures and Aphorisms has been held as part of Strumica's Carnival celebrations."
+        },
+        "5725f02bec44d21400f3d766": {
+            "id": "5725f02bec44d21400f3d766",
+            "question": "Who said \"The Yavanas, O king, are all-knowing; the Suras are particularly so.\"?",
+            "context": "Several references in Indian literature praise the knowledge of the Yavanas or the Greeks. The Mahabharata compliments them as \"the all-knowing Yavanas\" (sarvajnaa yavanaa) i.e. \"The Yavanas, O king, are all-knowing; the Suras are particularly so. The mlecchas are wedded to the creations of their own fancy.\" and the creators of flying machines that are generally called vimanas. The \"Brihat-Samhita\" of the mathematician Varahamihira says: \"The Greeks, though impure, must be honored since they were trained in sciences and therein, excelled others.....\" .",
+            "answers": [
+                "The Mahabharata"
+            ],
+            "irrelevant_id": "572651155951b619008f6fb8",
+            "irrelevant_context": "In 2013 the United States Patent & Trademark Office approximated that the worth of intellectual property to the U.S. economy is more than US$5 trillion and creates employment for an estimated 18 million American people. The value of intellectual property is considered similarly high in other developed nations, such as those in the European Union. In the UK, IP has become a recognised asset class for use in pension-led funding and other types of business finance. However, in 2013, the UK Intellectual Property Office stated: \"There are millions of intangible business assets whose value is either not being leveraged at all, or only being leveraged inadvertently\"."
+        },
+        "5728d8654b864d1900164f63": {
+            "id": "5728d8654b864d1900164f63",
+            "question": "What was first used as a cure for asthma?",
+            "context": "In 1873, one of the first papers in modern medicine on the subject tried to explain the pathophysiology of the disease while one in 1872, concluded that asthma can be cured by rubbing the chest with chloroform liniment. Medical treatment in 1880, included the use of intravenous doses of a drug called pilocarpin. In 1886, F.H. Bosworth theorized a connection between asthma and hay fever. Epinephrine was first referred to in the treatment of asthma in 1905. Oral corticosteroids began to be used for this condition in the 1950s while inhaled corticosteroids and selective short acting beta agonist came into wide use in the 1960s.",
+            "answers": [
+                "by rubbing the chest with chloroform liniment"
+            ],
+            "irrelevant_id": "5727691df1498d1400e8f78a",
+            "irrelevant_context": "People with prolonged, frequent, or close contact with people with TB are at particularly high risk of becoming infected, with an estimated 22% infection rate. A person with active but untreated tuberculosis may infect 10\u201315 (or more) other people per year. Transmission should occur from only people with active TB \u2013 those with latent infection are not thought to be contagious. The probability of transmission from one person to another depends upon several factors, including the number of infectious droplets expelled by the carrier, the effectiveness of ventilation, the duration of exposure, the virulence of the M. tuberculosis strain, the level of immunity in the uninfected person, and others. The cascade of person-to-person spread can be circumvented by segregating those with active (\"overt\") TB and putting them on anti-TB drug regimens. After about two weeks of effective treatment, subjects with nonresistant active infections generally do not remain contagious to others. If someone does become infected, it typically takes three to four weeks before the newly infected person becomes infectious enough to transmit the disease to others."
+        },
+        "5725c41889a1e219009abe2e": {
+            "id": "5725c41889a1e219009abe2e",
+            "question": "What percent are Jewish intermarriage rates at?",
+            "context": "Israel was established as a homeland for the Jewish people and is often referred to as a Jewish state. The country's Law of Return grants all Jews and those of Jewish ancestry the right to Israeli citizenship. Over three quarters, or 75.5%, of the population are Jews from a diversity of Jewish backgrounds. Around 4% of Israelis (300,000), ethnically defined as \"others\", are Russian descendants of Jewish origin or family who are not Jewish according to rabbinical law, but were eligible for Israeli citizenship under the Law of Return. Approximately 75% of Israeli Jews are born in Israel, 17% are immigrants from Europe and the Americas, and 8% are immigrants from Asia and Africa (including the Arab World). Jews from Europe and the former Soviet Union and their descendants born in Israel, including Ashkenazi Jews, constitute approximately 50% of Jewish Israelis. Jews who left or fled Arab and Muslim countries and their descendants, including both Mizrahi and Sephardi Jews, form most of the rest of the Jewish population. Jewish intermarriage rates run at over 35% and recent studies suggest that the percentage of Israelis descended from both Sephardi and Ashkenazi Jews increases by 0.5 percent every year, with over 25% of school children now originating from both communities.",
+            "answers": [
+                "35%"
+            ],
+            "irrelevant_id": "56de22b84396321400ee25db",
+            "irrelevant_context": "An example of mutual symbiosis is the relationship between the ocellaris clownfish that dwell among the tentacles of Ritteri sea anemones. The territorial fish protects the anemone from anemone-eating fish, and in turn the stinging tentacles of the anemone protect the clownfish from its predators. A special mucus on the clownfish protects it from the stinging tentacles."
+        },
+        "57251b2c0a492a1900435703": {
+            "id": "57251b2c0a492a1900435703",
+            "question": "How are oaths taken?",
+            "context": "The idea of Masonic brotherhood probably descends from a 16th-century legal definition of a brother as one who has taken an oath of mutual support to another. Accordingly, Masons swear at each degree to keep the contents of that degree secret, and to support and protect their brethren unless they have broken the law. In most Lodges the oath or obligation is taken on a Volume of Sacred Law, whichever book of divine revelation is appropriate to the religious beliefs of the individual brother (usually the Bible in the Anglo-American tradition). In Progressive continental Freemasonry, books other than scripture are permissible, a cause of rupture between Grand Lodges.",
+            "answers": [
+                "on a Volume of Sacred Law"
+            ],
+            "irrelevant_id": "5706402075f01819005e7abf",
+            "irrelevant_context": "Summers are typically warm and humid with a July daily average of 75.6 \u00b0F (24.2 \u00b0C). During this time, the city gets a sea breeze off the ocean that often makes daytime temperatures much cooler than inland areas, making Atlantic City a prime place for beating the summer heat from June through September. Average highs even just a few miles west of Atlantic City exceed 85 \u00b0F (29 \u00b0C) in July. Near the coast, temperatures reach or exceed 90 \u00b0F (32 \u00b0C) on an average of only 6.8 days a year, but this reaches 21 days at nearby Atlantic City Int'l.[a] Winters are cool, with January averaging 35.5 \u00b0F (2 \u00b0C). Spring and autumn are erratic, although they are usually mild with low humidity. The average window for freezing temperatures is November 20 to March 25, allowing a growing season of 239 days. Extreme temperatures range from \u22129 \u00b0F (\u221223 \u00b0C) on February 9, 1934 to 104 \u00b0F (40 \u00b0C) on August 7, 1918.[b]"
+        },
+        "5726ad55f1498d1400e8e6e5": {
+            "id": "5726ad55f1498d1400e8e6e5",
+            "question": "What year did the Crimean War end?",
+            "context": "The Crimean War was a military conflict fought between October 1853 \u2013 March 1856 in which Russia lost to an alliance of France, the United Kingdom, the Ottoman Empire, and Sardinia. The immediate cause involved the rights of Christian minorities in the Holy Land, which was controlled by the Ottoman Empire. The French promoted the rights of Catholics, while Russia promoted those of the Eastern Orthodox Christians. The longer-term causes involved the decline of the Ottoman Empire and the unwillingness of the United Kingdom and France to allow Russia to gain territory and power at Ottoman expense. It has widely been noted that the causes, in one case involving an argument over a key, have never revealed a \"greater confusion of purpose\", yet led to a war noted for its \"notoriously incompetent international butchery.\"",
+            "answers": [
+                "1856"
+            ],
+            "irrelevant_id": "56e13eb6cd28a01900c676ed",
+            "irrelevant_context": "The median household income in Boston was $51,739, while the median income for a family was $61,035. Full-time year-round male workers had a median income of $52,544 versus $46,540 for full-time year-round female workers. The per capita income for the city was $33,158. 21.4% of the population and 16.0% of families are below the poverty line. Of the total population, 28.8% of those under the age of 18 and 20.4% of those 65 and older were living below the poverty line."
+        },
+        "57314b13497a881900248d69": {
+            "id": "57314b13497a881900248d69",
+            "question": "What color gowns are generally worn by recent Doctors of Philosophy at Oxford?",
+            "context": "Red is the color most commonly associated with joy and well being. It is the color of celebration and ceremony. A red carpet is often used to welcome distinguished guests. Red is also the traditional color of seats in opera houses and theaters. Scarlet academic gowns are worn by new Doctors of Philosophy at degree ceremonies at Oxford University and other schools. In China, it is considered the color of good fortune and prosperity, and it is the color traditionally worn by brides. In Christian countries, it is the color traditionally worn at Christmas by Santa Claus, because in the 4th century the historic Saint Nicholas was the Greek Christian Bishop of Myra, in modern-day Turkey, and bishops then dressed in red.",
+            "answers": [
+                "Scarlet"
+            ],
+            "irrelevant_id": "56f8deb99b226e1400dd1147",
+            "irrelevant_context": "Guinea-Bissau has started to show some economic advances after a pact of stability was signed by the main political parties of the country, leading to an IMF-backed structural reform program. The key challenges for the country in the period ahead are to achieve fiscal discipline, rebuild public administration, improve the economic climate for private investment, and promote economic diversification. After the country became independent from Portugal in 1974 due to the Portuguese Colonial War and the Carnation Revolution, the rapid exodus of the Portuguese civilian, military, and political authorities resulted in considerable damage to the country's economic infrastructure, social order, and standard of living."
+        },
+        "570a71dd6d058f1900182e70": {
+            "id": "570a71dd6d058f1900182e70",
+            "question": "In what decade did sociologists focus on the social relevance of emotion?",
+            "context": "In the 1990s, sociologists focused on different aspects of specific emotions and how these emotions were socially relevant. For Cooley (1992), pride and shame were the most important emotions that drive people to take various social actions. During every encounter, he proposed that we monitor ourselves through the \"looking glass\" that the gestures and reactions of others provide. Depending on these reactions, we either experience pride or shame and this results in particular paths of action. Retzinger (1991) conducted studies of married couples who experienced cycles of rage and shame. Drawing predominantly on Goffman and Cooley's work, Scheff (1990) developed a micro sociological theory of the social bond. The formation or disruption of social bonds is dependent on the emotions that people experience during interactions.",
+            "answers": [
+                "1990s"
+            ],
+            "irrelevant_id": "56ea9f495a205f1900d6d395",
+            "irrelevant_context": "In the context of political corruption, a bribe may involve a payment given to a government official in exchange of his use of official powers. Bribery requires two participants: one to give the bribe, and one to take it. Either may initiate the corrupt offering; for example, a customs official may demand bribes to let through allowed (or disallowed) goods, or a smuggler might offer bribes to gain passage. In some countries the culture of corruption extends to every aspect of public life, making it extremely difficult for individuals to operate without resorting to bribes. Bribes may be demanded in order for an official to do something he is already paid to do. They may also be demanded in order to bypass laws and regulations. In addition to their role in private financial gain, bribes are also used to intentionally and maliciously cause harm to another (i.e. no financial incentive).[citation needed] In some developing nations, up to half of the population has paid bribes during the past 12 months."
+        },
+        "5725cd5838643c19005acd35": {
+            "id": "5725cd5838643c19005acd35",
+            "question": "What years did Queen Teutra reign?",
+            "context": "The west Balkan coast was inhabited by various Illyrian tribes and kingdoms such as the kingdom of the Dalmatae and of the Ardiaei, who often engaged in piracy under Queen Teuta (reigned 231 BC to 227 BCE). Further inland was the Illyrian Paeonian Kingdom and the tribe of the Agrianes which covers most of the modern republic of Macedonia. Illyrians on the coast of the Adriatic were under the effects and influence of Hellenisation and some tribes adopted Greek, becoming bilingual due to their proximity to the Greek colonies in Illyria. Illyrians imported weapons and armor from the Ancient Greeks (such as the Illyrian type helmet, originally a Greek type) and also adopted the ornamentation of Ancient Macedon on their shields and their war belts (a single one has been found, dated 3rd century BC at modern Selce e Poshtme part of Macedon at the time under Philip V of Macedon).",
+            "answers": [
+                "231 BC to 227 BCE"
+            ],
+            "irrelevant_id": "572768c8dd62a815002e9c62",
+            "irrelevant_context": "Carnival was introduced by Portuguese settlers. The celebration is celebrated on each of the archipelago's nine inhabited islands. In Mindelo, S\u00e3o Vicente groups challenge each other for a yearly prize. It has imported various Brazilian carnival traditions. The celebration in S\u00e3oNicolau is more traditional, where established groups parade through the Ribeira Brava, gathering in the town square, although it has adopted drums, floats and costumes from Brazil. In S\u00e3o Nicolau three groups, Copa Cabana, Estrela Azul and Brilho Da Zona constructs a painted float using fire, newspaper for the mold, iron and steel to for structure. Carnival S\u00e3o Nicolau is celebrated over three days: dawn Saturday, Sunday afternoon, and Tuesday."
+        },
+        "572940edaf94a219006aa1f3": {
+            "id": "572940edaf94a219006aa1f3",
+            "question": "What does a description of a wanted individual include beyond their racial category?",
+            "context": "In an attempt to provide general descriptions that may facilitate the job of law enforcement officers seeking to apprehend suspects, the United States FBI employs the term \"race\" to summarize the general appearance (skin color, hair texture, eye shape, and other such easily noticed characteristics) of individuals whom they are attempting to apprehend. From the perspective of law enforcement officers, it is generally more important to arrive at a description that will readily suggest the general appearance of an individual than to make a scientifically valid categorization by DNA or other such means. Thus, in addition to assigning a wanted individual to a racial category, such a description will include: height, weight, eye color, scars and other distinguishing characteristics.",
+            "answers": [
+                "height, weight, eye color, scars and other distinguishing characteristics."
+            ],
+            "irrelevant_id": "56d37c5a59d6e41400146504",
+            "irrelevant_context": "The final two contestants were Lee DeWyze and Bowersox. DeWyze was declared the winner during the May 26 finale. No new song was used as coronation song this year; instead, the two finalists each released a cover song \u2013 DeWyze chose U2's \"Beautiful Day\", and Bowersox chose Patty Griffin's \"Up to the Mountain\". This is the first season where neither finalist achieved significant album sales."
+        },
+        "56e0856a7aa994140058e5a6": {
+            "id": "56e0856a7aa994140058e5a6",
+            "question": "Saint Helena is a member of what kind of association?",
+            "context": "Sports played on the island include football, cricket, volleyball, tennis, golf, motocross, shooting sports and yachting. Saint Helena has sent teams to a number of Commonwealth Games. Saint Helena is a member of the International Island Games Association. The Saint Helena cricket team made its debut in international cricket in Division Three of the African region of the World Cricket League in 2011.",
+            "answers": [
+                "International Island Games Association"
+            ],
+            "irrelevant_id": "570b2f83ec8fbc190045b8cc",
+            "irrelevant_context": "While the original Xbox sold poorly in Japan, selling just 2 million units while it was on the market (between 2002 and 2005),[citation needed] the Xbox 360 sold even more poorly, selling only 1.5 million units from 2005 to 2011. Edge magazine reported in August 2011 that initially lackluster and subsequently falling sales in Japan, where Microsoft had been unable to make serious inroads into the dominance of domestic rivals Sony and Nintendo, had led to retailers scaling down and in some cases discontinuing sales of the Xbox 360 completely."
+        },
+        "5729b86a3f37b31900478543": {
+            "id": "5729b86a3f37b31900478543",
+            "question": "What was the name of the company that IBM Micro Electronics was offloaded to?",
+            "context": "IBM acquired Kenexa (2012) and SPSS (2009) and PwC's consulting business (2002), spinning off companies like printer manufacturer Lexmark (1991), and selling off product lines like its personal computer and x86 server businesses to Lenovo (2005, 2014). In 2014, IBM announced that it would go \"fabless\" by offloading IBM Micro Electronics semiconductor manufacturing to GlobalFoundries, a leader in advanced technology manufacturing, citing that semiconductor manufacturing is a capital-intensive business which is challenging to operate without scale. This transition had progressed as of early 2015[update].",
+            "answers": [
+                "GlobalFoundries"
+            ],
+            "irrelevant_id": "5726f649708984140094d71b",
+            "irrelevant_context": "Liber Aboali Abincine de Anima in arte Alchemiae was the most influential, having influenced later medieval chemists and alchemists such as Vincent of Beauvais. However Anawati argues (following Ruska) that the de Anima is a fake by a Spanish author. Similarly the Declaratio is believed not to be actually by Avicenna. The third work (The Book of Minerals) is agreed to be Avicenna's writing, adapted from the Kitab al-Shifa (Book of the Remedy). Ibn Sina classified minerals into stones, fusible substances, sulfurs, and salts, building on the ideas of Aristotle and Jabir. The epistola de Re recta is somewhat less sceptical of alchemy; Anawati argues that it is by Avicenna, but written earlier in his career when he had not yet firmly decided that transmutation was impossible."
+        },
+        "572ea6d5cb0c0d14000f13f3": {
+            "id": "572ea6d5cb0c0d14000f13f3",
+            "question": "Why didn't California officially become  bilingual?",
+            "context": "Through the force of sheer numbers, the English-speaking American settlers entering the Southwest established their language, culture, and law as dominant, to the extent it fully displaced Spanish in the public sphere; this is why the United States never developed bilingualism as Canada did. For example, the California constitutional convention of 1849 had eight Californio participants; the resulting state constitution was produced in English and Spanish, and it contained a clause requiring all published laws and regulations to be published in both languages. The constitutional convention of 1872 had no Spanish-speaking participants; the convention's English-speaking participants felt that the state's remaining minority of Spanish-speakers should simply learn English; and the convention ultimately voted 46-39 to revise the earlier clause so that all official proceedings would henceforth be published only in English.",
+            "answers": [
+                "the convention's English-speaking participants felt that the state's remaining minority of Spanish-speakers should simply learn English"
+            ],
+            "irrelevant_id": "57266d4d5951b619008f7261",
+            "irrelevant_context": "In its first century and half, the EIC used a few hundred soldiers as guards. The great expansion came after 1750, when it had 3000 regular troops. By 1763, it had 26,000; by 1778, it had 67,000. It recruited largely Indian troops, and trained them along European lines. The company, fresh from a colossal victory, and with the backing of its own private well-disciplined and experienced army, was able to assert its interests in the Carnatic region from its base at Madras and in Bengal from Calcutta, without facing any further obstacles from other colonial powers."
+        },
+        "56f83111aef2371900625ed9": {
+            "id": "56f83111aef2371900625ed9",
+            "question": "What did powerful leaders of szlachta sought?",
+            "context": "For many centuries, wealthy and powerful members of the szlachta sought to gain legal privileges over their peers. Few szlachta were wealthy enough to be known as magnates (karmazyni\u2014the \"Crimsons\", from the crimson colour of their boots). A proper magnate should be able to trace noble ancestors back for many generations and own at least 20 villages or estates. He should also hold a major office in the Commonwealth.",
+            "answers": [
+                "gain legal privileges over their peers"
+            ],
+            "irrelevant_id": "572a69cefed8de19000d5bfe",
+            "irrelevant_context": "Dietary deficiencies in developing countries can be combated by promoting better eating practices. Supplementation with vitamin A and/or zinc. Zinc supplementation proved successful showing a significant decrease in the incidence of diarrheal disease compared to a control group. The majority of the literature suggests that vitamin A supplementation is advantageous in reducing disease incidence. Development of a supplementation strategy should take into consideration the fact that vitamin A supplementation was less effective in reducing diarrhea incidence when compared to vitamin A and zinc supplementation, and that the latter strategy was estimated to be significantly more cost effective."
+        },
+        "572947721d04691400779244": {
+            "id": "572947721d04691400779244",
+            "question": "What is the average cost of electricity from a hydro plant larger than 10 megawatts?",
+            "context": "Hydropower is produced in 150 countries, with the Asia-Pacific region generating 32 percent of global hydropower in 2010. China is the largest hydroelectricity producer, with 721 terawatt-hours of production in 2010, representing around 17 percent of domestic electricity use. There are now three hydroelectricity plants larger than 10 GW: the Three Gorges Dam in China, Itaipu Dam across the Brazil/Paraguay border, and Guri Dam in Venezuela. The cost of hydroelectricity is low, making it a competitive source of renewable electricity. The average cost of electricity from a hydro plant larger than 10 megawatts is 3 to 5 U.S. cents per kilowatt-hour.",
+            "answers": [
+                "3 to 5 U.S. cents per kilowatt-hour"
+            ],
+            "irrelevant_id": "572c929ef182dd1900d7c7db",
+            "irrelevant_context": "The Tennessee income tax does not apply to salaries and wages, but most income from stock, bonds and notes receivable is taxable. All taxable dividends and interest which exceed the $1,250 single exemption or the $2,500 joint exemption are taxable at the rate of 6%. The state's sales and use tax rate for most items is 7%. Food is taxed at a lower rate of 5.25%, but candy, dietary supplements and prepared food are taxed at the full 7% rate. Local sales taxes are collected in most jurisdictions, at rates varying from 1.5% to 2.75%, bringing the total sales tax to between 8.5% and 9.75%, one of the highest levels in the nation. Intangible property is assessed on the shares of stock of stockholders of any loan company, investment company, insurance company or for-profit cemetery companies. The assessment ratio is 40% of the value multiplied by the tax rate for the jurisdiction. Tennessee imposes an inheritance tax on decedents' estates that exceed maximum single exemption limits ($1,000,000 for deaths in 2006 and thereafter)."
+        },
+        "570e5b3b0dc6ce1900204f8b": {
+            "id": "570e5b3b0dc6ce1900204f8b",
+            "question": "Do the Docklands, St. Kilda Road, and Southbank areas feature high-density or low-density forms?",
+            "context": "Melbourne is typical of Australian capital cities in that after the turn of the 20th century, it expanded with the underlying notion of a 'quarter acre home and garden' for every family, often referred to locally as the Australian Dream. This, coupled with the popularity of the private automobile after 1945, led to the auto-centric urban structure now present today in the middle and outer suburbs. Much of metropolitan Melbourne is accordingly characterised by low density sprawl, whilst its inner city areas feature predominantly medium-density, transit-oriented urban forms. The city centre, Docklands, St. Kilda Road and Southbank areas feature high-density forms.",
+            "answers": [
+                "high-density"
+            ],
+            "irrelevant_id": "572fe399a23a5019007fcae4",
+            "irrelevant_context": "Many assembled PCBs are static sensitive, and therefore must be placed in antistatic bags during transport. When handling these boards, the user must be grounded (earthed). Improper handling techniques might transmit an accumulated static charge through the board, damaging or destroying components. Even bare boards are sometimes static sensitive. Traces have become so fine that it's quite possible to blow an etch off the board (or change its characteristics) with a static charge. This is especially true on non-traditional PCBs such as MCMs and microwave PCBs."
+        },
+        "5726f4ddf1498d1400e8f0f1": {
+            "id": "5726f4ddf1498d1400e8f0f1",
+            "question": "Napoleon created a relationship with the art community to commission work specifically targeting what segment of his audience?",
+            "context": "Napoleon's use of propaganda contributed to his rise to power, legitimated his r\u00e9gime, and established his image for posterity. Strict censorship, controlling aspects of the press, books, theater, and art, was part of his propaganda scheme, aimed at portraying him as bringing desperately wanted peace and stability to France. The propagandistic rhetoric changed in relation to events and to the atmosphere of Napoleon's reign, focusing first on his role as a general in the army and identification as a soldier, and moving to his role as emperor and a civil leader. Specifically targeting his civilian audience, Napoleon fostered an important, though uneasy, relationship with the contemporary art community, taking an active role in commissioning and controlling different forms of art production to suit his propaganda goals.",
+            "answers": [
+                "civilian"
+            ],
+            "irrelevant_id": "572fe9e4b2c2fd14005685cb",
+            "irrelevant_context": "The ordinary half-wave dipole is probably the most widely used antenna design. This consists of two 1\u20444-wavelength elements arranged end-to-end, and lying along essentially the same axis (or collinear), each feeding one side of a two-conductor transmission wire. The physical arrangement of the two elements places them 180 degrees out of phase, which means that at any given instant one of the elements is driving current into the transmission line while the other is pulling it out. The monopole antenna is essentially one half of the half-wave dipole, a single 1\u20444-wavelength element with the other side connected to ground or an equivalent ground plane (or counterpoise). Monopoles, which are one-half the size of a dipole, are common for long-wavelength radio signals where a dipole would be impractically large. Another common design is the folded dipole, which is essentially two dipoles placed side-by-side and connected at their ends to make a single one-wavelength antenna."
+        },
+        "56f8dbb99e9bad19000a060a": {
+            "id": "56f8dbb99e9bad19000a060a",
+            "question": "What is one example of horizontal gene transfer in eukaryotes?",
+            "context": "Horizontal gene transfer refers to the transfer of genetic material through a mechanism other than reproduction. This mechanism is a common source of new genes in prokaryotes, sometimes thought to contribute more to genetic variation than gene duplication. It is a common means of spreading antibiotic resistance, virulence, and adaptive metabolic functions. Although horizontal gene transfer is rare in eukaryotes, likely examples have been identified of protist and alga genomes containing genes of bacterial origin.",
+            "answers": [
+                "alga genomes containing genes of bacterial origin"
+            ],
+            "irrelevant_id": "57323080e17f3d1400422701",
+            "irrelevant_context": "With the abatement of persecution, St. Jerome acknowledged the Empire as a bulwark against evil but insisted that \"imperial honours\" were contrary to Christian teaching. His was an authoritative but minority voice: most Christians showed no qualms in the veneration of even \"pagan\" emperors. The peace of the emperors was the peace of God; as far as the Church was concerned, internal dissent and doctrinal schism were a far greater problem. The solution came from a hitherto unlikely source: as pontifex maximus Constantine I favoured the \"Catholic Church of the Christians\" against the Donatists because:"
+        },
+        "5726bbc15951b619008f7c57": {
+            "id": "5726bbc15951b619008f7c57",
+            "question": "How many magnet schools are there in Raleigh?",
+            "context": "Public schools in Raleigh are operated by the Wake County Public School System. Observers have praised the Wake County Public School System for its innovative efforts to maintain a socially, economically and racial balanced system by using income as a prime factor in assigning students to schools. Raleigh is home to three magnet high schools and three high schools offering the International Baccalaureate program. There are four early college high schools in Raleigh. Raleigh also has two alternative high schools.",
+            "answers": [
+                "three"
+            ],
+            "irrelevant_id": "570e73c20dc6ce19002050a2",
+            "irrelevant_context": "Satyagraha, an opera by Philip Glass, uses texts from the Bhagavad Gita, sung in Sanskrit. The closing credits of The Matrix Revolutions has a prayer from the Brihadaranyaka Upanishad. The song \"Cyber-raga\" from Madonna's album Music includes Sanskrit chants, and Shanti/Ashtangi from her 1998 album Ray of Light, which won a Grammy, is the ashtanga vinyasa yoga chant. The lyrics include the mantra Om shanti. Composer John Williams featured choirs singing in Sanskrit for Indiana Jones and the Temple of Doom and in Star Wars: Episode I \u2013 The Phantom Menace. The theme song of Battlestar Galactica 2004 is the Gayatri Mantra, taken from the Rigveda. The lyrics of \"The Child In Us\" by Enigma also contains Sanskrit verses.[better source needed]."
+        },
+        "5728af434b864d1900164c1f": {
+            "id": "5728af434b864d1900164c1f",
+            "question": "What is another popular madonlin tuning? ",
+            "context": "Many adaptations of the instrument have been done to cater to the special needs of Indian Carnatic music. In Indian classical music and Indian light music, the mandolin, which bears little resemblance to the European mandolin, is usually tuned E-B-E-B. As there is no concept of absolute pitch in Indian classical music, any convenient tuning maintaining these relative pitch intervals between the strings can be used. Another prevalent tuning with these intervals is C-G-C-G, which corresponds to Sa-Pa-Sa-Pa in the Indian carnatic classical music style. This tuning corresponds to the way violins are tuned for carnatic classical music. This type of mandolin is also used in Bhangra, dance music popular in Punjabi culture.",
+            "answers": [
+                "C-G-C-G"
+            ],
+            "irrelevant_id": "5726f997f1498d1400e8f189",
+            "irrelevant_context": "The important legacy of this period included substantial advances in factual knowledge, especially in anatomy, zoology, botany, mineralogy, geography, mathematics and astronomy; an awareness of the importance of certain scientific problems, especially those related to the problem of change and its causes; and a recognition of the methodological importance of applying mathematics to natural phenomena and of undertaking empirical research. In the Hellenistic age scholars frequently employed the principles developed in earlier Greek thought: the application of mathematics and deliberate empirical research, in their scientific investigations. Thus, clear unbroken lines of influence lead from ancient Greek and Hellenistic philosophers, to medieval Muslim philosophers and scientists, to the European Renaissance and Enlightenment, to the secular sciences of the modern day. Neither reason nor inquiry began with the Ancient Greeks, but the Socratic method did, along with the idea of Forms, great advances in geometry, logic, and the natural sciences. According to Benjamin Farrington, former Professor of Classics at Swansea University:"
+        },
+        "56e0fedde3433e1400422a74": {
+            "id": "56e0fedde3433e1400422a74",
+            "question": "Who was the person credited with the first in-flight space death?",
+            "context": "Meanwhile, the Soviet Union was having its own problems with Soyuz development. Engineers reported 200 design faults to party leaders, but their concerns \"were overruled by political pressures for a series of space feats to mark the anniversary of Lenin's birthday.\"[citation needed] On April 24, 1967, the single pilot of Soyuz 1, Vladimir Komarov, became the first in-flight spaceflight fatality. The mission was planned to be a three-day test, to include the first Soviet docking with an unpiloted Soyuz 2, but the mission was plagued with problems. Early on, Komarov's craft lacked sufficient electrical power because only one of two solar panels had deployed. Then the automatic attitude control system began malfunctioning and eventually failed completely, resulting in the craft spinning wildly. Komarov was able to stop the spin with the manual system, which was only partially effective. The flight controllers aborted his mission after only one day. During the emergency re-entry, a fault in the landing parachute system caused the primary chute to fail, and the reserve chute became tangled with the drogue chute; Komarov was killed on impact. Fixing the spacecraft faults caused an eighteen-month delay before piloted Soyuz flights could resume.",
+            "answers": [
+                "Vladimir Komarov"
+            ],
+            "irrelevant_id": "5731439c497a881900248d1c",
+            "irrelevant_context": "By about 6000 BC, a Neolithic culture rooted in the Nile Valley. During the Neolithic era, several predynastic cultures developed independently in Upper and Lower Egypt. The Badarian culture and the successor Naqada series are generally regarded as precursors to dynastic Egypt. The earliest known Lower Egyptian site, Merimda, predates the Badarian by about seven hundred years. Contemporaneous Lower Egyptian communities coexisted with their southern counterparts for more than two thousand years, remaining culturally distinct, but maintaining frequent contact through trade. The earliest known evidence of Egyptian hieroglyphic inscriptions appeared during the predynastic period on Naqada III pottery vessels, dated to about 3200 BC."
+        },
+        "572b550a34ae481900dead91": {
+            "id": "572b550a34ae481900dead91",
+            "question": "What applications do chalcogenides have?",
+            "context": "Binary compounds of zinc are known for most of the metalloids and all the nonmetals except the noble gases. The oxide ZnO is a white powder that is nearly insoluble in neutral aqueous solutions, but is amphoteric, dissolving in both strong basic and acidic solutions. The other chalcogenides (ZnS, ZnSe, and ZnTe) have varied applications in electronics and optics. Pnictogenides (Zn\n3N\n2, Zn\n3P\n2, Zn\n3As\n2 and Zn\n3Sb\n2), the peroxide (ZnO\n2), the hydride (ZnH\n2), and the carbide (ZnC\n2) are also known. Of the four halides, ZnF\n2 has the most ionic character, whereas the others (ZnCl\n2, ZnBr\n2, and ZnI\n2) have relatively low melting points and are considered to have more covalent character.",
+            "answers": [
+                "electronics and optics."
+            ],
+            "irrelevant_id": "56de0fef4396321400ee2587",
+            "irrelevant_context": "Lighting or illumination is the deliberate use of light to achieve a practical or aesthetic effect. Lighting includes the use of both artificial light sources like lamps and light fixtures, as well as natural illumination by capturing daylight. Daylighting (using windows, skylights, or light shelves) is sometimes used as the main source of light during daytime in buildings. This can save energy in place of using artificial lighting, which represents a major component of energy consumption in buildings. Proper lighting can enhance task performance, improve the appearance of an area, or have positive psychological effects on occupants."
+        },
+        "56f8c6b29e9bad19000a0497": {
+            "id": "56f8c6b29e9bad19000a0497",
+            "question": "What date was independence considered universal? ",
+            "context": "Independence was unilaterally declared on 24 September 1973. Recognition became universal following the 25 April 1974 socialist-inspired military coup in Portugal, which overthrew Lisbon's Estado Novo regime.",
+            "answers": [
+                "25 April 1974"
+            ],
+            "irrelevant_id": "570a9a216d058f1900182fee",
+            "irrelevant_context": "With the unification of the Anglo-Saxon kingdoms (outside the Danelaw) by Alfred the Great in the later 9th century, the language of government and literature became standardised around the West Saxon dialect (Early West Saxon). Alfred advocated education in English alongside Latin, and had many works translated into the English language; some of them, such as Pope Gregory I's treatise Pastoral Care, appear to have been translated by Alfred himself. In Old English, typical of the development of literature, poetry arose before prose, but King Alfred the Great (871 to 901) chiefly inspired the growth of prose."
+        },
+        "572806e03acd2414000df28e": {
+            "id": "572806e03acd2414000df28e",
+            "question": "What government entity was abolished in 1986?",
+            "context": "The Greater London Council was abolished in 1986, which left London as the only large metropolis in the world without a central administration. In 2000, London-wide government was restored, with the creation of the Greater London Authority. To celebrate the start of the 21st century, the Millennium Dome, London Eye and Millennium Bridge were constructed. On 6 July 2005 London was awarded the 2012 Summer Olympics, making London the first city to stage the Olympic Games three times. In January 2015, Greater London's population was estimated to be 8.63 million, the highest level since 1939.",
+            "answers": [
+                "The Greater London Council"
+            ],
+            "irrelevant_id": "5724125f0ba9f01400d97b63",
+            "irrelevant_context": "In 1853, Victoria gave birth to her eighth child, Leopold, with the aid of the new anaesthetic, chloroform. Victoria was so impressed by the relief it gave from the pain of childbirth that she used it again in 1857 at the birth of her ninth and final child, Beatrice, despite opposition from members of the clergy, who considered it against biblical teaching, and members of the medical profession, who thought it dangerous. Victoria may have suffered from post-natal depression after many of her pregnancies. Letters from Albert to Victoria intermittently complain of her loss of self-control. For example, about a month after Leopold's birth Albert complained in a letter to Victoria about her \"continuance of hysterics\" over a \"miserable trifle\"."
+        },
+        "572850984b864d1900164932": {
+            "id": "572850984b864d1900164932",
+            "question": "What did Ulam think of von Nuemann's cognitive ability?",
+            "context": "Herman Goldstine wrote: \"One of his remarkable abilities was his power of absolute recall. As far as I could tell, von Neumann was able on once reading a book or article to quote it back verbatim; moreover, he could do it years later without hesitation. He could also translate it at no diminution in speed from its original language into English. On one occasion I tested his ability by asking him to tell me how A Tale of Two Cities started. Whereupon, without any pause, he immediately began to recite the first chapter and continued until asked to stop after about ten or fifteen minutes.\" Ulam noted that von Neumann's way of thinking might not be visual, but more of an aural one.",
+            "answers": [
+                "von Neumann's way of thinking might not be visual, but more of an aural one."
+            ],
+            "irrelevant_id": "56f8f65b9b226e1400dd1202",
+            "irrelevant_context": "The use of the term Middle East as a region of international affairs apparently began in British and American diplomatic circles quite independently of each other over concern for the security of the same country: Iran, then known to the west as Persia. In 1900 Thomas Edward Gordon published an article, The Problem of the Middle East, which began:"
+        },
+        "572fa8c9947a6a140053cb14": {
+            "id": "572fa8c9947a6a140053cb14",
+            "question": "Some contradictory reviews of 13 high quality studies found actual what?",
+            "context": "Pain is the most common reason for people to use complementary and alternative medicine. An analysis of the 13 highest quality studies of pain treatment with acupuncture, published in January 2009, concluded there is little difference in the effect of real, sham and no acupuncture. However other reviews have found benefit. Additionally, there is tentative evidence for a few herbal medicine. There is interest in the relationship between vitamin D and pain, but the evidence so far from controlled trials for such a relationship, other than in osteomalacia, is unconvincing.",
+            "answers": [
+                "benefit"
+            ],
+            "irrelevant_id": "57108d9ab654c5140001f990",
+            "irrelevant_context": "As the economy and the middle class expanded, there was an increasing number of amateur musicians. One manifestation of this involved women, who became more involved with music on a social level. Women were already engaged in professional roles as singers, and increased their presence in the amateur performers' scene, especially with keyboard music. Music publishers begin to print music that amateurs could understand and play. The majority of the works that were published were for keyboard, voice and keyboard, and chamber ensemble. After these initial genres were popularized, from the mid-century on, amateur groups sang choral music, which then became a new trend for publishers to capitalize on. The increasing study of the fine arts, as well as access to amateur-friendly published works, led to more people becoming interested in reading and discussing music. Music magazines, reviews, and critical works which suited amateurs as well as connoisseurs began to surface."
+        },
+        "5731e1420fdd8d15006c65f6": {
+            "id": "5731e1420fdd8d15006c65f6",
+            "question": "What does having no state-run or state-established allow a variety of religions to do?",
+            "context": "Robert S. Wood has argued that the United States is a model for the world in terms of how a separation of church and state\u2014no state-run or state-established church\u2014is good for both the church and the state, allowing a variety of religions to flourish. Speaking at the Toronto-based Center for New Religions, Wood said that the freedom of conscience and assembly allowed under such a system has led to a \"remarkable religiosity\" in the United States that isn't present in other industrialized nations. Wood believes that the U.S. operates on \"a sort of civic religion,\" which includes a generally-shared belief in a creator who \"expects better of us.\" Beyond that, individuals are free to decide how they want to believe and fill in their own creeds and express their conscience. He calls this approach the \"genius of religious sentiment in the United States.\"",
+            "answers": [
+                "flourish"
+            ],
+            "irrelevant_id": "56d1335f17492d1400aabc15",
+            "irrelevant_context": "A high-definition remaster of the game, The Legend of Zelda: Twilight Princess HD, is being developed by Tantalus Media for the Wii U. Officially announced during a Nintendo Direct presentation on November 12, 2015, it features enhanced graphics and Amiibo functionality. The game will be released in North America and Europe on March 4, 2016; in Australia on March 5, 2016; and in Japan on March 10, 2016."
+        },
+        "5731085a05b4da19006bccfa": {
+            "id": "5731085a05b4da19006bccfa",
+            "question": "What is the traditional customs and culture on Tuvalu?",
+            "context": "Another important building is the falekaupule or maneapa the traditional island meeting hall, where important matters are discussed and which is also used for wedding celebrations and community activities such as a fatele involving music, singing and dancing. Falekaupule is also used as the name of the council of elders \u2013 the traditional decision making body on each island. Under the Falekaupule Act, Falekaupule means \"traditional assembly in each island...composed in accordance with the Aganu of each island\". Aganu means traditional customs and culture.",
+            "answers": [
+                "Aganu"
+            ],
+            "irrelevant_id": "57278428708984140094dfc8",
+            "irrelevant_context": "Public schools are part of the Ann Arbor Public Schools (AAPS) district. AAPS has one of the country's leading music programs. In September 2008, 16,539 students had been enrolled in the Ann Arbor Public Schools. There were 21 elementary schools, five middle schools (Forsythe, Slauson, Tappan, Scarlett, and Clague) three traditional high schools (Pioneer, Huron, and Skyline), and three alternative high schools (Community High, Stone School, and Roberto Clemente) in the district. The district also operates a K-8 open school program, Ann Arbor Open School, out of the former Mack School. This program is open to all families who live within the district. Ann Arbor Public Schools also operates a preschool and family center, with programs for at-risk infants and children before kindergarten. The district has a preschool center with both free and tuition-based programs for preschoolers in the district."
+        }
+    }
+}
