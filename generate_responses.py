@@ -61,6 +61,22 @@ def get_output_path(args, example_id):
     return os.path.join(dir_path, f"{example_id}.pkl")
 
 
+def load_pickle_file(file_path):
+    with open(file_path, 'rb') as f:
+        data = pickle.load(f)
+    return data
+
+def get_result(example_id, args):
+    file_path = get_output_path(args, example_id)
+    if not os.path.exists(file_path):
+        return {
+            'example_id': example_id,
+            'responses': [],
+        }
+    result = load_pickle_file(file_path)
+    return result
+
+
 def main(args):
     # 加载模型
     model = HuggingfaceModel(args.model, stop_sequences='default', max_new_tokens=args.max_new_tokens)
@@ -93,7 +109,12 @@ def main(args):
         assert example_id in data_dict, f"Example id {example_id} not found in dataset {args.dataset_json_file}."
         example = data_dict[example_id]
         output_path = os.path.join(args.output_dir, f"{example_id}.pkl")
-        if not args.override and os.path.exists(output_path): # 若不覆盖且结果已存在
+        result = get_result(example_id, args)
+        num_gen = max(0, args.num_generations - len(result['responses'])) # 还需要生成的数量
+        if args.override: # 覆盖
+            result['responses'] = []
+            num_gen = args.num_generations
+        if not args.override and num_gen <= 0: # 若 不覆盖 且 生成的回答已足够
             continue
 
         # 构造prompt
@@ -106,14 +127,10 @@ def main(args):
             prompt = make_brief_prompt(example['question'], None)
 
         # 生成回答
-        result = {
-            'example_id': example['id'],
-            'args': args,
-            'responses': [],
-        }
-        for _ in range(args.num_generations):
+        for _ in range(num_gen):
             response = generate_responses(prompt)
-            result['responses'].append(response)
+            if 'error' not in response:
+                result['responses'].append(response)
 
         # 保存结果
         with open(output_path, 'wb') as f:

@@ -22,8 +22,7 @@ num_generations=(1 30)
 temperatures=(0.1 1.0)
 latents=("--return_latent" "--no-return_latent")
 
-# datasets=("squad" "triviaqa")
-datasets=("bioasq")
+datasets=("squad" "triviaqa" "bioasq")
 splits=("train" "test" "validation")
 num_samples=(2000 100 100)
 # num_samples=(10000 1000 1000)
@@ -35,10 +34,10 @@ root_dir="."
 # 任务计数器
 task_counter=0
 # 任务总数
-task_total=$((1*2*3*3*2))
+task_total=$((1*3*3*3*2))
 
 for model in "${models[@]}"; do # 1
-    for dataset in "${datasets[@]}"; do # 2
+    for dataset in "${datasets[@]}"; do # 3
         for k in "${!splits[@]}"; do # 3
             split="${splits[$k]}"
             num_sample="${num_samples[$k]}"
@@ -70,10 +69,10 @@ done
 # 任务计数器
 task_counter=0
 # 任务总数
-task_total=$((1*2*3*3))
+task_total=$((1*3*3*3))
 
 for model in "${models[@]}"; do # 1
-    for dataset in "${datasets[@]}"; do # 2
+    for dataset in "${datasets[@]}"; do # 3
         for k in "${!splits[@]}"; do # 3
             split="${splits[$k]}"
             num_sample="${num_samples[$k]}"
