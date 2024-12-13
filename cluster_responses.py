@@ -61,6 +61,30 @@ def get_semantic_ids(strings_list, model, strict_entailment=False, example=None)
 
     return semantic_set_ids
 
+def get_output_path(args, example_id):
+    '''返回输出文件路径'''
+    # `./output/train/clustered/Qwen/Qwen2.5-1.5B-Instruct/squad/sample_golden/1.pkl`
+    dir_path = args.output_dir
+    if not os.path.exists(dir_path):
+        os.makedirs(dir_path)
+    return os.path.join(dir_path, f"{example_id}.pkl")
+
+def load_pickle_file(file_path):
+    with open(file_path, 'rb') as f:
+        data = pickle.load(f)
+    return data
+
+def get_result(example_id, args):
+    file_path = get_output_path(args, example_id)
+    if not os.path.exists(file_path):
+        return {
+            'example_id': example_id,
+            'cluster_ids': [],
+        }
+    result = load_pickle_file(file_path)
+    return result
+
+
 def main(args):
     assert os.path.exists(args.input_dir)
 
@@ -78,16 +102,25 @@ def main(args):
         assert example_id in data_dict, f"Example id {example_id} not found in dataset {args.dataset_json_file}."
         example = data_dict[example_id]
 
-        output_path = os.path.join(args.output_dir, f"{example_id}.pkl")
-        if not args.override and os.path.exists(output_path): # 若不覆盖且结果已存在
-            continue
-        
         input_path = os.path.join(args.input_dir, f"{example_id}.pkl")
         if not os.path.exists(input_path): # 若输入文件不存在
             continue
-        input_dict = load_pickle_file(input_path)
+        responses = load_pickle_file(input_path)['responses']
+        num_responses = len(responses)
+
+        output_path = os.path.join(args.output_dir, f"{example_id}.pkl")
+
+        override = args.override
+        if not override and os.path.exists(output_path): # 若不强制覆盖且输出文件存在
+            cluster_ids = load_pickle_file(output_path)['cluster_ids']
+            num_cluster_ids = len(cluster_ids)
+            override = num_responses != num_cluster_ids # 若生成数和聚类数不相等，则覆盖
+        
+        if not override:
+            continue
+        
         # 生成文本
-        response_texts = [resp.get('text', '') for resp in input_dict['responses']]
+        response_texts = [resp.get('text', '') for resp in responses]
         # 聚类
         cluster_ids = get_semantic_ids(response_texts, 
                                        model=model, 

@@ -44,22 +44,10 @@ def make_brief_prompt(question, context=None):
 def get_output_path(args, example_id):
     '''返回输出文件路径'''
     # `./output/train/generation/Qwen/Qwen2.5-1.5B-Instruct/squad/greedy_golden/1.pkl`
-    # sample = "greedy" if args.temperature < GREEDY_TEMPERATURE_THRESHOLD else "sample"
-    # context = ""
-    # if args.use_context:
-    #     if args.irrelevant_context:
-    #         context = "irrelevant"
-    #     else:
-    #         context = "golden"
-    # else:
-    #     context = "without"
-    # sample_context = f"{sample}_{context}"
     dir_path = args.output_dir
-    # f"{args.output_dir}/{args.split}/generation/{args.model}/{args.dataset}/{sample_context}"
     if not os.path.exists(dir_path):
         os.makedirs(dir_path)
     return os.path.join(dir_path, f"{example_id}.pkl")
-
 
 def load_pickle_file(file_path):
     with open(file_path, 'rb') as f:
