@@ -2,7 +2,7 @@
 # GPU-0执行的脚本
 
 #################不同的参数##################
-cuda=0
+cuda=1
 models=("Qwen/Qwen2.5-7B-Instruct")
 # models=("Qwen/Qwen2.5-7B-Instruct" "meta-llama/Llama-3.1-8B-Instruct")
 
@@ -22,12 +22,10 @@ num_generations=(1 30)
 temperatures=(0.1 1.0)
 latents=("--return_latent" "--no-return_latent")
 
-# datasets=("bioasq" "squad" "triviaqa")
-datasets=("bioasq" "squad")
+datasets=("triviaqa")
 split="train"
 # splits=("train" "test" "validation")
-# dataset_json_files=("bioasq_train_2000.json" "squad_train_10000.json" "triviaqa_train_10000.json")
-dataset_json_files=("bioasq_train_2000.json" "squad_train_10000.json")
+dataset_json_files=("triviaqa_train_10000.json")
 
 gen_override="--no-override"
 cluster_override="--no-override"
@@ -36,10 +34,10 @@ root_dir="."
 # 任务计数器
 task_counter=0
 # 任务总数
-task_total=$((1*2*3*2))
+task_total=$((1*1*3*2))
 
 for model in "${models[@]}"; do # 1
-    for k in "${!datasets[@]}"; do # 2
+    for k in "${!datasets[@]}"; do # 1
         dataset="${datasets[$k]}"
         dataset_json_file="$root_dir/dataset/json/${dataset_json_files[$k]}"
         for i in "${!context_types[@]}"; do # 3
