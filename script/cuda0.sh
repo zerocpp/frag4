@@ -2,7 +2,7 @@
 # GPU-0执行的脚本
 
 #################不同的参数##################
-cuda=1
+cuda=0
 models=("Qwen/Qwen2.5-7B-Instruct")
 # models=("Qwen/Qwen2.5-7B-Instruct" "meta-llama/Llama-3.1-8B-Instruct")
 
@@ -12,7 +12,7 @@ start_time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "Start time: $start_time"
 
 
-#################generate##################
+#################cluster##################
 
 context_types=("irrelevant" "golden" "without")
 contexts=("--use_context --irrelevant_context" "--use_context --no-irrelevant_context" "--no-use_context --irrelevant_context")
@@ -25,7 +25,8 @@ latents=("--return_latent" "--no-return_latent")
 datasets=("bioasq" "squad" "triviaqa")
 split="train"
 # splits=("train" "test" "validation")
-dataset_json_files=("bioasq_train_2000.json" "squad_train_10000.json" "triviaqa_train_10000.json")
+dataset_json_files=("bioasq_train_2000.json" "squad_train_2000.json" "triviaqa_train_2000.json")
+# dataset_json_files=("bioasq_train_2000.json" "squad_train_10000.json" "triviaqa_train_10000.json")
 
 gen_override="--no-override"
 cluster_override="--no-override"
@@ -34,28 +35,21 @@ root_dir="."
 # 任务计数器
 task_counter=0
 # 任务总数
-task_total=$((1*3*3*2))
+task_total=$((1*3*3))
 
 for model in "${models[@]}"; do # 1
     for k in "${!datasets[@]}"; do # 3
         dataset="${datasets[$k]}"
         dataset_json_file="$root_dir/dataset/json/${dataset_json_files[$k]}"
-        for i in "${!context_types[@]}"; do # 3
-            context_type="${context_types[$i]}"
-            context="${contexts[$i]}"
-            for j in "${!sample_prefixs[@]}"; do # 2
-                task_counter=$((task_counter + 1))
-                echo "Task1: $task_counter/$task_total"
-                sample_prefix="${sample_prefixs[$j]}"
-                num_generation="${num_generations[$j]}"
-                temperature="${temperatures[$j]}"
-                latent="${latents[$j]}"
-                sample="${sample_prefix}_${context_type}"
-                output_dir="$root_dir/output/${split}/generation/${model}/${dataset}/${sample}"
-                cmd="DEVICE=cuda:$cuda python generate_responses.py --output_dir $output_dir --model $model --num_generations $num_generation --temperature $temperature $context $latent --dataset_json_file $dataset_json_file $gen_override"
-                echo "> $cmd"
-                eval $cmd
-            done
+        for sample_suffix in "${context_types[@]}"; do # 3
+            task_counter=$((task_counter + 1))
+            echo "Task2: $task_counter/$task_total"
+            sample="sample_${sample_suffix}"
+            input_dir="$root_dir/output/${split}/generation/${model}/${dataset}/${sample}"
+            output_dir="$root_dir/output/${split}/clustered/${model}/${dataset}/${sample}"
+            cmd="DEVICE=cuda:$cuda python cluster_responses.py --dataset_json_file $dataset_json_file --input_dir $input_dir --output_dir $output_dir $cluster_override"
+            echo "> $cmd"
+            eval $cmd
         done
     done
 done
