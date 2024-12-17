@@ -111,10 +111,14 @@ def main(args):
         output_path = os.path.join(args.output_dir, f"{example_id}.pkl")
 
         override = args.override
-        if not override and os.path.exists(output_path): # 若不强制覆盖且输出文件存在
-            cluster_ids = load_pickle_file(output_path)['cluster_ids']
-            num_cluster_ids = len(cluster_ids)
-            override = num_responses != num_cluster_ids # 若生成数和聚类数不相等，则覆盖
+        if not override: # 若不强制覆盖
+            if not os.path.exists(output_path): # 若输出文件不存在
+                override = True # 则覆盖
+            else:
+                cluster_ids = load_pickle_file(output_path)['cluster_ids']
+                num_cluster_ids = len(cluster_ids)
+                if num_responses != num_cluster_ids: # 若生成数和聚类数不相等
+                    override = True # 则覆盖
         
         if not override:
             continue
