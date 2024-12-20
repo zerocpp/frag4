@@ -22,10 +22,12 @@ num_generations=(1 30)
 temperatures=(0.1 1.0)
 latents=("--return_latent" "--no-return_latent")
 
-datasets=("bioasq" "squad" "triviaqa")
+# datasets=("bioasq" "squad" "triviaqa")
+datasets=("bioasq" "squad")
+dataset_json_files=("bioasq_train_2000.json" "squad_train_10000.json")
 split="train"
 # splits=("train" "test" "validation")
-dataset_json_files=("bioasq_train_2000.json" "squad_train_2000.json" "triviaqa_train_2000.json")
+# dataset_json_files=("bioasq_train_2000.json" "squad_train_2000.json" "triviaqa_train_2000.json")
 # dataset_json_files=("bioasq_train_2000.json" "squad_train_10000.json" "triviaqa_train_10000.json")
 
 gen_override="--no-override"
@@ -35,10 +37,10 @@ root_dir="."
 # 任务计数器
 task_counter=0
 # 任务总数
-task_total=$((1*3*3))
+task_total=$((1*2*3))
 
 for model in "${models[@]}"; do # 1
-    for k in "${!datasets[@]}"; do # 3
+    for k in "${!datasets[@]}"; do # 2
         dataset="${datasets[$k]}"
         dataset_json_file="$root_dir/dataset/json/${dataset_json_files[$k]}"
         for sample_suffix in "${context_types[@]}"; do # 3
