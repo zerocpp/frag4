@@ -4,8 +4,8 @@
 # models=("meta-llama/Llama-3.1-8B-Instruct" "Qwen/Qwen2.5-7B-Instruct")
 models=("Qwen/Qwen2.5-7B-Instruct")
 datasets=("bioasq" "squad" "triviaqa")
-dataset_json_files=("bioasq_train_2000.json" "squad_train_2000.json" "triviaqa_train_2000.json")
-# dataset_json_files=("bioasq_train_2000.json" "squad_train_10000.json" "triviaqa_train_10000.json")
+# dataset_json_files=("bioasq_train_2000.json" "squad_train_2000.json" "triviaqa_train_2000.json")
+dataset_json_files=("bioasq_train_2000.json" "squad_train_10000.json" "triviaqa_train_10000.json")
 split="train"
 # splits=("train" "test" "validation")
 # num_samples=(2000 100 100)
