@@ -126,7 +126,7 @@ def main(args):
 
 def get_parser():
     '''
-    python rank_gen.py --output_dir output/rank/gen/Qwen/Qwen2.5-7B-Instruct/nq-rank-10 --model Qwen/Qwen2.5-7B-Instruct --num_generations 10 --retry_times 3 --temperature 1.0 --max_new_tokens 50 --use_context --irrelevant_context --return_latent --dataset output/rank/dataset/nq-rank-1000.json --override
+    python rank_gen.py --output_dir output/rank/gen/Qwen/Qwen2.5-7B-Instruct/nq-rank-10 --model Qwen/Qwen2.5-7B-Instruct --num_generations 10 --retry_times 3 --max_new_tokens 50 --dataset_jsonl_path dataset/rank/nq-rank-10.jsonl --override
     '''
     parser = argparse.ArgumentParser()
     parser.add_argument('--output_dir', type=str, default='output/rank/gen/Qwen/Qwen2.5-7B-Instruct/nq-rank-10')
