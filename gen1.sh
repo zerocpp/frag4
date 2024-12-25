@@ -8,13 +8,13 @@ echo "Start time: $start_time"
 cuda=1
 model="Qwen/Qwen2.5-7B-Instruct"
 num_generations=10
-dataset_jsonl_file="dataset/rank/nq-rank-10.jsonl"
+dataset_jsonl_path="dataset/rank/nq-rank-10.jsonl"
 output_dir="output/rank/gen/Qwen/Qwen2.5-7B-Instruct/nq-rank-10"
 gen_override="--no-override"
 
 #################generate##################
 
-cmd="DEVICE=cuda:$cuda python rank_gen.py --output_dir $output_dir --model $model --num_generations $num_generations --dataset_jsonl_file $dataset_jsonl_file $gen_override"
+cmd="DEVICE=cuda:$cuda python rank_gen.py --output_dir $output_dir --model $model --num_generations $num_generations --dataset_jsonl_path $dataset_jsonl_path $gen_override"
 echo "> $cmd"
 eval $cmd
 
