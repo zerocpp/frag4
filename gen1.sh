@@ -14,7 +14,7 @@ gen_override="--no-override"
 
 #################generate##################
 
-cmd="DEVICE=cuda:$cuda python rank_gen.py --output_dir $output_dir --model $model --num_generations $num_generations --dataset_json_file $dataset_json_file $gen_override"
+cmd="DEVICE=cuda:$cuda python rank_gen.py --output_dir $output_dir --model $model --num_generations $num_generations --dataset_jsonl_file $dataset_jsonl_file $gen_override"
 echo "> $cmd"
 eval $cmd
 
