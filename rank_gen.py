@@ -111,8 +111,14 @@ def main(args):
                 if 'error' not in response:
                     result['sample'].append(response)
 
+    def get_task_total_count():
+        '''获取任务总数'''
+        with jsonlines.open(args.dataset_jsonl_path) as reader:
+            return len(list(reader))
+    total_count = get_task_total_count()
+
     with jsonlines.open(args.dataset_jsonl_path) as reader:
-        for i, item in enumerate(tqdm(reader, desc="RankGen")):
+        for i, item in enumerate(tqdm(reader, desc="RankGen", total=total_count)):
             # 释放显存
             if i % 10 == 0:
                 gc.collect()
