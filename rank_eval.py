@@ -22,10 +22,11 @@ def load_rank_results(rank_result_path):
     return results
 
 def load_data(dataset_path, dataset_name):
-    if dataset_name == "msmarco":
-        corpus, queries, qrels = GenericDataLoader(data_folder=dataset_path).load(split="dev")
-    else:
-        corpus, queries, qrels = GenericDataLoader(data_folder=dataset_path).load(split="test")
+    # if dataset_name == "msmarco": # why?
+    #     corpus, queries, qrels = GenericDataLoader(data_folder=dataset_path).load(split="dev")
+    # else:
+    #     corpus, queries, qrels = GenericDataLoader(data_folder=dataset_path).load(split="test")
+    corpus, queries, qrels = GenericDataLoader(data_folder=dataset_path).load(split="test")
     return corpus, queries, qrels
 
 def eval_beir_rank_result(rank_result_path, dataset_path, dataset_name):
