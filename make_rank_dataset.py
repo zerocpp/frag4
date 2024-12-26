@@ -73,3 +73,4 @@ if __name__ == "__main__":
 
     make_rank_dataset(args.dataset_name, args.dataset_path, args.rank_result_path, args.output_path, args.rank_num)
     print(f"Rank dataset saved to {args.output_path}")
+    # python make_rank_dataset.py --dataset_name nq --dataset_path /Users/song/Downloads/beir/nq --rank_result_path /Users/song/Downloads/beir/nq/rank.tsv --rank_num 10 --output_path /Users/song/Downloads/beir/nq/rank_dataset.jsonl
