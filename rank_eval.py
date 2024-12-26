@@ -64,3 +64,4 @@ if __name__ == "__main__":
     parser.add_argument('--rank_result_path', required=True)
     args = parser.parse_args()
     eval_beir_rank_result(args.rank_result_path, args.dataset_path, args.dataset_name)
+    # python rank_eval.py --dataset_name nq --dataset_path '/Users/song/Downloads/nq' --rank_result_path '/Users/song/Downloads/beir/nq/rank.tsv'
