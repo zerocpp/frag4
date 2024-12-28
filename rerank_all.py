@@ -5,7 +5,7 @@ from rerank import rerank_by_entropy
 
 
 BEIR_DATASET_NAMES = ["trec-covid", "climate-fever", "dbpedia-entity", "fever", "fiqa", "hotpotqa", "msmarco",  "nfcorpus", "nq", "scidocs", "scifact"]
-SIZE_NAME = "toy"
+SIZE_NAME = "small"
 MODEL_NAME = "Qwen/Qwen2.5-7B-Instruct"
 
 for dataset_name in BEIR_DATASET_NAMES:
