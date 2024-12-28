@@ -29,7 +29,12 @@ def load_data(dataset_path, dataset_name):
     corpus, queries, qrels = GenericDataLoader(data_folder=dataset_path).load(split="test")
     return corpus, queries, qrels
 
-def eval_beir_rank_result(rank_result_path, dataset_path, dataset_name):
+def eval_beir_rank_result(rank_result_path, dataset_path, dataset_name, k_values=[1,3,5,10]):
+    # print(f"> Start evaluating rank results")
+    # print(f"rank_result_path: {rank_result_path}")
+    # print(f"dataset_path: {dataset_path}")
+    # print(f"dataset_name: {dataset_name}")
+
     # Load data
     corpus, queries, qrels = load_data(dataset_path, dataset_name)
 
@@ -38,25 +43,34 @@ def eval_beir_rank_result(rank_result_path, dataset_path, dataset_name):
     
     retriever = EvaluateRetrieval()
         
+    all_scores = {}
     #### Evaluate your retrieval using NDCG@k, MAP@K ...
     print("Retriever evaluation")
-    ndcg, _map, recall, precision = retriever.evaluate(qrels, results, [1,3,5,10,20,100])
+    ndcg, _map, recall, precision = retriever.evaluate(qrels, results, k_values)
     print('map:')
     print(_map)
+    all_scores['map'] = _map
     print('precision:')
     print(precision)
+    all_scores['precision'] = precision
     print('ndcg:')
     print(ndcg)
-    mrr = retriever.evaluate_custom(qrels, results, [1,3,5,10,20,100], "mrr")
+    all_scores['ndcg'] = ndcg
+    mrr = retriever.evaluate_custom(qrels, results, k_values, "mrr")
     print('mrr:')
     print(mrr)
+    all_scores['mrr'] = mrr
     if dataset_name == "trec-covid":
-        recall_cap = retriever.evaluate_custom(qrels, results, [1,3,5,10,20,100], "recall_cap")
+        recall_cap = retriever.evaluate_custom(qrels, results, k_values, "recall_cap")
         print('recall_cap:')
         print(recall_cap)
+        all_scores['recall_cap'] = recall_cap
     else:
         print('recall:')
         print(recall)
+        all_scores['recall'] = recall
+        
+    return all_scores
 
 if __name__ == "__main__":
     parser = ArgumentParser()
