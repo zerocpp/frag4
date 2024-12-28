@@ -8,8 +8,8 @@ echo "Start time: $start_time"
 cuda=0
 model="Qwen/Qwen2.5-7B-Instruct"
 dataset_names=("trec-covid" "climate-fever" "dbpedia-entity" "fever" "fiqa" "hotpotqa" "msmarco" "nfcorpus" "scidocs" "scifact" "nq")
-dataset_size="toy"
-# dataset_size="small"
+# dataset_size="toy"
+dataset_size="small"
 # dataset_jsonl_path="dataset/rank/nq-rank-10.jsonl"
 # output_dir="output/rank/gen/Qwen/Qwen2.5-7B-Instruct/nq-rank-10"
 cluster_override="--no-override"
