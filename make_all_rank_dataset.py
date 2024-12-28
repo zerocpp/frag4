@@ -15,7 +15,8 @@ RANK_RESULT_DIR = '/home/song/dataset/first/beir_rank'
 # FIRST所使用的11个数据集
 BEIR_DATASET_NAMES = ["trec-covid", "climate-fever", "dbpedia-entity", "fever", "fiqa", "hotpotqa", "msmarco",  "nfcorpus", "nq", "scidocs", "scifact"]
 # 尺寸后缀、问题数量、文档数量
-SIZES = [("toy", 10, 10), ("small", 50, 10)]
+# SIZES = [("toy", 10, 10), ("small", 50, 10)]
+SIZES = [("small100", 50, 100), ("large", 1000, 10)]
 
 for dataset_name in tqdm(BEIR_DATASET_NAMES, desc="Building rank datasets"):
     dataset_path = os.path.join(DATASET_DIR, dataset_name)
