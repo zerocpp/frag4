@@ -29,7 +29,7 @@ for SIZE_NAME in ["small"]:
     for dataset_name in tqdm(BEIR_DATASET_NAMES):
         try:
             dataset_path = f'/home/song/dataset/beir/{dataset_name}'
-            rank_result_path = f'dataset/rank/{dataset_name}/{dataset_name}-rank10.tsv'
+            rank_result_path = f'dataset/rank/{dataset_name}/{dataset_name}-rank10-{SIZE_NAME}.tsv'
             entropy_result_path = f'output/rerank/{dataset_name}/entropy-{SIZE_NAME}.tsv'
             all_scores[dataset_name] = eval_beir_rerank_result(rank_result_path, entropy_result_path, dataset_path, dataset_name, k_values=[1,3,5,10])
         except Exception as e:
