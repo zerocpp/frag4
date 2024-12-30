@@ -56,6 +56,7 @@ def make_rank_dataset(dataset_name, dataset_path, rank_result_path, output_path,
     qids = sorted(list(qids))[:query_num] # 只取前query_num个问题
     print(f"> Use {len(qids)} questions")
     prompt_count = 0 # 实际生成的prompt行数
+    doc_fail_count = 0
     with jsonlines.open(output_path, 'w') as writer:
         for qid in tqdm(qids):
             query = queries[qid]
@@ -63,7 +64,10 @@ def make_rank_dataset(dataset_name, dataset_path, rank_result_path, output_path,
             # print(f"len(rank_results[qid]): {len(rank_results[qid])}")
             # print(f"doc_ids: {len(doc_ids)}")
             for doc_id in doc_ids:
-                assert doc_id in docs or doc_id == 'no'
+                if doc_id not in docs and doc_id != 'no':
+                    doc_fail_count += 1
+                    continue
+                # assert doc_id in docs or doc_id == 'no', f"doc_id {doc_id} not found"
                 writer.write({
                     'metadata': {
                         'dataset': dataset_name,
@@ -75,6 +79,7 @@ def make_rank_dataset(dataset_name, dataset_path, rank_result_path, output_path,
                     'context': docs.get(doc_id, None),
                 })
                 prompt_count += 1
+    print(f"Failed to find {doc_fail_count} documents")
     print(f"Saved to {output_path}")
     print(f"Total {prompt_count} prompts")
 

@@ -8,15 +8,24 @@ echo "Start time: $start_time"
 cuda=1
 model="Qwen/Qwen2.5-7B-Instruct"
 num_generations=10
-dataset_jsonl_path="dataset/rank/nq-rank-10.jsonl"
-output_dir="output/rank/gen/Qwen/Qwen2.5-7B-Instruct/nq-rank-10"
+dataset_names=("hotpotqa" "msmarco" "nfcorpus" "scidocs" "scifact" "nq")
+# dataset_size="toy"
+dataset_size="all"
+# dataset_jsonl_path="dataset/rank/nq-rank-10.jsonl"
+# output_dir="output/rank/gen/Qwen/Qwen2.5-7B-Instruct/nq-rank-10"
 gen_override="--no-override"
 
 #################generate##################
-
-cmd="DEVICE=cuda:$cuda python rank_gen.py --output_dir $output_dir --model $model --num_generations $num_generations --dataset_jsonl_path $dataset_jsonl_path $gen_override"
-echo "> $cmd"
-eval $cmd
+for dataset_name in ${dataset_names[@]}; do
+    index=$(($index + 1))
+    total=${#dataset_names[@]}
+    echo "Processing dataset $index of $total: $dataset_name"
+    dataset_jsonl_path="dataset/rank/${dataset_name}/${dataset_name}-${dataset_size}.jsonl"
+    output_dir="output/rank/gen/Qwen/Qwen2.5-7B-Instruct/${dataset_name}"
+    cmd="DEVICE=cuda:$cuda python rank_gen.py --output_dir $output_dir --model $model --num_generations $num_generations --dataset_jsonl_path $dataset_jsonl_path $gen_override"
+    echo "> $cmd"
+    eval $cmd
+done
 
 #################time-log##################
 # 记录结束时间

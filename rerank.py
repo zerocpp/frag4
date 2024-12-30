@@ -90,13 +90,14 @@ def rerank_by_entropy(dataset_path, input_dir, output_path):
             if len(cluster_ids) == 0:
                 continue
             entropy = compute_entropy(cluster_ids)
+            score = entropy
             rerank_results.append({
                 'query_id': item['metadata']['query_id'],
                 'doc_id': item['metadata']['doc_id'],
-                'score': -entropy,
+                'score': score,
             })
     # 先按query_id升序排序，再按score降序排序
-    rerank_results = sorted(rerank_results, key=lambda x: (x['query_id'], -x['score']))
+    rerank_results = sorted(rerank_results, key=lambda x: (x['query_id'], x['score']))
     # 保存成tsv文件
     with open(output_path, 'w') as f:
         for item in rerank_results:
