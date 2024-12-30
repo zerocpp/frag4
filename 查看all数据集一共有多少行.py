@@ -16,7 +16,7 @@ RANK_RESULT_DIR = '/home/song/dataset/first/beir_rank'
 BEIR_DATASET_NAMES = ["trec-covid", "climate-fever", "dbpedia-entity", "fever", "fiqa", "hotpotqa", "msmarco",  "nfcorpus", "nq", "scidocs", "scifact"]
 # 尺寸后缀、问题数量、文档数量
 # SIZES = [("toy", 10, 10), ("small", 50, 10)]
-# SIZES = [("small100", 50, 100), ("large", 1000, 10)]
+# SIZES = [("small100", 50, 100), ("large", 500, 10)]
 # SIZES = [("all", 10000, 10)]
 SIZES = [("large", 500, 10)]
 
