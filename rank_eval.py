@@ -26,7 +26,10 @@ def load_data(dataset_path, dataset_name):
     #     corpus, queries, qrels = GenericDataLoader(data_folder=dataset_path).load(split="dev")
     # else:
     #     corpus, queries, qrels = GenericDataLoader(data_folder=dataset_path).load(split="test")
+    
+    # fixme: ????
     corpus, queries, qrels = GenericDataLoader(data_folder=dataset_path).load(split="test")
+    # corpus = {k: v['text'] for k, v in corpus.items()}
     return corpus, queries, qrels
 
 def eval_beir_rerank_result(rank_result_path, entropy_result_path, dataset_path, dataset_name, k_values=[1,3,5,10]):
