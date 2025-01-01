@@ -5,9 +5,9 @@ start_time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "Start time: $start_time"
 
 #################不同的参数##################
-cuda=0
+cuda=1
 model="Qwen/Qwen2.5-7B-Instruct"
-dataset_names=("trec-covid" "climate-fever" "dbpedia-entity" "fever" "fiqa")
+dataset_names=("hotpotqa" "msmarco" "nfcorpus" "scidocs" "scifact" "nq")
 # dataset_size="toy"
 # dataset_size="small"
 dataset_size="large"
