@@ -4,6 +4,11 @@
 start_time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "Start time: $start_time"
 
+# 以时间戳为文件名，创建一个日志文件
+timestamp=$(date "+%Y%m%d-%H%M%S")
+log_file="log/cluster1-$timestamp.log"
+touch $log_file
+
 #################不同的参数##################
 cuda=1
 model="Qwen/Qwen2.5-7B-Instruct"
@@ -23,7 +28,7 @@ for dataset_name in ${dataset_names[@]}; do
     dataset_path="dataset/rank/${dataset_name}/${dataset_name}-${dataset_size}.jsonl"
     input_dir="output/rank/gen/Qwen/Qwen2.5-7B-Instruct/${dataset_name}"
     output_dir="output/rank/cluster/Qwen/Qwen2.5-7B-Instruct/${dataset_name}"
-    cmd="DEVICE=cuda:$cuda python rank_cluster.py --input_dir $input_dir --output_dir $output_dir --dataset_path $dataset_path $cluster_override"
+    cmd="DEVICE=cuda:$cuda python rank_cluster.py --input_dir $input_dir --output_dir $output_dir --dataset_path $dataset_path $cluster_override >> $log_file 2>&1"
     echo "> $cmd"
     eval $cmd
 done

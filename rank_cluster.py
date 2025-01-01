@@ -96,6 +96,8 @@ def main(args):
     # 保存结果
     def save_cluster_result(result):
         file_path = os.path.join(args.output_dir, f"{result['id']}.pkl")
+        # 创建文件夹
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
         with open(file_path, 'wb') as f:
             pickle.dump(result, f)
 

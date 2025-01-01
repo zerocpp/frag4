@@ -18,3 +18,6 @@ output/
 
 # macOS系统文件
 .DS_Store
+
+# 日志
+log/
