@@ -32,12 +32,27 @@ def load_data(dataset_path, dataset_name):
     # corpus = {k: v['text'] for k, v in corpus.items()}
     return corpus, queries, qrels
 
+def eval_rank_results(results, qrels, k_values=[1,3,5,10]):
+    retriever = EvaluateRetrieval()
+    scores = {}
+    ndcg, _map, recall, precision = retriever.evaluate(qrels, results, k_values)
+    scores['ndcg'] = ndcg
+    scores['map'] = _map
+    scores['recall'] = recall
+    scores['precision'] = precision
+    mrr = retriever.evaluate_custom(qrels, results, k_values, "mrr")
+    scores['mrr'] = mrr
+    recall_cap = retriever.evaluate_custom(qrels, results, k_values, "recall_cap")
+    scores['recall_cap'] = recall_cap
+    return scores
+
+
 def eval_beir_rerank_result(rank_result_path, entropy_result_path, dataset_path, dataset_name, k_values=[1,3,5,10]):
     # print(f"> Start evaluating rank results")
     # print(f"rank_result_path: {rank_result_path}")
     # print(f"dataset_path: {dataset_path}")
     # print(f"dataset_name: {dataset_name}")
-    
+    retriever = EvaluateRetrieval()
 
     # Load data
     corpus, queries, qrels = load_data(dataset_path, dataset_name)
@@ -87,7 +102,7 @@ def eval_beir_rerank_result(rank_result_path, entropy_result_path, dataset_path,
                 fail_count += 1
     print(f"Success count: {suc_count}, success1 count: {suc1_count}, fail count: {fail_count}")
 
-    retriever = EvaluateRetrieval()
+    
 
     rank_scores = {}
     rank_scores['rank'] = eval_scores(rank_results)
