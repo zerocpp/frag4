@@ -11,8 +11,8 @@ import os
 import pickle
 from core.computation.uncertainty_measure import cluster_assignment_entropy
 
-ALL_DATASET_NAMES = ["nq"]
-# ALL_DATASET_NAMES = ["trec-covid", "climate-fever", "dbpedia-entity", "fever", "fiqa", "hotpotqa", "msmarco", "nfcorpus", "scidocs", "scifact", "nq"]
+# ALL_DATASET_NAMES = ["nq"]
+ALL_DATASET_NAMES = ["trec-covid", "climate-fever", "dbpedia-entity", "fever", "fiqa", "hotpotqa", "msmarco", "nfcorpus", "scidocs", "scifact", "nq"]
 SIZE_NAME = "all"
 # SIZE_NAME = "large"
 BEIR_DATASET_DIR = "/home/song/dataset/beir"
@@ -34,6 +34,13 @@ def load_samples(dataset_name, qid, doc_id):
         result = load_pickle_file(file_path)
         return [x['text'] for x in result['sample']]
     return []
+
+def load_greedy(dataset_name, qid, doc_id):
+    file_path = f'output/rank/gen/Qwen/Qwen2.5-7B-Instruct/{dataset_name}/{dataset_name}-{qid}-{doc_id}.pkl'
+    if os.path.exists(file_path):
+        result = load_pickle_file(file_path)
+        return result.get('greedy', {}).get('text', None)
+    return None
 
 
 def load_cluster_ids(dataset_name, qid, doc_id):
@@ -78,8 +85,10 @@ def make_sample_data(rank_results, dataset_name):
     for qid, doc_ids in tqdm(rank_results.items()):
         for doc_id in ['no']+list(doc_ids.keys()):
             samples = load_samples(dataset_name, qid, doc_id)
+            greedy = load_greedy(dataset_name, qid, doc_id)
             cluster_ids = load_cluster_ids(dataset_name, qid, doc_id)
             sample_data[qid][doc_id] = {
+                'greedy': greedy,
                 'samples': samples,
                 'cluster_ids': cluster_ids,
                 'entropy': compute_entropy(cluster_ids)
