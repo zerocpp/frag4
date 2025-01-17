@@ -13,7 +13,8 @@ from core.computation.uncertainty_measure import cluster_assignment_entropy
 
 # ALL_DATASET_NAMES = ["nq"]
 ALL_DATASET_NAMES = ["trec-covid", "climate-fever", "dbpedia-entity", "fever", "fiqa", "hotpotqa", "msmarco", "nfcorpus", "scidocs", "scifact", "nq"]
-SIZE_NAME = "all"
+SIZE_NAME = "500"
+# SIZE_NAME = "all"
 # SIZE_NAME = "large"
 BEIR_DATASET_DIR = "/home/song/dataset/beir"
 RANK_DIR = "dataset/rank"
