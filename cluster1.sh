@@ -4,15 +4,19 @@
 start_time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "Start time: $start_time"
 
-# 以时间戳为文件名，创建一个日志文件
-timestamp=$(date "+%Y%m%d-%H%M%S")
-log_file="log/cluster1-$timestamp.log"
+# 重置日志文件
+# timestamp=$(date "+%Y%m%d-%H%M%S")
+# log_file="log/cluster1-$timestamp.log"
+log_file="log/cluster1.log"
+# 若已存在，则删除
+rm -f $log_file
+# 新建文件
 touch $log_file
 
 #################不同的参数##################
 cuda=1
 model="Qwen/Qwen2.5-7B-Instruct"
-dataset_names=("hotpotqa" "msmarco" "nfcorpus" "scidocs" "scifact" "nq")
+dataset_names=("nq" "hotpotqa" "nfcorpus" "msmarco" "scidocs" "scifact")
 # dataset_size="toy"
 # dataset_size="small"
 # dataset_size="large"

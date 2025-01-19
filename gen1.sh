@@ -8,7 +8,7 @@ echo "Start time: $start_time"
 cuda=1
 model="Qwen/Qwen2.5-7B-Instruct"
 num_generations=10
-dataset_names=("hotpotqa" "msmarco" "nfcorpus" "scidocs" "scifact" "nq")
+dataset_names=("nq" "hotpotqa" "nfcorpus" "msmarco" "scidocs" "scifact")
 # dataset_size="toy"
 dataset_size="all"
 # dataset_size="large"
