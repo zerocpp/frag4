@@ -16,7 +16,7 @@ touch $log_file
 #################不同的参数##################
 cuda=0
 model="Qwen/Qwen2.5-7B-Instruct"
-dataset_names=("trec-covid" "dbpedia-entity" "climate-fever" "fever" "fiqa")
+dataset_names=("hotpotqa" "trec-covid" "dbpedia-entity" "climate-fever" "fever" "fiqa")
 # dataset_size="toy"
 # dataset_size="small"
 # dataset_size="large"

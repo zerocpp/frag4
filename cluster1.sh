@@ -16,7 +16,7 @@ touch $log_file
 #################不同的参数##################
 cuda=1
 model="Qwen/Qwen2.5-7B-Instruct"
-dataset_names=("nq" "hotpotqa" "nfcorpus" "msmarco" "scidocs" "scifact")
+dataset_names=("nq" "nfcorpus" "msmarco" "scidocs" "scifact")
 # dataset_size="toy"
 # dataset_size="small"
 # dataset_size="large"
