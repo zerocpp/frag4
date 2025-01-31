@@ -41,7 +41,7 @@ def load_greedy(dataset_name, qid, doc_id):
     file_path = f'output/rank/gen/Qwen/Qwen2.5-7B-Instruct/{dataset_name}/{dataset_name}-{qid}-{doc_id}.pkl'
     if os.path.exists(file_path):
         result = load_pickle_file(file_path)
-        return result.get('greedy', {}).get('text', None)
+        return result.get('greedy', {})
     return None
 
 
@@ -88,9 +88,14 @@ def make_sample_data(rank_results, dataset_name):
         for doc_id in ['no']+list(doc_ids.keys()):
             samples = load_samples(dataset_name, qid, doc_id)
             greedy = load_greedy(dataset_name, qid, doc_id)
+            greedy_text = greedy.get('text', '') if greedy else None
+            log_likelihoods = greedy.get('log_likelihoods', None) if greedy else None
+            hidden_states = greedy.get('hidden_states', None) if greedy else None
             cluster_ids = load_cluster_ids(dataset_name, qid, doc_id)
             sample_data[qid][doc_id] = {
-                'greedy': greedy,
+                'greedy': greedy_text,
+                'hidden_states': hidden_states,
+                'log_likelihoods': log_likelihoods,
                 'samples': samples,
                 'cluster_ids': cluster_ids,
                 'entropy': compute_entropy(cluster_ids)
