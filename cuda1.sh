@@ -8,7 +8,7 @@ echo "Start time: $start_time"
 cuda=1
 model="Qwen/Qwen2.5-7B-Instruct"
 num_generations=30
-dataset_names=("hotpotqa")
+dataset_names=("nq" "dbpedia-entity" "hotpotqa" "climate-fever" "fever")
 dataset_size="all"
 gen_override="--no-override"
 cluster_override="--no-override"
@@ -22,16 +22,16 @@ rm -f $log_file
 touch $log_file
 
 #################generate##################
-for dataset_name in ${dataset_names[@]}; do
-    index=$(($index + 1))
-    total=${#dataset_names[@]}
-    echo "Processing dataset $index of $total: $dataset_name"
-    dataset_jsonl_path="dataset/rank/${dataset_name}/${dataset_name}-${dataset_size}.jsonl"
-    output_dir="output/rank/gen/Qwen/Qwen2.5-7B-Instruct/${dataset_name}"
-    cmd="DEVICE=cuda:$cuda python rank_gen.py --output_dir $output_dir --model $model --num_generations $num_generations --dataset_jsonl_path $dataset_jsonl_path $gen_override >> $log_file 2>&1"
-    echo "> $cmd"
-    eval $cmd
-done
+# for dataset_name in ${dataset_names[@]}; do
+#     index=$(($index + 1))
+#     total=${#dataset_names[@]}
+#     echo "Processing dataset $index of $total: $dataset_name"
+#     dataset_jsonl_path="dataset/rank/${dataset_name}/${dataset_name}-${dataset_size}.jsonl"
+#     output_dir="output/rank/gen/Qwen/Qwen2.5-7B-Instruct/${dataset_name}"
+#     cmd="DEVICE=cuda:$cuda python rank_gen.py --output_dir $output_dir --model $model --num_generations $num_generations --dataset_jsonl_path $dataset_jsonl_path $gen_override >> $log_file 2>&1"
+#     echo "> $cmd"
+#     eval $cmd
+# done
 
 #################聚类cluster##################
 for dataset_name in ${dataset_names[@]}; do

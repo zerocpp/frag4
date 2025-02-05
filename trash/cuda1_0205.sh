@@ -5,11 +5,10 @@ start_time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "Start time: $start_time"
 
 #################不同的参数##################
-cuda=0
+cuda=1
 model="Qwen/Qwen2.5-7B-Instruct"
 num_generations=30
-# 已完成: "nq" "dbpedia-entity"
-dataset_names=("hotpotqa" "climate-fever" "fever")
+dataset_names=("hotpotqa")
 dataset_size="all"
 gen_override="--no-override"
 cluster_override="--no-override"
@@ -35,17 +34,17 @@ for dataset_name in ${dataset_names[@]}; do
 done
 
 #################聚类cluster##################
-# for dataset_name in ${dataset_names[@]}; do
-#     index=$(($index + 1))
-#     total=${#dataset_names[@]}
-#     echo "Processing dataset $index of $total: $dataset_name"
-#     dataset_path="dataset/rank/${dataset_name}/${dataset_name}-${dataset_size}.jsonl"
-#     input_dir="output/rank/gen/Qwen/Qwen2.5-7B-Instruct/${dataset_name}"
-#     output_dir="output/rank/cluster/Qwen/Qwen2.5-7B-Instruct/${dataset_name}"
-#     cmd="DEVICE=cuda:$cuda python rank_cluster.py --input_dir $input_dir --output_dir $output_dir --dataset_path $dataset_path $cluster_override >> $log_file 2>&1"
-#     echo "> $cmd"
-#     eval $cmd
-# done
+for dataset_name in ${dataset_names[@]}; do
+    index=$(($index + 1))
+    total=${#dataset_names[@]}
+    echo "Processing dataset $index of $total: $dataset_name"
+    dataset_path="dataset/rank/${dataset_name}/${dataset_name}-${dataset_size}.jsonl"
+    input_dir="output/rank/gen/Qwen/Qwen2.5-7B-Instruct/${dataset_name}"
+    output_dir="output/rank/cluster/Qwen/Qwen2.5-7B-Instruct/${dataset_name}"
+    cmd="DEVICE=cuda:$cuda python rank_cluster.py --input_dir $input_dir --output_dir $output_dir --dataset_path $dataset_path $cluster_override >> $log_file 2>&1"
+    echo "> $cmd"
+    eval $cmd
+done
 
 #################time-log##################
 # 记录结束时间
